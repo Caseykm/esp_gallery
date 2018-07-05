@@ -1,8 +1,6 @@
 # esp_gallery
 Final group project
 Deliverables
-Create a Readme
-(in markdown format) and answer each question below
 
 Client’s Requirements
 1. Who is your client?
