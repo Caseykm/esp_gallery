@@ -61,7 +61,7 @@ Wifeframe with images
 ![mockup](https://github.com/url.png)
 
 #### 16. Describe the way Tasks are being allocated and tracked in your project.
-Tarsks are being alocated by who feels like doing somthing...People are choosing what hey want to do.
+Tasks are being alocated by who feels like doing somthing...People are choosing what hey want to do.
 Tasks are being racked useing Trello and Confluence
 
 #### 17. Discuss how Agile methodology is being implemented in your App.
@@ -79,3 +79,14 @@ We will use Webpack for testing
 #### 21. Discuss methods you will use to protect information and data.
 
 #### 22. Research what your legal obligations are in relation to handling user data
+
+#### Confluence jira
+Confluenct was used to maintain source control
+![confluence](https://github.com/casscass/esp_gallery/blob/development/README-images/confluence1.png)
+
+#### Trello
+Trello was initially used to maintain source control. So we endened up with somethings in trello and others in Confluence. This actually worked well for us as we were familier with trello and it provided a familier source control while we familierised ourselves with Confluence.
+![trello](https://github.com/casscass/esp_gallery/blob/development/README-images/trello1.png)
+
+
+
