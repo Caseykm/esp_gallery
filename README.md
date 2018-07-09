@@ -97,8 +97,7 @@ Confluenct was used to maintain source control
 
 ## Style Guide
 ### Clients logo
-![logo]
-(https://github.com/casscass/esp_gallery/blob/development/README-images/ESP-Gallery%20Small%20Logo200x135.jpg)
+![logo](https://github.com/casscass/esp_gallery/blob/development/README-images/ESP-Gallery%20Small%20Logo200x135.jpg)
 
 ### Colour Scheme
 ### Fonts
