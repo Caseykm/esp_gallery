@@ -1,6 +1,6 @@
 # esp_gallery
 Final group project
-Deliverables
+Part A Questionnaire
 
 Client’s Requirements
 1. Who is your client?
