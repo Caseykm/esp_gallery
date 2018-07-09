@@ -39,7 +39,7 @@ Third party services will be: Stripe and maybe Paypal (Paypal is a sprinkle)
 Data base reations are as follows:
 
 #### 13. Provide your database schema design.
-![erd](https://raw.githubusercontent.com/casscass/artcloud/master/app/assets/README-images/ERD_C4.png)
+![erd](https://raw.githubusercontent.com/casscass/esp_gallery/development/README-images/ERD_C4.png)
 
 #### 14. Provide User stories for your App.
 
