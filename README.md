@@ -39,17 +39,19 @@ Third party services will be: Stripe and maybe Paypal (Paypal is a sprinkle)
 Data base reations are as follows:
 
 #### 13. Provide your database schema design.
-![erd](https://raw.githubusercontent.com/casscass/artcloud/master/app/assets/images/ERD.png)
+![erd](https://raw.githubusercontent.com/casscass/artcloud/master/app/assets/README-images/ERD_C4.png)
 
 #### 14. Provide User stories for your App.
-![userStorys](/images-documentation/userStory1.png)
-Format: ![Alt Text](url)
-![userStorys](/images-documentation/userStory2.png)
-Format: ![Alt Text](url)
-![userStorys](/images-documentation/userStory3.png)
-Format: ![Alt Text](url)
-![userStorys](/images-documentation/userStory4.png)
-Format: ![Alt Text](url)
+
+As an artist I want to be able to sign up to esp gallery website so that I can use the website. 
+
+As an artist that has already signed up. I want to be able to go to the website and log in using my password anytime I feel like it.
+
+As an artist who has signed up I want to be the only one able to change/update my information and when I refresh the page I want to see the updated information .
+
+As an artist when I log in I want to be able to update /change the price and when I refresh the page I want to see the updated information .
+
+
 
 #### 15. Provide Wireframes for your App.
 Basic wireframes
