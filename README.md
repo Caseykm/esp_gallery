@@ -4,7 +4,7 @@ Deliverables
 
 ## Clients logo
 ESP Gallery logo
-![logo](https://github.com/casscass/esp_gallery/blob/development/README-images/ESP-GallerySmallLogo200x135.jpg)
+![logo](https://github.com/casscass/esp_gallery/blob/development/README-images/ESP-Gallery%20Small%20Logo200x135.jpg)
 
 ## Client’s Requirements
 #### 1. Who is your client?
@@ -47,8 +47,6 @@ Data base reations are as follows:
 
 #### 14. Provide User stories for your App.
 User Stories
-Basic wireframes
-![mockup](https://github.com/casscass/artcloud/blob/master/app/assets/images/Wireframs.png)
 
 As an artist I want to be able to sign up to esp gallery website so that I can use the website. 
 
@@ -66,6 +64,9 @@ Flow Chart
 
 Wifeframe with images
 ![mockup](https://github.com/url.png)
+
+Basic wireframes
+![mockup](https://github.com/casscass/artcloud/blob/master/app/assets/images/Wireframs.png)
 
 #### 16. Describe the way Tasks are being allocated and tracked in your project.
 Tasks are being alocated by who feels like doing somthing...People are choosing what hey want to do.
@@ -96,9 +97,7 @@ We will use Webpack for testing
 Confluenct was used to maintain source control
 ![confluence](https://github.com/casscass/esp_gallery/blob/development/README-images/confluence1.png)
 
-#### Trello
-Trello was initially used to maintain source control. So we endened up with somethings in trello and others in Confluence. This actually worked well for us as we were familier with trello and it provided a familier source control while we familierised ourselves with Confluence.
-![trello](https://github.com/casscass/esp_gallery/blob/development/README-images/trello1.png)
+
 
 
 
