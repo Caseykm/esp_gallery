@@ -2,6 +2,10 @@
 Final group project
 Deliverables
 
+## Clients logo
+ESP Gallery logo
+![logo](https://github.com/casscass/esp_gallery/blob/development/README-images/ESP-GallerySmallLogo200x135.jpg)
+
 ## Client’s Requirements
 #### 1. Who is your client?
 ESP Gallery - contact Lou Steer
@@ -42,6 +46,9 @@ Data base reations are as follows:
 ![erd](https://raw.githubusercontent.com/casscass/esp_gallery/development/README-images/ERD_C4.png)
 
 #### 14. Provide User stories for your App.
+User Stories
+Basic wireframes
+![mockup](https://github.com/casscass/artcloud/blob/master/app/assets/images/Wireframs.png)
 
 As an artist I want to be able to sign up to esp gallery website so that I can use the website. 
 
@@ -54,15 +61,20 @@ As an artist when I log in I want to be able to update /change the price and whe
 
 
 #### 15. Provide Wireframes for your App.
-Basic wireframes
-![mockup](https://github.com/casscass/artcloud/blob/master/app/assets/images/Wireframs.png)
+Flow Chart
+![flowchart](https://raw.githubusercontent.com/casscass/esp_gallery/development/README-images/preliminaryFlowChart.jpg)
 
 Wifeframe with images
 ![mockup](https://github.com/url.png)
 
 #### 16. Describe the way Tasks are being allocated and tracked in your project.
 Tasks are being alocated by who feels like doing somthing...People are choosing what hey want to do.
-Tasks are being racked useing Trello and Confluence
+Tasks are being tracked useing Trello.
+
+#### Trello
+Trello was initially used to maintain source control. So we endened up with somethings in trello and others in Confluence. This actually worked well for us as we were familier with trello and it provided a familier source control while we familierised ourselves with Confluence.
+![trello](https://github.com/casscass/esp_gallery/blob/development/README-images/trello1.png)
+
 
 #### 17. Discuss how Agile methodology is being implemented in your App.
 
