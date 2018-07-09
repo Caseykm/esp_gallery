@@ -4,17 +4,17 @@ Deliverables
 
 Client’s Requirements
 1. Who is your client?
-ESP Gallery
+ESP Gallery - contact Lou Steer
 
 2. What is your client’s need (i.e. challenge) that you will be addressing in your
 Project?
 Building a website that has an online gallery that can be booked by artists and a Gallery/shop 
 
 3. Describe the client’s current setup and data.
-No Website
+No current Website
 
 4. Describe the project will you be conducting and how your App will address the client’s needs.
-Website that 
+The esp gallery website will have a virtual gallery that can be booked by artists. The virtual gallery will be on the landing page.  
 
 5. Identify and describe the software (including databases) to be used in your
 App.
