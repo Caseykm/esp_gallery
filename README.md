@@ -1,10 +1,5 @@
-#_esp_galleryUser_
-Final group project
-Deliverables
-
-## Clients logo
-ESP Gallery logo
-![logo](https://github.com/casscass/esp_gallery/blob/development/README-images/ESP-Gallery%20Small%20Logo200x135.jpg)
+# ESP Gallery Website - Final group project
+## Deliverables
 
 ## Client’s Requirements
 #### 1. Who is your client?
@@ -47,15 +42,18 @@ Data base reations are as follows:
 
 #### 14. Provide User stories for your App.
 User Stories
+* Artist 
+    * As an artist I want to be able to sign up to esp gallery website so that I can use the website. 
 
-As an artist I want to be able to sign up to esp gallery website so that I can use the website. 
+    * As an artist that has already signed up. I want to be able to go to the website and log in using my password anytime I feel like it.
 
-As an artist that has already signed up. I want to be able to go to the website and log in using my password anytime I feel like it.
+    * As an artist who has signed up I want to be the only one able to change/update my information and when I refresh the page I want to see the updated information .
 
-As an artist who has signed up I want to be the only one able to change/update my information and when I refresh the page I want to see the updated information .
+    * As an artist when I log in I want to be able to update /change the price and when I refresh the page I want to see the updated information.
 
-As an artist when I log in I want to be able to update /change the price and when I refresh the page I want to see the updated information .
-
+* User
+  * Item 2a
+  * Item 2b
 
 
 #### 15. Provide Wireframes for your App.
@@ -97,7 +95,13 @@ We will use Webpack for testing
 Confluenct was used to maintain source control
 ![confluence](https://github.com/casscass/esp_gallery/blob/development/README-images/confluence1.png)
 
+## Style Guide
+### Clients logo
+![logo]
+(https://github.com/casscass/esp_gallery/blob/development/README-images/ESP-Gallery%20Small%20Logo200x135.jpg)
 
+### Colour Scheme
+### Fonts
 
 
 
