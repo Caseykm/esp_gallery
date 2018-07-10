@@ -1,7 +1,7 @@
 # ESP Gallery Website - Final group project
 ## Deliverables
 
-## Client’s Requirements
+#### Client’s Requirements
 #### 1. Who is your client?
 ESP Gallery - contact Lou Steer
 
@@ -60,6 +60,7 @@ User Stories
 Flow Chart
 ![flowchart](https://raw.githubusercontent.com/casscass/esp_gallery/development/README-images/preliminaryFlowChart.jpg)
 
+
 Wifeframe with images
 ![mockup](https://github.com/url.png)
 
@@ -100,6 +101,11 @@ Confluenct was used to maintain source control
 ![logo](https://github.com/casscass/esp_gallery/blob/development/README-images/ESP-Gallery%20Small%20Logo200x135.jpg)
 
 ### Colour Scheme
+Colour scheme can be viewed [here](https://coolors.co/f9f8f8-ffffff-337f96-444444-adadad)
+
+
+
+
 ### Fonts
 
 
