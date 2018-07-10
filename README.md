@@ -72,7 +72,11 @@ Tasks are being alocated by who feels like doing somthing...People are choosing 
 Tasks are being tracked useing Trello.
 
 #### Trello
+Trello board can be viewed [here](https://trello.com/b/NZm11i1D/c4-assignment)
+
+
 Trello was initially used to maintain source control. So we endened up with somethings in trello and others in Confluence. This actually worked well for us as we were familier with trello and it provided a familier source control while we familierised ourselves with Confluence.
+
 ![trello](https://github.com/casscass/esp_gallery/blob/development/README-images/trello1.png)
 
 
@@ -98,13 +102,13 @@ Confluenct was used to maintain source control
 
 ## Style Guide
 ### Clients logo
-![logo](https://github.com/casscass/esp_gallery/blob/development/README-images/ESP-Gallery%20Small%20Logo200x135.jpg)
+![logo](https://github.com/casscass/esp_gallery/blob/development/README-images/ESP-GalleryBigLogo600x300.jpg)
+
 
 ### Colour Scheme
 Colour scheme can be viewed [here](https://coolors.co/f9f8f8-ffffff-337f96-444444-adadad)
 
-
-
+![colour scheme](https://github.com/casscass/esp_gallery/blob/development/README-images/ESP-ColourScheme.png)
 
 ### Fonts
 
