@@ -19,8 +19,9 @@ The esp gallery website will have a virtual gallery that can be booked by artist
 
 1. **front end:**
 
-  * React.js
-  ...Provides stateful components for interactive UI
+  * **React.js**
+  
+  Provides stateful components for interactive UI
 
 2. **back end:**
 
