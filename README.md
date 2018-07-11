@@ -7,7 +7,19 @@ Part A Questionnaire
 ESP Gallery - contact Lou Steer
 
 #### 2. What is your client’s need (i.e. challenge) that you will be addressing in your Project?
-The client wants a  website that has an online gallery that can be booked by artists and a Gallery/shop 
+The client has outlined the need for an online gallery website that can be booked by artist with the following features:
+  * An easily navigable site
+  * Virtual gallery and shop
+  * Easy for users to buy
+  * Sound muted / no noise so people can sneakily look and buy from website at work. Without being sprung!
+  * A for hire gallery space that artists can hire/book - To be called 'Virtual Gallery'
+  * A shop that sells artworks
+  * Artist able to sign up and upload images of artwork, price & text. Artists able to  add/edit/destroy  images, text, price
+    * Ability for artists to input artwork dimensions and properties (requirement)
+    * Must be easy to upload artworks - ease of usability for admin and demographic.
+    * Disclaimer agreement for artists to show that they understand shipping responsibilities.
+  * Artists to have artwork on site but not necessarily for sale
+  * Log in page for artists - administrator will use too
 
 #### 3. Describe the client’s current setup and data.
 No current Website
@@ -63,7 +75,7 @@ Third party services will be: Stripe and maybe Paypal (Paypal is a sprinkle)
 
 
 #### 12. Discuss the database relations to be implemented.
-Data base reations are as follows:
+Data base relations are as follows:
 
 #### 13. Provide your database schema design.
 ![erd](https://raw.githubusercontent.com/casscass/esp_gallery/development/README-images/ERD_C4.png)
