@@ -17,24 +17,24 @@ The esp gallery website will have a virtual gallery that can be booked by artist
 
 #### 5. Identify and describe the software (including databases) to be used in your App.
 
-**front end:**
+1. **front end:**
 
   *React.js
-    Provides stateful components for interactive UI
+  ...Provides stateful components for interactive UI
 
-**back end:**
+2. **back end:**
 
   *Node.js
-    Event driven server environment
+  ...Event driven server environment
   
   *MongoDB
-    Database that uses a document-oriented data model. Stores JSON-like document models that map to objects in the application code
+  ...Database that uses a document-oriented data model. Stores JSON-like document models that map to objects in the application code
   
   *Mongoose
-    Database modeling for MongoDB
+  ...Database modeling for MongoDB
   
   *Express.js
-    Node.js application framework to help organize the application into an MVC architecture on the server side.
+  ...Node.js application framework to help organize the application into an MVC architecture on the server side.
 
 
 #### 6. Identify and describe the network setup you will use in your development.
