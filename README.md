@@ -1,5 +1,6 @@
 # ESP Gallery Website - Final group project
-## Deliverables
+Final group project
+Part A Questionnaire
 
 ### Client’s Requirements
 #### 1. Who is your client?
