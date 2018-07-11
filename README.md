@@ -1,7 +1,7 @@
 # ESP Gallery Website - Final group project
 ## Deliverables
 
-## Client’s Requirements
+### Client’s Requirements
 #### 1. Who is your client?
 ESP Gallery - contact Lou Steer
 
@@ -26,13 +26,16 @@ Hardware will be
 
 #### 8. Describe the architecture of your App.
 
+
 #### 9. Explain the different high-level components (abstractions) in your App.
 The different functionalities of the app are the sales function.
+
 
 #### 10. Detail any third party services that your App will use.
 Third party services will be: Stripe and maybe Paypal (Paypal is a sprinkle)
 
 #### 11. Identify the database to be used in your app and provide a justification for your choice.
+
 
 #### 12. Discuss the database relations to be implemented.
 Data base reations are as follows:
@@ -43,11 +46,13 @@ Data base reations are as follows:
 #### 14. Provide User stories for your App.
 User Stories
 * Artist 
+
     * As an artist I want to be able to sign up to esp gallery website so that I can use the website. 
 
     * As an artist that has already signed up. I want to be able to go to the website and log in using my password anytime I feel like it.
 
-    * As an artist who has signed up I want to be the only one able to change/update my information and when I refresh the page I want to see the updated information .
+Ability to change my information on my Profile Page
+    * As an artist who has signed up I want to be  able to change/update my information and when I refresh the page I want to see the updated information.
 
     * As an artist when I log in I want to be able to update /change the price and when I refresh the page I want to see the updated information.
 
@@ -57,13 +62,15 @@ User Stories
 
 
 #### 15. Provide Wireframes for your App.
-Flow Chart
+* Flow Chart
+
 ![flowchart](https://raw.githubusercontent.com/casscass/esp_gallery/development/README-images/preliminaryFlowChart.jpg)
 
-Wifeframe with images
-![mockup](https://github.com/url.png)
 
-Basic wireframes
+* Wifeframs 
+Wireframes where made with Figma and can be viewed online [here](https://www.figma.com/file/PU0NB9pOHF1cRj3zrTYRrLpC/ESP-gallery-wireframes
+)
+
 ![mockup](https://github.com/casscass/artcloud/blob/master/app/assets/images/Wireframs.png)
 
 #### 16. Describe the way Tasks are being allocated and tracked in your project.
@@ -71,8 +78,17 @@ Tasks are being alocated by who feels like doing somthing...People are choosing 
 Tasks are being tracked useing Trello.
 
 #### Trello
+Trello board can be viewed [here](https://trello.com/b/NZm11i1D/c4-assignment)
+
+
 Trello was initially used to maintain source control. So we endened up with somethings in trello and others in Confluence. This actually worked well for us as we were familier with trello and it provided a familier source control while we familierised ourselves with Confluence.
+
 ![trello](https://github.com/casscass/esp_gallery/blob/development/README-images/trello1.png)
+
+##### Confluence jira
+Confluenct was used in conjuction with Trello to maintain source control.
+
+![confluence](https://github.com/casscass/esp_gallery/blob/development/README-images/confluence1.png)
 
 
 #### 17. Discuss how Agile methodology is being implemented in your App.
@@ -88,18 +104,43 @@ We will use Webpack for testing
 #### 20. Discuss and analyse requirements related to information system security.
 
 #### 21. Discuss methods you will use to protect information and data.
+Operating systems and applications can always be reinstalled, but data is unique--making it the most important thing on your computer or network
+    
+* Backup data early and often. 
+    * Data is pushed to Github by team members as they finish/install code/package/feature
+
+* When we depoly
+    * We will be looking into options like Wizard Mode to simplify the process of creating and restoring backups for the website.
+    * We will be advising our client to store a copy of the backup offsite in case of fire, tornado, or other natural disaster that can destroy the original data.
+
+* Use file-level and share-level security
+    * Permissions will be set on the data files and folders.
+    * Permissions will be set for user accounts, users and admin. We will allow or deny various levels of access from read-only to full control.
+
+* Password-protect
+    * When users Sign-Up their information will be protected by their password.
+
+* Encryption keys 
+    * Encryption keys for stripe and sendgrid will be stored in .gitignore file so they will not be published on git hub.
+
+* User-info
+    * ESP Gallery has a no-share information policy. They do not share user information with third parties.
+
 
 #### 22. Research what your legal obligations are in relation to handling user data
 
-#### Confluence jira
-Confluenct was used to maintain source control
-![confluence](https://github.com/casscass/esp_gallery/blob/development/README-images/confluence1.png)
+
 
 ## Style Guide
 ### Clients logo
-![logo](https://github.com/casscass/esp_gallery/blob/development/README-images/ESP-Gallery%20Small%20Logo200x135.jpg)
+![logo](https://github.com/casscass/esp_gallery/blob/development/README-images/ESP-GalleryBigLogo600x300.jpg)
+
 
 ### Colour Scheme
+Colour scheme can be viewed [here](https://coolors.co/f9f8f8-ffffff-337f96-444444-adadad)
+
+![colour scheme](https://github.com/casscass/esp_gallery/blob/development/README-images/ESP-ColourScheme.png)
+
 ### Fonts
 
 
