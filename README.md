@@ -16,8 +16,26 @@ No current Website
 The esp gallery website will have a virtual gallery that can be booked by artists. The virtual gallery will be on the landing page.  
 
 #### 5. Identify and describe the software (including databases) to be used in your App.
-Software will be: react.js, node.js, express,
-Database will be: Mongodb, AWS Mlab
+
+**front end:**
+
+  *React.js
+    Provides stateful components for interactive UI
+
+**back end:**
+
+  *Node.js
+    Event driven server environment
+  
+  *MongoDB
+    Database that uses a document-oriented data model. Stores JSON-like document models that map to objects in the application code
+  
+  *Mongoose
+    Database modeling for MongoDB
+  
+  *Express.js
+    Node.js application framework to help organize the application into an MVC architecture on the server side.
+
 
 #### 6. Identify and describe the network setup you will use in your development.
 Network will be: 
