@@ -32,30 +32,30 @@ The app will fulfill the client needs, as described in question 2 by:
 
 ## 5. Identify and describe the software (including databases) to be used in your App.
 
-1. front end:
+1. **front end:**
 
-	* React.js
+  * **React.js**
   
-  Provides stateful components for interactive UI
+  React is a Javascript library for building user interfaces. It handles the View part of the MVC architecture. It provides the ability to change data states without reloading the page. To do this, it provides a virtual DOM which tracks changes in state and compares them to the DOM in the browser, and only updates parts of the page which have changed. Because of this, React is fast, scalable and simple. React also provides a utility called JSX. JSX is simple Javascript which uses HTML-like syntax for templating and can be embedded within React components.
 
-2. back end:
+2. **Back end:**
 
-	* Node.js
+  * **Node.js**
   
-  Event driven server environment
+  An event driven web server environment. It handles the Controller part of the MVC architecture. It contains the business logic of the app. Node processes HTTP requests from the client side and manipulates the database through through the model.
   
   
-	* MongoDB
+  * **MongoDB**
   
-  Database that uses a document-oriented data model. Stores JSON-like document models that map to objects in the application code
+  A database that uses a document-oriented data model. Stores JSON-like document models that map to objects in the application code. Because it is document-oriented, documents in the database can be updated and changed over time.
   
-	* Mongoose
+  * **Mongoose**
   
-  Database modeling for MongoDB
+  Database modelling for MongoDB. It handles the Model part of the MVC architecture. Mongoose is a middleware which provides utilities for the creation of Schema which model documents in the database and acts as a 'translator' between MongoDB and the Node web server.
   
-	* Express.js
+  * **Express.js**
   
-  Node.js application framework to help organize the application into an MVC architecture on the server side.
+  A Node.js application framework to help organise the application into an MVC architecture on the server side. It provides an additional layer of utilities and middleware for processing HTTP requests from the client side.
 
 
 ## 6. Identify and describe the network setup you will use in your development.
@@ -153,7 +153,7 @@ The Trello board can be viewed [here](https://trello.com/b/NZm11i1D/c4-assignmen
 ![trello](https://github.com/casscass/esp_gallery/blob/development/README-images/trello1.png)
 
 Additionally, a Trello powerup called TeamGantt is being used to monitor progress as pictured below:
-![gantt](https://github.com/casscass/artcloud/blob/master/app/assets/images/gantt.png)
+![gantt](https://github.com/casscass/esp_gallery/blob/master/app/assets/images/gantt.png)
 
 
 ## 17. Discuss how Agile methodology is being implemented in your App.
@@ -185,7 +185,18 @@ G) We self-organize by using the Trello board and team meetings to direct our fo
 We will be using a Git Feature Branch Workflow. Each individual decides on a feature to work on, creates a feature branch on their local machine and commits their changes to this branch as they progress. Once the feature is completed, the individual rebases their code from the main branch, resolves any conflicts, and then submits a merge request to the main branch. Once the feature is reviewed it is either approved and merged into the main branch, or rejected and marked for revision. 
 
 ## 19. Provide an overview and description of your Testing process.
-Our tests will be implemented with Jest, a unit testing framework. We will also be employing the Enzyme testing utility to streamline the testing process. Tests will be created for individual components to assess functionality of each component in the app.
+
+Our tests will be implemented with Jest, a unit testing framework. We will also be employing the Enzyme testing utility to streamline the testing process. The types of tests we will conduct are as follows:
+Unit testing will test individual functions or classes by providing input and making sure the output is expected. Integration tests will determine if processes or components behave as expected, including side effects.
+* UI tests will test scenarios on the product itself. Expected behavior will be ensured by controlling the website, regardless of internal structure.
+
+Example User Stories and Acceptance Criteria:
+/As an artist, I want to be able to provide a description of my artwork so that I can engage more people with my art./
+AC1. Option to enter description is displayed when adding a new artwork listing. AC2. Description appears on the view alongside other artwork information when listing application is completed upon clicking done button.
+
+/As a user, I want to be able to update my personal information to make sure its current./
+AC1. Edit button is visible on profile page. AC2. Clicking on the edit button allows you to edit information.
+* AC3. Updated information appears once form is resubmitted upon clicking done button.
 
 ## 20. Discuss and analyze requirements related to information system security.
 The maintenance of sensitive information is imperative when handling user data. The following safeguard requirements, as per the risk assessment, are to be fulfilled in the construction of the website.
