@@ -10,6 +10,20 @@ ESP Gallery - contact Lou Steer
 
 Our client, ESP Gallery, needs a user friendly, aesthetically inviting online art platform allowing users to display, sell or buy artwork and for enthusiasts to view art. Our client wants to receive a commission on all art sales processed by the site. Also, a hireable, main gallery section (i.e. the homepage), is needed for artists who want more exposure for their art. It is important that the site promotes the same sense of community, for which ESP Gallery is known. The site admin must be able to alter key aspects of the site.
 
+The client has outlined the need for an online gallery website that can be booked by artist with the following features:
+  * An easily navigable site
+  * Virtual gallery and shop
+  * Easy for users to buy
+  * Sound muted / no noise so people can sneakily look and buy from website at work. Without being sprung!
+  * A for hire gallery space that artists can hire/book - To be called 'Virtual Gallery'
+  * A shop that sells artworks
+  * Artist able to sign up and upload images of artwork, price & text. Artists able to  add/edit/destroy  images, text, price
+    * Ability for artists to input artwork dimensions and properties (requirement)
+    * Must be easy to upload artworks - ease of usability for admin and demographic.
+    * Disclaimer agreement for artists to show that they understand shipping responsibilities.
+  * Artists to have artwork on site but not necessarily for sale
+  * Log in page for artists - administrator will use too
+
 #### 3. Describe the client’s current setup and data.
 There is no current website or data. The gallery sells no art at the moment. It only has an online presence through Facebook and Instagram.  
 
@@ -92,16 +106,35 @@ The Gallery abstraction is basically the home page and let's artists pay the gal
 
 Buying/selling is another abstraction that is not a model and is done so through another abstraction, "listing".   
 
+
 #### 10. Detail any third party services that your App will use.
 Third party services will be: Stripe and maybe Paypal (Paypal is a sprinkle)
 
 #### 11. Identify the database to be used in your app and provide a justification for your choice.
 The database we will be using is MongoDB. It stores data in JSON-like documents which can have different fields, allowing the database structure to change over time. As a distributable database, it provides horizontal scaling, high availability and geographic distribution. Additionally, its ability to handle ad hoc queries, indexing and real-time aggregation allow for easy access to the database throughout the structure of the app.
 
+
 #### 12. Discuss the database relations to be implemented.
+
 The models that we will be using in our database are users, artwork, and gallery.  The gallery, which is a singleton resource, has two foreign keys, one that relates to the artwork's primary key, and one that relates to the user primary key so that the artwork and artist shown in the gallery can be identified.  The artwork, has a foreign key, which relates to the user primary key, which allows artworks to be associated to it's user(a.k.a. artist/seller).
 
 #### 13. Provide your database schema design.
+
+Data base relations are as follows:
+
+#### 13. Provide your database schema design.
+![erd](https://raw.githubusercontent.com/casscass/esp_gallery/development/README-images/ERD_C4.png)
+
+#### 14. Provide User stories for your App.
+User Stories
+* Artist 
+
+    * As an artist I want to be able to sign up to esp gallery website so that I can use the website. 
+
+    * As an artist that has already signed up. I want to be able to go to the website and log in using my password anytime I feel like it.
+
+Ability to change my information on my Profile Page
+    * As an artist who has signed up I want to be  able to change/update my information and when I refresh the page I want to see the updated information.
 
 We used Dbdesigner to design our database schema as follows:
 
@@ -144,8 +177,11 @@ We used Dbdesigner to design our database schema as follows:
 ![flowchart](https://raw.githubusercontent.com/casscass/esp_gallery/development/README-images/preliminaryFlowChart.jpg)
 
 
+
 * Wifeframes 
 Wireframes were made with Figma and can be viewed online here:(https://www.figma.com/file/PU0NB9pOHF1cRj3zrTYRrLpC/ESP-gallery-wireframes
+* Wifeframs 
+Wireframes where made with Figma and can be viewed online [here](https://www.figma.com/file/PU0NB9pOHF1cRj3zrTYRrLpC/ESP-gallery-wireframes
 )
 
 ![mockup](https://github.com/casscass/artcloud/blob/master/app/assets/images/Wireframs.png)
@@ -153,6 +189,8 @@ Wireframes were made with Figma and can be viewed online here:(https://www.figma
 #### 16. Describe the way Tasks are being allocated and tracked in your project.
 
 #### Trello
+
+
 Tasks initially, were broadly distributed with two people on the front-end and two on the backend. Trello was then implemented to keep all tasks organised and the project progressing.  Team members created a Trello board and put all tasks in the "to do" section. After that team members could take ownership of a task by putting their name to it, move it to doing, and then put it in completed when they are done.  
 
 The Trello board can be viewed [here](https://trello.com/b/NZm11i1D/c4-assignment) or here:
@@ -161,6 +199,19 @@ The Trello board can be viewed [here](https://trello.com/b/NZm11i1D/c4-assignmen
 
 Additionally, a Trello powerup called TeamGantt is being used to monitor progress as pictured below:
 ![gantt](https://github.com/casscass/artcloud/blob/master/app/assets/images/gantt.png)
+
+Trello board can be viewed [here](https://trello.com/b/NZm11i1D/c4-assignment)
+
+
+Trello was initially used to maintain source control. So we endened up with somethings in trello and others in Confluence. This actually worked well for us as we were familier with trello and it provided a familier source control while we familierised ourselves with Confluence.
+
+![trello](https://github.com/casscass/esp_gallery/blob/development/README-images/trello1.png)
+
+##### Confluence jira
+Confluence was used in conjuction with Trello to maintain source control.
+
+![confluence](https://github.com/casscass/esp_gallery/blob/development/README-images/confluence1.png)
+
 
 
 #### 17. Discuss how Agile methodology is being implemented in your App.
