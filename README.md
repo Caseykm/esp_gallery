@@ -152,7 +152,7 @@ Wireframes were made with Figma and can be viewed online here:(https://www.figma
 ## 16. Describe the way Tasks are being allocated and tracked in your project.
 
 #### Trello
-Tasks initially, were broadly distributed with two people on the front-end and two on the backend. Trello was then implemented to keep all tasks organised and the project progressing.  Team members created a Trello board and put all tasks in the "to do" section. After that team members could take ownership of a task by putting their name to it, move it to doing, and then put it in completed when they are done.  
+Tasks initially, were broadly distributed with two people on the front-end and two on the backend. Trello was then implemented to keep all tasks organised and the project progressing. Team members created a Trello board and put all tasks in the "to do" section. After that team members could take ownership of a task by putting their name to it, move it to doing, and then put it in completed when they are done.  
 
 The Trello board can be viewed [here](https://trello.com/b/NZm11i1D/c4-assignment) or here:
 
@@ -174,8 +174,7 @@ July 11- July 21 Development phase
 July 21 - July 24 Project review and delivery to client, Finalise docs and code, presentation planning
 
 B) Collaboration with the customer
-We managed client satisfaction ensuring that the product met her needs 
-by keeping her updated on the progress and seeking her input on the website throughout our sprints.  
+We managed client satisfaction ensuring that the product met her needs by keeping her updated on the progress and seeking her input on the website throughout our sprints.  
 
 C) Commitment to the delivery of working software as frequently as possible. 
 
