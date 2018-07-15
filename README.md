@@ -132,46 +132,46 @@ We used Dbdesigner to design our database schema as follows:
 * As admin, I want to be able to display information about ESP Gallery, to provide some background on the company, and to promote a sense of community.
 
 ## 15. Provide Wireframes for your App.
-* Flow Chart
+### Flow Chart
 
 ![flowchart](https://github.com/casscass/esp_gallery/blob/develop/README-images/preliminaryFlowChart.jpg)
 
 
-* Wifeframes 
+### Wifeframes 
 
 Wireframes were made with Figma and can be viewed [here](https://www.figma.com/file/PU0NB9pOHF1cRj3zrTYRrLpC/ESP-gallery-wireframes) 
 
-*** Wireframe Landing Page
+#### Wireframe Landing Page
 
 ![wireframe-landingPage](https://github.com/casscass/esp_gallery/blob/develop/README-images/wireframe-LandingPage.png)
 
 
-*** Wireframe About Us Page
+#### Wireframe About Us Page
 
 ![wireframe-AboutUsPage](https://github.com/casscass/esp_gallery/blob/develop/README-images/Wireframe-AboutUs.png)
 
 
-*** Wireframe Apply To Sell Art Page
+#### Wireframe Apply To Sell Art Page
 
 ![wireframe-ApplyToSellArtPage](https://github.com/casscass/esp_gallery/blob/develop/README-images/Wireframe-ApplyToSellArt.png)
 
 
-*** Wireframe Contact Us Page
+#### Wireframe Contact Us Page
 
 ![wireframe-ContactUs](https://github.com/casscass/esp_gallery/blob/develop/README-images/Wireframe-ContactUs.png)
 
 
-*** Wireframe Gallery Shop Page
+#### Wireframe Gallery Shop Page
 
 ![wireframe-GalleryShop](https://github.com/casscass/esp_gallery/blob/develop/README-images/Wireframe-GalleryShop.png)
 
 
-*** Wireframe Product Page Page
+#### Wireframe Product Page Page
 
 ![wireframe-ProductPage](https://github.com/casscass/esp_gallery/blob/develop/README-images/Wireframe-ProductPage.png)
 
 
-*** Wireframe Sell Art Page Page
+#### Wireframe Sell Art Page Page
 
 ![wireframe-SellArt](https://github.com/casscass/esp_gallery/blob/develop/README-images/Wireframe-SellArt.png)
 
