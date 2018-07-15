@@ -284,7 +284,3 @@ Colour scheme can be viewed [here](https://coolors.co/f9f8f8-ffffff-337f96-44444
 ![colour scheme](https://github.com/casscass/esp_gallery/blob/development/README-images/ESP-ColourScheme.png)
 
 ### Fonts
-
-
-
-

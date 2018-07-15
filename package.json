@@ -12,6 +12,7 @@
     "mongoose": "^5.2.2"
   },
   "devDependencies": {
-    "concurrently": "^3.5.0"
+    "concurrently": "^3.5.0",
+    "jest": "^23.4.0"
   }
 }
