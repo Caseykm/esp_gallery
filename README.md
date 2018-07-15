@@ -88,26 +88,26 @@ The “Gallery” is the landing page and lets artists pay to show their art on 
 Buying/selling is another abstraction that is not a model and is a boolean value on the artwork model.   
 
 ## 10. Detail any third party services that your App will use.
-Third party services that will be utilised by the app include:
+**Third party services that will be utilised by the app include:**
 
-Amazon Simple Storage Service (AWS S3)
+* **Amazon Simple Storage Service (AWS S3)**
 AWS S3 is a cloud computing web service offered by Amazon. It provides fast, reliable, affordable and scalable object storage that is developer friendly. It will be used to store the App's image files.
 
-mLab
+* **mLab**
 MLab is "the leading Database-as-a-Service, for MongoDB".
 It is a fully managed cloud database service which provides automated provisioning and scaling of the app's MongoDB database, as well as backup, recovery and security. It has a Web GUI for running queries, editing documents, and viewing results.
 The service can also include 24 hour emergency support and monitoring & analytic tools.
 
-Stripe Connect
+* **Stripe Connect**
 Stripe connect is an online payment processor that allows businesses to accept credit card payments. Stripe connect can handle user onboarding, compliance, payment routing, and reporting automatically. Stripe will service the Artist/buyer transaction paradigm.
 
-Heroku
+* **Heroku**
 Heroku is a cloud hosting platform that we will use to deploy and manage the ESP app in the development stage.
 
-Now
+* **Now**
 Now is a cloud hosting platform that we will use to deploy and manage the ESP app in the production stage if the client is happy and wants to go through with the project.
 
-Passport
+* **Passport**
 Passport facilitates user authentication within the app. It does this by delegating all other functionality other than authentication requests to the app. This separation of concerns keeps code clean and maintainable and allows easy integration of the service.
 
 ## 11. Identify the database to be used in your app and provide a justification for your choice.
