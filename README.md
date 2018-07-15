@@ -2,18 +2,17 @@
 Final group project
 Part A Questionnaire
 
-### Client’s Requirements
-#### 1. Who is your client?
+## 1. Who is your client?
 ESP Gallery - contact Lou Steer
 
-#### 2. What is your client’s need (i.e. challenge) that you will be addressing in your Project?
+## 2. What is your client’s need (i.e. challenge) that you will be addressing in your Project?
 
 Our client, ESP Gallery, needs a user friendly, aesthetically inviting online art platform allowing users to display, sell or buy artwork and for enthusiasts to view art. Our client wants to receive a commission on all art sales processed by the site. Also, a hireable, main gallery section (i.e. the homepage), is needed for artists who want more exposure for their art. It is important that the site promotes the same sense of community, for which ESP Gallery is known. The site admin must be able to alter key aspects of the site.
 
-#### 3. Describe the client’s current setup and data.
+## 3. Describe the client’s current setup and data.
 There is no current website or data. The gallery sells no art at the moment. It only has an online presence through Facebook and Instagram.  
 
-#### 4. Describe the project will you be conducting and how your App will address the client’s needs.
+## 4. Describe the project will you be conducting and how your App will address the client’s needs.
 
 The ESP Gallery App uses MongoDB, Express, React, Node, Bootstrap, Sendgrid, stripe, cloudinary, atlas, and passport technologies.
 The app will fulfil the client needs, as described in question 2 by:
@@ -35,7 +34,7 @@ The app will fulfil the client needs, as described in question 2 by:
   * providing no automatic audio play, so people can use the site without drawing the attention of others.
 
 
-#### 5. Identify and describe the software (including databases) to be used in your App.
+## 5. Identify and describe the software (including databases) to be used in your App.
 
 1. **front end:**
 
@@ -63,10 +62,10 @@ The app will fulfil the client needs, as described in question 2 by:
   Node.js application framework to help organize the application into an MVC architecture on the server side.
 
 
-#### 6. Identify and describe the network setup you will use in your development.
+## 6. Identify and describe the network setup you will use in your development.
 Network will be: 
 
-#### 7. Identify and describe the infrastructure (i.e. hardware) that your App will run on.
+## 7. Identify and describe the infrastructure (i.e. hardware) that your App will run on.
 
 The client does not have the capacity to run her own server so the app will run on third party providers. The setup will be as follows:
  
@@ -77,12 +76,12 @@ The App will be deployed on Heroku. Heroku is a cloud platform service located i
 Amazon Simple Storage Service (AWS S3) will be used to store the App's images.  It is a cloud computing web service offered by Amazon Web Services and provides fast, reliable and scalable object storage. 
 The AWS we are using is located in West Virginia however, there are locations globally and we are currently looking into whether we should use one closer to Sydney.  
 
-#### 8. Describe the architecture of your App.
+## 8. Describe the architecture of your App.
 
 We have decided on a model, view, controller, layered architecture pattern. The app uses MongoDB, above which, is our backend layer containing our models, business logic and data types. We have utilised Mongoose and Express for this.  Our controllers transform and manipulate the data between this model layer and the front-end view layer, which is built with React JS and uses HTML/CSS, Javascript, and bootstrap.  
 This architecture allows compartmentalisation of the app's different functions, aiding the building process so that changes in one layer or function aren't affected by other layers.
 
-#### 9. Explain the different high-level components (abstractions) in your App.
+## 9. Explain the different high-level components (abstractions) in your App.
 We have three models: Users, Artworks and Gallery.  
 
 The "user" model represents art buyers, sellers, and site admin.  All these users are able to sign in to  accounts. Site admin have extra permissions which allow the management of data on the site.  Users are able to create art listings, which enable them to sell artwork, and other users are able to buy this artwork.  Users that wish to be known as artists, are able to populate their profile with information about themselves and their art.  
@@ -90,24 +89,24 @@ The "user" model represents art buyers, sellers, and site admin.  All these user
 "Artworks", discussed above, is another model that represent art that is/was for sale, or art shown on the gallery page.  It has data such as images, description, id, and a boolean depending on if it's in the gallery.    
 The Gallery abstraction is basically the home page and let's artists pay the gallery to show their art on this page.  They will also be able to display their personal artist profile or other info.  
 
-Buying/selling is another abstraction that is not a model and is done so through another abstraction, "listing".   
+Buying/selling is another abstraction that is not a model and is a boolean value on the artwork model.   
 
-#### 10. Detail any third party services that your App will use.
+## 10. Detail any third party services that your App will use.
 Third party services will be: Stripe and maybe Paypal (Paypal is a sprinkle)
 
-#### 11. Identify the database to be used in your app and provide a justification for your choice.
-The database we will be using is MongoDB. It stores data in JSON-like documents which can have different fields, allowing the database structure to change over time. As a distributable database, it provides horizontal scaling, high availability and geographic distribution. Additionally, its ability to handle ad hoc queries, indexing and real-time aggregation allow for easy access to the database throughout the structure of the app.
+## 11. Identify the database to be used in your app and provide a justification for your choice.
+The database we will be using is MongoDB. It stores data in JSON-like documents which can have different fields, allowing the database structure to change over time. As a distributable database, it provides horizontal scaling, high availability and geographic distribution. Additionally, its ability to handle ad hoc queries, indexing, and real-time aggregation, allow for easy access to the database throughout the structure of the app. Mysql or a no sql data store, are other options, however they don't have all the features that easily support our client's goal of having two-sided marketplace fuctionality.  Ebay's choice of MongoDB for some of the aforementioned reasons, informed our decision making process. This rationale is part of the reason that Ebay uses MongoDB.
 
-#### 12. Discuss the database relations to be implemented.
+## 12. Discuss the database relations to be implemented.
 The models that we will be using in our database are users, artwork, and gallery.  The gallery, which is a singleton resource, has two foreign keys, one that relates to the artwork's primary key, and one that relates to the user primary key so that the artwork and artist shown in the gallery can be identified.  The artwork, has a foreign key, which relates to the user primary key, which allows artworks to be associated to it's user(a.k.a. artist/seller).
 
-#### 13. Provide your database schema design.
+## 13. Provide your database schema design.
 
 We used Dbdesigner to design our database schema as follows:
 
 ![erd](https://raw.githubusercontent.com/casscass/esp_gallery/development/README-images/ERD_C4.png)
 
-#### 14. Provide User stories for your App.
+## 14. Provide User stories for your App.
 # User Stories
 
 ## User
@@ -138,7 +137,7 @@ We used Dbdesigner to design our database schema as follows:
 * As admin, I want to be able to receive commission from transactions so that I can continue to provide a service.
 * As admin, I want to be able to display information about ESP Gallery, to provide some background on the company, and to promote a sense of community.
 
-#### 15. Provide Wireframes for your App.
+## 15. Provide Wireframes for your App.
 * Flow Chart
 
 ![flowchart](https://raw.githubusercontent.com/casscass/esp_gallery/development/README-images/preliminaryFlowChart.jpg)
@@ -150,7 +149,7 @@ Wireframes were made with Figma and can be viewed online here:(https://www.figma
 
 ![mockup](https://github.com/casscass/artcloud/blob/master/app/assets/images/Wireframs.png)
 
-#### 16. Describe the way Tasks are being allocated and tracked in your project.
+## 16. Describe the way Tasks are being allocated and tracked in your project.
 
 #### Trello
 Tasks initially, were broadly distributed with two people on the front-end and two on the backend. Trello was then implemented to keep all tasks organised and the project progressing.  Team members created a Trello board and put all tasks in the "to do" section. After that team members could take ownership of a task by putting their name to it, move it to doing, and then put it in completed when they are done.  
@@ -163,7 +162,7 @@ Additionally, a Trello powerup called TeamGantt is being used to monitor progres
 ![gantt](https://github.com/casscass/artcloud/blob/master/app/assets/images/gantt.png)
 
 
-#### 17. Discuss how Agile methodology is being implemented in your App.
+## 17. Discuss how Agile methodology is being implemented in your App.
 
 Agile methodology was used to complete our project as follows:
 
@@ -189,16 +188,64 @@ F) Every day we have a team meeting so we could find out how to increase team ef
 
 G) We self-organize by using the Trello board and team meetings to direct our focus
 
-#### 18. Provide an overview and description of your Source control process.
+## 18. Provide an overview and description of your Source control process.
 
 We will be using a Git Feature Branch Workflow. Each individual decides on a feature to work on, creates a feature branch on their local machine and commits their changes to this branch as they progress. Once the feature is completed, the individual rebases their code from the main branch, resolves any conflicts, and then submits a merge request to the main branch. Once the feature is reviewed it is either approved and merged into the main branch, or rejected and marked for revision. 
 
-#### 19. Provide an overview and description of your Testing process.
+## 19. Provide an overview and description of your Testing process.
 We will use Webpack for testing
 
-#### 20. Discuss and analyse requirements related to information system security.
+## 20. Discuss and analyse requirements related to information system security.
 
-#### 21. Discuss methods you will use to protect information and data.
+The maintenance of sensitive information is imperative when handling user data. The following safeguard requirements, as per the risk assessment, are to be fulfilled in the construction of the website.
+
+### Risk Assessment 
+* User authentication
+* Data management
+* File uploads
+* Protection against data loss (when parts of the database can no longer be retrieved).
+* Transaction security (payments /commission)
+
+### Data Management & Anonymization
+#### Data Minimization
+To reduce the risk of exposure in the event of a breach, unnecessary information won’t be collected. For example, date of birth isn’t directly required to support business processes, therefore its acquisition isn’t needed. 
+
+#### Data Encyption
+* Data encryption to encode sensitive information so that it can only be accessed by authorized individuals.
+	* An encryption key is used to make the information illegible and a decryption key is used to decipher the information.
+	* Encryption is necessary when handling transactions to ensure customer information security.
+
+#### Input Validation & Sanitization
+* Only allow users to input data of the expected type by checking that inputs meet criteria and ensuring that it is valid.
+	* For instance, email address inputs should be filtered to only allow characters that are allowed in email addresses.
+
+### SQL Injections
+SQL injection attacks are when a web form field or URL parameter is used to manipulate or gain access to your database. This can be prevented by using parameterized queries which are used to stop attackers from adding queries to be added to SQL statements that are executed.
+
+### User Authentication
+#### Password Protection
+Restrict access to sensitive personal information by requiring strong passwords is essential.  Some requirements and methods for password protection are:
+* Enforced password requirements such as character minimum, uppercase and number integration to protect password security.
+
+##### Plain text passwords
+Plain text passwords only use letters. This means hackers can easily gain access to the system due to their simplicity. Often these types of passwords are used across other logins as well which makes it easy for hackers to access any accounts a user belongs to.
+
+##### One-way Hash
+Servers don’t store plain text passwords to authenticate users with a one-way hash. A hashing algorithm is applied to increase security. This is a better security solution than just a plain text password but hackers have 
+been known to find ways around this method.
+* Storage of passwords as encrypted values (preferably through a hashing algorithm).
+	* In the event of a hacking, hashed passwords could limit damage as it isn’t possible to decrypt them.
+
+##### Password Salting
+A random ’salt’ string can be added for each user to provide an extra level of protection. This could happen during the creation of an account, significantly increasing encryption. This vastly increases the time needed for hackers to gain access to the system as passwords will have to be found for each user although it is still possible.
+
+### File Uploads
+File uploads are an integral part of the functionality of the website as we need images of artwork to be displayed on the virtual gallery and the gallery shop. This is a major risk when it comes to website security. Files could contain scripts that could open up the website to hacking if executed on the server.
+Our choice for file storage will need to take these requirements into account:
+* Uploaded files must be treated with suspicion to ensure site protection. File extension names cannot be trusted for verification as they can be easily fabricated. Options around this are to rename files on upload to ensure the right file extension.
+* Direct access to uploaded files should be prevented. Any uploaded files are stored in a folder outside the webroot.
+
+## 21. Discuss methods you will use to protect information and data.
 Operating systems and applications can always be reinstalled, but data is unique--making it the most important thing on your computer or network
     
 * Backup data early and often. 
@@ -222,7 +269,7 @@ Operating systems and applications can always be reinstalled, but data is unique
     * ESP Gallery has a no-share information policy. They do not share user information with third parties.
 
 
-#### 22. Research what your legal obligations are in relation to handling user data
+## 22. Research what your legal obligations are in relation to handling user data
 
 
 
