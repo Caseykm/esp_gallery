@@ -100,7 +100,7 @@ The models that we will be using in our database are users, artwork, and gallery
 
 We used Dbdesigner to design our database schema as follows:
 
-![erd](https://raw.githubusercontent.com/casscass/esp_gallery/development/README-images/ERD_C4.png)
+![erd](https://github.com/casscass/esp_gallery/blob/develop/README-images/ERD_C4.png)
 
 ## 14. Provide User stories for your App.
 ### User
@@ -132,16 +132,50 @@ We used Dbdesigner to design our database schema as follows:
 * As admin, I want to be able to display information about ESP Gallery, to provide some background on the company, and to promote a sense of community.
 
 ## 15. Provide Wireframes for your App.
-* Flow Chart
+### Flow Chart
 
-![flowchart](https://raw.githubusercontent.com/casscass/esp_gallery/development/README-images/preliminaryFlowChart.jpg)
+![flowchart](https://github.com/casscass/esp_gallery/blob/develop/README-images/preliminaryFlowChart.jpg)
 
 
-* Wifeframes 
-Wireframes were made with Figma and can be viewed online here:(https://www.figma.com/file/PU0NB9pOHF1cRj3zrTYRrLpC/ESP-gallery-wireframes
-)
+### Wifeframes 
 
-![mockup](https://github.com/casscass/artcloud/blob/master/app/assets/images/Wireframs.png)
+Wireframes were made with Figma and can be viewed [here](https://www.figma.com/file/PU0NB9pOHF1cRj3zrTYRrLpC/ESP-gallery-wireframes) 
+
+#### Wireframe Landing Page
+
+![wireframe-landingPage](https://github.com/casscass/esp_gallery/blob/develop/README-images/wireframe-LandingPage.png)
+
+
+#### Wireframe About Us Page
+
+![wireframe-AboutUsPage](https://github.com/casscass/esp_gallery/blob/develop/README-images/Wireframe-AboutUs.png)
+
+
+#### Wireframe Apply To Sell Art Page
+
+![wireframe-ApplyToSellArtPage](https://github.com/casscass/esp_gallery/blob/develop/README-images/Wireframe-ApplyToSellArt.png)
+
+
+#### Wireframe Contact Us Page
+
+![wireframe-ContactUs](https://github.com/casscass/esp_gallery/blob/develop/README-images/Wireframe-ContactUs.png)
+
+
+#### Wireframe Gallery Shop Page
+
+![wireframe-GalleryShop](https://github.com/casscass/esp_gallery/blob/develop/README-images/Wireframe-GalleryShop.png)
+
+
+#### Wireframe Product Page Page
+
+![wireframe-ProductPage](https://github.com/casscass/esp_gallery/blob/develop/README-images/Wireframe-ProductPage.png)
+
+
+#### Wireframe Sell Art Page Page
+
+![wireframe-SellArt](https://github.com/casscass/esp_gallery/blob/develop/README-images/Wireframe-SellArt.png)
+
+
 
 ## 16. Describe the way Tasks are being allocated and tracked in your project.
 
@@ -150,10 +184,11 @@ Tasks initially were broadly distributed with two people on the front-end and tw
 
 The Trello board can be viewed [here](https://trello.com/b/NZm11i1D/c4-assignment) or here:
 
-![trello](https://github.com/casscass/esp_gallery/blob/development/README-images/trello1.png)
+![trello](https://github.com/casscass/esp_gallery/blob/develop/README-images/trello1.png)
 
 Additionally, a Trello powerup called TeamGantt is being used to monitor progress as pictured below:
-![gantt](https://github.com/casscass/esp_gallery/blob/master/app/assets/images/gantt.png)
+
+![gantt](https://github.com/casscass/esp_gallery/blob/develop/README-images/Gantt.png)
 
 
 ## 17. Discuss how Agile methodology is being implemented in your App.
