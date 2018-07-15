@@ -88,7 +88,27 @@ The “Gallery” is the landing page and lets artists pay to show their art on 
 Buying/selling is another abstraction that is not a model and is a boolean value on the artwork model.   
 
 ## 10. Detail any third party services that your App will use.
-Third party services will be: Stripe and perhaps Paypal; time permitting.
+Third party services that will be utilised by the app include:
+
+Amazon Simple Storage Service (AWS S3)
+AWS S3 is a cloud computing web service offered by Amazon. It provides fast, reliable, affordable and scalable object storage that is developer friendly. It will be used to store the App's image files.
+
+mLab
+MLab is "the leading Database-as-a-Service, for MongoDB".
+It is a fully managed cloud database service which provides automated provisioning and scaling of the app's MongoDB database, as well as backup, recovery and security. It has a Web GUI for running queries, editing documents, and viewing results.
+The service can also include 24 hour emergency support and monitoring & analytic tools.
+
+Stripe Connect
+Stripe connect is an online payment processor that allows businesses to accept credit card payments. Stripe connect can handle user onboarding, compliance, payment routing, and reporting automatically. Stripe will service the Artist/buyer transaction paradigm.
+
+Heroku
+Heroku is a cloud hosting platform that we will use to deploy and manage the ESP app in the development stage.
+
+Now
+Now is a cloud hosting platform that we will use to deploy and manage the ESP app in the production stage if the client is happy and wants to go through with the project.
+
+Passport
+Passport facilitates user authentication within the app. It does this by delegating all other functionality other than authentication requests to the app. This separation of concerns keeps code clean and maintainable and allows easy integration of the service.
 
 ## 11. Identify the database to be used in your app and provide a justification for your choice.
 The database we will be using is MongoDB. It stores data in JSON-like documents which can have different fields, allowing the database structure to change over time. As a distributable database, it provides horizontal scaling, high availability and geographic distribution. Additionally, its ability to handle ad hoc queries, indexing, and real-time aggregation, allow for easy access to the database throughout the structure of the app. Mysql or a no sql data store, are other options, however they don't have all the features that easily support our client's goal of having two-sided marketplace functionality.  Ebay's choice of MongoDB for some of the aforementioned reasons, informed our decision making process. This rationale is part of the reason that Ebay uses MongoDB.
