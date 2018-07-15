@@ -59,7 +59,7 @@ The app will fulfill the client needs, as described in question 2 by:
 
 
 ## 6. Identify and describe the network setup you will use in your development.
-Network will be: 
+The network setup is based on the MERN stack development pattern. The client side is handled by React which renders HTML, CSS and Javascript in the browser and handles user input. An HTTP request on the client side is sent to the NodeJs web server, which processes the request. Express provides an additional layer of functionality for the processing of HTTP requests. Database documents are accessed on the server side via Schema which are defined by Mongoose, a middleware which facilitates communication between the web server and the MongoDB database. The MongoDB database is hosted by mLab, which upon receiving a request from the server to CREATE/READ/UPDATE/DELETE some data in the database, makes the necessary changes to the database and then sends the completed request back to the web server, which in turn sends the result to the client side to be rendered by React.
 
 ## 7. Identify and describe the infrastructure (i.e. hardware) that your App will run on.
 
