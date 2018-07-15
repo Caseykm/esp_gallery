@@ -100,7 +100,7 @@ The models that we will be using in our database are users, artwork, and gallery
 
 We used Dbdesigner to design our database schema as follows:
 
-![erd](https://raw.githubusercontent.com/casscass/esp_gallery/development/README-images/ERD_C4.png)
+![erd](https://github.com/casscass/esp_gallery/blob/develop/README-images/ERD_C4.png)
 
 ## 14. Provide User stories for your App.
 ### User
@@ -134,7 +134,7 @@ We used Dbdesigner to design our database schema as follows:
 ## 15. Provide Wireframes for your App.
 * Flow Chart
 
-![flowchart](https://raw.githubusercontent.com/casscass/esp_gallery/development/README-images/preliminaryFlowChart.jpg)
+![flowchart](https://github.com/casscass/esp_gallery/blob/develop/README-images/preliminaryFlowChart.jpg)
 
 
 * Wifeframes 
@@ -184,7 +184,7 @@ Tasks initially were broadly distributed with two people on the front-end and tw
 
 The Trello board can be viewed [here](https://trello.com/b/NZm11i1D/c4-assignment) or here:
 
-![trello](https://github.com/casscass/esp_gallery/blob/development/README-images/trello1.png)
+![trello](https://github.com/casscass/esp_gallery/blob/develop/README-images/trello1.png)
 
 Additionally, a Trello powerup called TeamGantt is being used to monitor progress as pictured below:
 
