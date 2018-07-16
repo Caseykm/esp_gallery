@@ -1,9 +1,10 @@
-const mongoose = require('mongoose')
+const { Schema, mongoose } = require('./db')
+const passportLocalMongoose = require('passport-local-mongoose')
 const Schema = mongoose.Schema
 
 const User = new Schema({
     user_id: Number,
-    profile_pic: text,
+    profile_pic: Text,
     username: String,
     email: String,
     password: String,
