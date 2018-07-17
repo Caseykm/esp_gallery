@@ -1,53 +1,68 @@
-import React, { Component } from 'react';
-import './nav.css'; // Importing components
+import React from 'react';
+import './Nav.css'; // Importing nav.css
 import { BrowserRouter as Router, Route, Link } from "react-router-dom"
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem } from 'reactstrap';
 
-import logo from './logo.svg';
+export default class Example extends React.Component {
+  constructor(props) {
+    super(props);
 
-
-class Nav extends Component {
-  state = {
-    response: ''
-  };
-  
-// Added this code to render stuff in browser - and I installed npm install react-router-dom
+    this.toggle = this.toggle.bind(this);
+    this.state = {
+      isOpen: false
+    };
+  }
+  toggle() {
+    this.setState({
+      isOpen: !this.state.isOpen
+    });
+  }
   render() {
     return (
-        <div className="Nav">
-          <ul>
-            <li>
-              <Link to="/">Virtual Gallery</Link>
-            </li>
-            <li>
-            <Link to="/shop">Gallery Shop</Link>
-            </li>
-
-            <li>
-            <Link to="/sellart">Sell Art</Link>
-            </li>
-            <li>
-            <Link to="/contactus">Contact Us</Link>
-            </li>
-
-            <li>
-            <Link to="/about">About Us</Link>
-            </li>
-          </ul>
-        
-
-    {/* add links to froms later  */}
-
-
-        </div>
-
+      <div>
+        <Navbar color="light" light expand="md">
+          <NavbarBrand href="/">HEADDINGreactstrap</NavbarBrand>
+          <NavbarToggler onClick={this.toggle} />
+          <Collapse isOpen={this.state.isOpen} navbar>
+            <Nav className="ml-auto" navbar>
+              <NavItem>
+                <NavLink href="/components/">Components</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+              </NavItem>
+              <UncontrolledDropdown nav inNavbar>
+                <DropdownToggle nav caret>
+                  Options
+                </DropdownToggle>
+                <DropdownMenu right>
+                  <DropdownItem>
+                    Option 1
+                  </DropdownItem>
+                  <DropdownItem>
+                    Option 2
+                  </DropdownItem>
+                  <DropdownItem divider />
+                  <DropdownItem>
+                    Reset
+                  </DropdownItem>
+                </DropdownMenu>
+              </UncontrolledDropdown>
+            </Nav>
+          </Collapse>
+        </Navbar>
+      </div>
     );
   }
 }
-
-
-
-export default Nav;
-
-
-
-
