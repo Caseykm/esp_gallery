@@ -3,7 +3,7 @@ const passportLocalMongoose = require('passport-local-mongoose')
 const Schema = mongoose.Schema
 
 const User = new Schema({
-    user_id: Number,
+//  user_id: Number, ID will be automatically generated
     profile_pic: Text,
     username: String,
     email: String,
@@ -16,7 +16,7 @@ const User = new Schema({
     stripe_id: String,
     admin: Boolean,
     user_description: String,
-    images: Text = {},
+    images: Text = {}, // Michael dosent know what the {} do.
 });
 
 User.plugin(passportLocalMongoose, {
