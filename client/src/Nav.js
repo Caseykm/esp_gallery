@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './nav.css'; // Importing components
+import './nav.css'; // Importing nav.css
 import { BrowserRouter as Router, Route, Link } from "react-router-dom"
 
 import logo from './logo.svg';
@@ -35,7 +35,7 @@ class Nav extends Component {
           </ul>
         
 
-    {/* add links to froms later  */}
+    {/* add links to forms later  */}
 
 
         </div>
@@ -46,7 +46,7 @@ class Nav extends Component {
 
 
 
-export default Nav;
+export default Nav; //Export Nav
 
 
 
