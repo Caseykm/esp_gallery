@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import Nav from './Nav' // Importing from  Nav.js
+import './App.css'; // Importing from App.css 
 import logo from './logo.svg';
-import './App.css';
+
 
 class App extends Component {
   state = {
@@ -23,48 +25,57 @@ class App extends Component {
     return body;
   };
 
+  // Calling the NAV from nav.js
   render() {
     return (
       <Router>
-      <div className="App">
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/topics">Topics</Link>
-          </li>
-        </ul>
+        <div>
 
-        <hr />
+           <Nav/>
 
-        <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/topics" component={Topics} />
-      </div>
+           <hr />
+
+          <Route exact path="/" component={Home} />
+          <Route exact path="/shop" component={Shop} />
+           <Route exact path="/sellart" component={SellArt} /> 
+          <Route exact path="/about" component={About} />
+          <Route exact path="/contactus" component={ContactUs} />
+          {/* <Route exact path="/login" component={Login} />
+          <Route exact path="/cart" component={Cart} /> */}
+          {/* <Route exact path="/product" component={ProductPage} />  */}
+          {/* <Footer /> */}
+        </div>
       </Router>
     );
   }
 }
-
 const Home = () => (
   <div>
     <h2>Home</h2>
   </div>
 );
 
-const About = () => (
+const SellArt = () => (
   <div>
-    <h2>About</h2>
+    <h2>Sell Art</h2>
   </div>
 );
 
-const Topics = ({ match }) => (
+const About = () => (
   <div>
-    <h2>Topics</h2>
+    <h2>About Us</h2>
+  </div>
+);
+
+const ContactUs = () => (
+  <div>
+    <h2>Contact US</h2>
+  </div>
+);
+
+const Shop = ({ match }) => (
+  <div>
+    <h2>Gallery Shop</h2>
     <ul>
       <li>
         <Link to={`${match.url}/rendering`}>Rendering with React</Link>
@@ -77,7 +88,7 @@ const Topics = ({ match }) => (
       </li>
     </ul>
 
-    <Route path={`${match.url}/:topicId`} component={Topic} />
+    <Route path={`${match.url}/:shopId`} component={Shop} />
     <Route
       exact
       path={match.url}
@@ -91,6 +102,5 @@ const Topic = ({ match }) => (
     <h3>{match.params.topicId}</h3>
   </div>
 );
-
 
 export default App;

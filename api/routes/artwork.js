@@ -12,7 +12,8 @@ const Artwork = require('../models/artwork')
 //     })
 // })
 
-// This shows an individual artwork with ALL INFO price, description, artist name. EG this route will be used for PRODUCT PAGE
+// This shows an individual artwork with ALL INFO price, description, artist name. 
+//EG this route will be used for PRODUCT PAGE and  And for GALLERY SHOP (in CARDS the Buy NOW button OnClick goto artwork id of this artwork)
 router.get('/artwork/:id', (req, resp) => {
     const id = req.params.id
     Artwork.findById(id).then(artwork => {
@@ -31,6 +32,8 @@ router.get('/artwork/:id', (req, resp) => {
 // Need component for SLIDER that displays the artwork by id as images ONLY.
 
 // Need component for LANDING PAGE that displays the artwork as images ONLY in gridwork display in VIRTUAL GALLERY
+
+
 
 // Creates an instance of an artwork  New artwork with all the params of artwork.
 router.post('/artwork', (req, resp) => {
