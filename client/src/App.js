@@ -59,6 +59,7 @@ const Home = () => (
 const SellArt = () => (
   <div>
     <h2>Sell Art</h2>
+    <p>Stuff ksdfhg kvhgirt gibuir</p>
   </div>
 );
 

@@ -34,51 +34,54 @@ export default class Example extends React.Component {
         <div>
             <div className="Header">  
                 <div className="TopNav">
+                      {/* Search Box */}
                     <FormGroup className="search">
-                        {/* <Label for="exampleSearch">Search</Label> */}
-                        <Input type="search" name="search" id="search" placeholder="search" />
+                        <Input type="search" name="search" id="search" placeholder="Search   " />
                     </FormGroup>
+                      {/* End Search Box */}
                 </div>
-
-            <Navbar color="light" light expand="md">
-                <NavbarBrand href="./images/logoTrans60x53-72dpi.png">lookup Render image in react strap</NavbarBrand>
-                <NavbarToggler onClick={this.toggle} />
-                <Collapse isOpen={this.state.isOpen} navbar>
+                
+                    <Navbar color="light" light expand="md">    
+                        {/* LOGO IS HERE */}
+                         <img src="/images/logo.png" height="60" witdth="53" alt="ESP Gallery logo" />
+                       {/* END LOGO */}
+                    <NavbarToggler onClick={this.toggle} />
+                        <Collapse isOpen={this.state.isOpen} navbar>
                     
-                    <Nav className="ml-auto" navbar>
-                        <NavItem>
-                            <NavLink href="/home/">Virtual Gallery</NavLink>
-                        </NavItem>
-                        
-                        <NavItem>
-                            <NavLink href="/shop/">Gallery Shop</NavLink>
-                        </NavItem>
-                        
-                        <NavItem>
-                            <NavLink href="/sellart/">Sell Art</NavLink>
-                        </NavItem>
-                        
-                        <NavItem>
-                            <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
-                        </NavItem>
+                        <Nav className="ml-auto" navbar>
+                            <NavItem>
+                                <NavLink href="/home/">Virtual Gallery</NavLink>
+                            </NavItem>
                             
-                        <UncontrolledDropdown nav inNavbar>
-                            <DropdownToggle nav caret>
-                            About Us
-                            </DropdownToggle>
-                                <DropdownMenu right>
-                                    <DropdownItem>
-                                       Our Story
-                                    </DropdownItem>
-                                    <DropdownItem>
-                                        Our History
-                                    </DropdownItem>
-                                    <DropdownItem divider />
-                                    <DropdownItem>
-                                        Reset
-                                    </DropdownItem>
-                                </DropdownMenu>
-                            </UncontrolledDropdown>
+                            <NavItem>
+                                <NavLink href="/shop/">Gallery Shop</NavLink>
+                            </NavItem>
+                            
+                            <NavItem>
+                                <NavLink href="/sellart/">Sell Art</NavLink>
+                            </NavItem>
+                            
+                            <NavItem>
+                                <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+                            </NavItem>
+                                
+                                <UncontrolledDropdown nav inNavbar>
+                                    <DropdownToggle nav caret>
+                                        <NavLink href="/about/">About Us</NavLink>
+                                    </DropdownToggle>
+                                        <DropdownMenu right>
+                                            <DropdownItem>
+                                            Our Story
+                                            </DropdownItem>
+                                            <DropdownItem>
+                                                Our History
+                                            </DropdownItem>
+                                            <DropdownItem divider />
+                                            <DropdownItem>
+                                                Reset
+                                            </DropdownItem>
+                                        </DropdownMenu>
+                                </UncontrolledDropdown>
                             
                             <NavItem>
                             <NavLink href="/contactus/">Contact Us</NavLink>
