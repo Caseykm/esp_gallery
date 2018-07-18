@@ -25,20 +25,17 @@ class App extends Component {
     return body;
   };
 
-  // Calling the NAV from nav.js
+  // BEGGINING OF NAV ...Calling the NAV from nav.js
   render() {
     return (
       <Router>
         <div>
-
-           <Nav/>
-
-           <hr />
-
+           <Nav />
           <Route exact path="/" component={Home} />
           <Route exact path="/shop" component={Shop} />
            <Route exact path="/sellart" component={SellArt} /> 
           <Route exact path="/about" component={About} />
+          {/* This is going to the url/about and saying render the componet {about} */}
           <Route exact path="/contactus" component={ContactUs} />
           {/* <Route exact path="/login" component={Login} />
           <Route exact path="/cart" component={Cart} /> */}
@@ -49,39 +46,44 @@ class App extends Component {
     );
   }
 }
+// END OF NAV
+
+// THIS ARE ACTUAL (PAGES) COMPONENTS - THESE COMPNENTS CAN BE MOVED TO THER OWN .JS FILE
+// HOME PAGE
 const Home = () => (
   <div>
-    <h2>Home</h2>
+    <h2>Home</h2>   
   </div>
 );
 
 const SellArt = () => (
   <div>
     <h2>Sell Art</h2>
+    <p>Stuff ksdfhg kvhgirt gibuir</p>
   </div>
 );
 
-const About = () => (
+const Shop = () => (
   <div>
-    <h2>About Us</h2>
+    <h2>Gallery Shop</h2>
   </div>
 );
 
 const ContactUs = () => (
   <div>
-    <h2>Contact US</h2>
+    <h2>Contact Us</h2>
   </div>
 );
 
-const Shop = ({ match }) => (
+const About = ({ match }) => (
   <div>
-    <h2>Gallery Shop</h2>
+    <h2>Our Story</h2>
     <ul>
       <li>
-        <Link to={`${match.url}/rendering`}>Rendering with React</Link>
+        <Link to={`${match.url}/ourstory`}>Our Story</Link>
       </li>
       <li>
-        <Link to={`${match.url}/components`}>Components</Link>
+        <Link to={`${match.url}/ourhistory`}>Our History</Link>
       </li>
       <li>
         <Link to={`${match.url}/props-v-state`}>Props v. State</Link>
@@ -102,5 +104,6 @@ const Topic = ({ match }) => (
     <h3>{match.params.topicId}</h3>
   </div>
 );
+// END OF ACTUAL PAGES
 
 export default App;

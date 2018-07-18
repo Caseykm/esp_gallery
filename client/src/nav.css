@@ -1,0 +1,17 @@
+#search {
+    background-color: #f9f8f8;
+    width: 200px;
+   
+   
+}
+
+.search {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.TopNav {
+    margin-right:2%;
+    margin-top: 0.5%;
+}
