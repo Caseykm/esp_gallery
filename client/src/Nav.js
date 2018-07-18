@@ -38,16 +38,20 @@ export default class Example extends React.Component {
                       {/* Search Box */}
                     <FormGroup className="search">
                         <Input type="search" name="search" id="search" placeholder="Search   " />
-                        <MaterialIcon icon="dashboard" /> 
-                         {/* Search Icon */}
+                        <MaterialIcon icon="baseline-search-24px.svg" /> 
+                        {/* Search Icon */}
+                        <MaterialIcon icon="outline-local_grocery_store-24px.svg"  /> 
                     </FormGroup>
                       {/* End Search Box */}
                 </div>
-                
+
+                     {/* NAVBAR STARTS */}
                     <Navbar color="light" light expand="md">    
                         {/* LOGO IS HERE */}
                          <img src="/images/logo.png" height="60" witdth="53" alt="ESP Gallery logo" />
                        {/* END LOGO */}
+                       
+                     {/* NAV STARTS */}
                     <NavbarToggler onClick={this.toggle} />
                         <Collapse isOpen={this.state.isOpen} navbar>
                     
@@ -67,7 +71,7 @@ export default class Example extends React.Component {
                             <NavItem>
                                 <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
                             </NavItem>
-                                
+                                {/* NAV DROPDOWN */}
                                 <UncontrolledDropdown nav inNavbar>
                                     <DropdownToggle nav caret>
                                         <NavLink href="/about/">About Us</NavLink>
@@ -85,6 +89,7 @@ export default class Example extends React.Component {
                                             </DropdownItem>
                                         </DropdownMenu>
                                 </UncontrolledDropdown>
+                                {/* END NAV DROPDOWN */}
                             
                             <NavItem>
                             <NavLink href="/contactus/">Contact Us</NavLink>
