@@ -36,13 +36,21 @@ export default class Example extends React.Component {
             <div className="Header">  
                 <div className="TopNav">
                       {/* SEARCH BOX */}
-                    <FormGroup className="search">
-                        <Input type="search" name="search" id="search" placeholder="Search   " />
-                        <MaterialIcon icon="baseline-search-24px.svg" /> 
-                        {/* Search Icon */}
-                        <MaterialIcon icon="outline-local_grocery_store-24px.svg"  /> 
+                    <FormGroup className="searchgroup">
+                        <span className="searchbox">
+                            <Input type="search" name="search" id="search" placeholder="Search   " />
+                        </span>
+
+                         {/* SEARCH ICON */}
+                        <span className="magnifying">
+                            <MaterialIcon icon="search" className="searchicon mything" size='medium' />
+                        </span>
+
+                        {/* CART ICON */}
+                        <span className="">
+                            <MaterialIcon icon="shopping_cart" className="carticon" size='medium' /> 
+                        </span>       
                     </FormGroup>
-                     
                 </div>
 
                      {/* NAVBAR STARTS */}
