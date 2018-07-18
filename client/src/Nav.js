@@ -1,6 +1,7 @@
 import React from 'react';
-import './Nav.css'; // Importing nav.css
+import './nav.css'; // Importing nav.css
 import { BrowserRouter as Router, Route, Link } from "react-router-dom"
+import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 import {
   Collapse,
   Navbar,
@@ -30,39 +31,63 @@ export default class Example extends React.Component {
   }
   render() {
     return (
-      <div>
-        <Navbar color="light" light expand="md">
-          <NavbarBrand href="/">HEADDINGreactstrap</NavbarBrand>
-          <NavbarToggler onClick={this.toggle} />
-          <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto" navbar>
-              <NavItem>
-                <NavLink href="/components/">Components</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
-              </NavItem>
-              <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret>
-                  Options
-                </DropdownToggle>
-                <DropdownMenu right>
-                  <DropdownItem>
-                    Option 1
-                  </DropdownItem>
-                  <DropdownItem>
-                    Option 2
-                  </DropdownItem>
-                  <DropdownItem divider />
-                  <DropdownItem>
-                    Reset
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
-            </Nav>
-          </Collapse>
-        </Navbar>
-      </div>
+        <div>
+            <div className="Header">  
+                <div className="TopNav">
+                    <FormGroup className="search">
+                        {/* <Label for="exampleSearch">Search</Label> */}
+                        <Input type="search" name="search" id="search" placeholder="search" />
+                    </FormGroup>
+                </div>
+
+            <Navbar color="light" light expand="md">
+                <NavbarBrand href="./images/logoTrans60x53-72dpi.png">lookup Render image in react strap</NavbarBrand>
+                <NavbarToggler onClick={this.toggle} />
+                <Collapse isOpen={this.state.isOpen} navbar>
+                    
+                    <Nav className="ml-auto" navbar>
+                        <NavItem>
+                            <NavLink href="/home/">Virtual Gallery</NavLink>
+                        </NavItem>
+                        
+                        <NavItem>
+                            <NavLink href="/shop/">Gallery Shop</NavLink>
+                        </NavItem>
+                        
+                        <NavItem>
+                            <NavLink href="/sellart/">Sell Art</NavLink>
+                        </NavItem>
+                        
+                        <NavItem>
+                            <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+                        </NavItem>
+                            
+                        <UncontrolledDropdown nav inNavbar>
+                            <DropdownToggle nav caret>
+                            About Us
+                            </DropdownToggle>
+                                <DropdownMenu right>
+                                    <DropdownItem>
+                                       Our Story
+                                    </DropdownItem>
+                                    <DropdownItem>
+                                        Our History
+                                    </DropdownItem>
+                                    <DropdownItem divider />
+                                    <DropdownItem>
+                                        Reset
+                                    </DropdownItem>
+                                </DropdownMenu>
+                            </UncontrolledDropdown>
+                            
+                            <NavItem>
+                            <NavLink href="/contactus/">Contact Us</NavLink>
+                        </NavItem>
+                    </Nav>
+                </Collapse>
+            </Navbar>
+          </div>
+        </div>
     );
   }
 }
