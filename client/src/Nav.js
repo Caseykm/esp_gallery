@@ -34,15 +34,17 @@ export default class Example extends React.Component {
         <div>
             <div className="Header">  
                 <div className="TopNav">
+                      {/* Search Box */}
                     <FormGroup className="search">
-                        {/* <Label for Search Label */}
                         <Input type="search" name="search" id="search" placeholder="Search   " />
                     </FormGroup>
+                      {/* End Search Box */}
                 </div>
                 
                     <Navbar color="light" light expand="md">    
                         {/* LOGO IS HERE */}
                          <img src="/images/logo.png" height="60" witdth="53" alt="ESP Gallery logo" />
+                       {/* END LOGO */}
                     <NavbarToggler onClick={this.toggle} />
                         <Collapse isOpen={this.state.isOpen} navbar>
                     
