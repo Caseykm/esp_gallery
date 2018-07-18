@@ -2,8 +2,10 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background-color: blue;
 }
 
 .aboutPageStuff {
-  background-color: blueviolet;
+  background-color:aliceblue;
 }
+
