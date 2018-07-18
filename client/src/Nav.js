@@ -1,5 +1,5 @@
 import React from 'react';
-import './Nav.css'; // Importing nav.css
+import './nav.css'; // Importing nav.css
 import { BrowserRouter as Router, Route, Link } from "react-router-dom"
 import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 import {

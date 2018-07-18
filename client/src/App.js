@@ -25,7 +25,7 @@ class App extends Component {
     return body;
   };
 
-  // Calling the NAV from nav.js
+  // BEGGINING OF NAV ...Calling the NAV from nav.js
   render() {
     return (
       <Router>
@@ -35,7 +35,7 @@ class App extends Component {
           <Route exact path="/shop" component={Shop} />
            <Route exact path="/sellart" component={SellArt} /> 
           <Route exact path="/about" component={About} />
-          {/* This isgoing to the url/about and saing render the componet {about} */}
+          {/* This is going to the url/about and saying render the componet {about} */}
           <Route exact path="/contactus" component={ContactUs} />
           {/* <Route exact path="/login" component={Login} />
           <Route exact path="/cart" component={Cart} /> */}
@@ -46,8 +46,10 @@ class App extends Component {
     );
   }
 }
+// END OF NAV
 
 // THIS ARE ACTUAL (PAGES) COMPONENTS - THESE COMPNENTS CAN BE MOVED TO THER OWN .JS FILE
+// HOME PAGE
 const Home = () => (
   <div>
     <h2>Home</h2>   
