@@ -1,6 +1,7 @@
 import React from 'react';
 import './nav.css'; // Importing nav.css
 import { BrowserRouter as Router, Route, Link } from "react-router-dom"
+import MaterialIcon, {colorPallet} from 'material-icons-react';
 import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 import {
   Collapse,
@@ -37,6 +38,8 @@ export default class Example extends React.Component {
                       {/* Search Box */}
                     <FormGroup className="search">
                         <Input type="search" name="search" id="search" placeholder="Search   " />
+                        <MaterialIcon icon="dashboard" /> 
+                         {/* Search Icon */}
                     </FormGroup>
                       {/* End Search Box */}
                 </div>
