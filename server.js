@@ -1,9 +1,20 @@
 const express = require('express');
 const path = require('path');
-const app = express();
+const mongoose = require('mongoose');
 const port = process.env.PORT || 9001;
+const app = express();
+
+// db config
+const db = require('./config/keys').mongoURI
+
+// Connect to MongoDB
+mongoose
+.connect(db)
+.then(() => console.log('MongoDB connected'))
+.catch(err => console.log(err))
+
 // API calls
-app.get('/api/hello', (req, res) => {
+app.get('/', (req, res) => {
   res.send({ express: 'Hello From Express' });
 });
 if (process.env.NODE_ENV === 'production') {
