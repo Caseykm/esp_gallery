@@ -38,9 +38,9 @@ export default class Example extends React.Component {
                       {/* Search Box */}
                     <FormGroup className="search">
                         <Input type="search" name="search" id="search" placeholder="Search   " />
-                        
+                        <MaterialIcon icon="dashboard" /> 
+                         {/* Search Icon */}
                     </FormGroup>
-                    <MaterialIcon icon="dashboard" />
                       {/* End Search Box */}
                 </div>
                 
