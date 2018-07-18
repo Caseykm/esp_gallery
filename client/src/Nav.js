@@ -1,7 +1,7 @@
 import React from 'react';
 import './nav.css'; // Importing nav.css
 import { BrowserRouter as Router, Route, Link } from "react-router-dom"
-import MaterialIcon, {colorPallet} from 'material-icons-react';
+import MaterialIcon, {colorPallet} from 'material-icons-react'; // IMPORTS ICONS
 import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 import {
   Collapse,
@@ -14,7 +14,7 @@ import {
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
-  DropdownItem } from 'reactstrap';
+  DropdownItem } from 'reactstrap'; // IMPORTS NAV
 
 export default class Example extends React.Component {
   constructor(props) {
@@ -35,17 +35,17 @@ export default class Example extends React.Component {
         <div>
             <div className="Header">  
                 <div className="TopNav">
-                      {/* Search Box */}
+                      {/* SEARCH BOX */}
                     <FormGroup className="search">
                         <Input type="search" name="search" id="search" placeholder="Search   " />
-                        <MaterialIcon icon="dashboard" /> 
-                         {/* Search Icon */}
+                        {/* SEARCH ICON */}
+                        <MaterialIcon icon="dashboard" />   
                     </FormGroup>
-                      {/* End Search Box */}
+                     
                 </div>
                 
                     <Navbar color="light" light expand="md">    
-                        {/* LOGO IS HERE */}
+                        {/* LOGO */}
                          <img src="/images/logo.png" height="60" witdth="53" alt="ESP Gallery logo" />
                        {/* END LOGO */}
                     <NavbarToggler onClick={this.toggle} />
