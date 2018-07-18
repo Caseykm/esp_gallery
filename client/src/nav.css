@@ -1,13 +1,14 @@
 #search {
     background-color: #f9f8f8;
     width: 200px;
-   
-   
 }
+   
+   
 
-.search {
+.searchgroup {
     display: flex;
     justify-content: flex-end;
+
 
 }
 
@@ -15,3 +16,13 @@
     margin-right:2%;
     margin-top: 0.5%;
 }
+
+/* .mything {
+    margin-left: 20%;
+} */
+
+.magnifying {
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
