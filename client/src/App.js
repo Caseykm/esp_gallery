@@ -40,7 +40,7 @@ class App extends Component {
           {/* <Route exact path="/login" component={Login} />
           <Route exact path="/cart" component={Cart} /> */}
           {/* <Route exact path="/product" component={ProductPage} />  */}
-          <Route exact path="/footer" component={Footer} />
+          {/* <Route exact path="/footer" component={Footer} /> */}
         </div>
       </Router>
     );
