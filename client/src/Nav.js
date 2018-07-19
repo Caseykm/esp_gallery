@@ -43,7 +43,7 @@ export default class Example extends React.Component {
 
                          {/* SEARCH ICON */}
                         <span className="magnifying">
-                            <MaterialIcon icon="search" className="searchicon mything" size='medium' />
+                            <MaterialIcon icon="search" className="" size='medium' />
                         </span>
 
                         <span className="login">
