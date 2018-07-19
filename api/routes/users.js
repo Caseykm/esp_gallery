@@ -10,6 +10,8 @@ const User = require("../models/user");
 // @access  Public
 router.get("/test", (req, res) => res.json({ msg: "Users Works" }));
 
+// router.post("/register", (req, res) => res.json({ msg: "Register Works" }));
+
 // @route   GET api/users/register
 // @desc    Register user
 // @access  Public
@@ -23,8 +25,7 @@ router.post("/register", (req, res) => {
         email: req.body.email,
         password: req.body.password
       });
-
-      bcrypt.getSalt(10, (err, salt) => {
+      bcrypt.genSalt(10, (err, salt) => {
         // Generate a salt - gives an error if there is one
         bcrypt.hash(newUser.password, salt, (err, hash) => {
           if (err) throw err; // Checks for error
@@ -36,6 +37,34 @@ router.post("/register", (req, res) => {
         });
       });
     }
+  });
+});
+
+// Accept a user's email, validate that email and then validate
+// @route   GET api/routes/users/login
+// @desc    Login User / Returning JWT Token
+// @access  Public
+router.post("/login", (req, res) => {
+  const email = req.body.email;
+  const password = req.body.password; // Password coming through here is plain text - needs to be hashed
+
+  // Find user by email
+  User.findOne({ email }).then(user => {
+    // Check for user
+    if (!user) {
+      return res.status(404).json({ email: "User not found" });
+    }
+
+    // Check Password
+    bcrypt.compare(password, user.password).then(isMatch => {
+      // T/F value check
+      if (isMatch) {
+        // If match - gen token
+        res.json({ msg: "Success" });
+      } else {
+        return res.status(400).json({ password: "Password incorrect" });
+      }
+    });
   });
 });
 
