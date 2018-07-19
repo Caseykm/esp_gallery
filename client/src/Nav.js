@@ -34,8 +34,10 @@ export default class Example extends React.Component {
     return (
         <div>
             <div className="Header">  
+                   {/* TOP NAV */}
                 <div className="TopNav">
-                      {/* SEARCH BOX */}
+    
+                    {/* SEARCH BOX */}
                     <FormGroup className="searchgroup">
                         <span className="searchbox">
                             <Input type="search" name="search" id="search" placeholder="Search   " />
@@ -46,8 +48,10 @@ export default class Example extends React.Component {
                             <MaterialIcon icon="search" className="" size='medium' />
                         </span>
 
+                        {/* Login */}
+
                         <span className="login">
-                            <h3>Login</h3>
+                            <h3 href="/logInForm/">Login</h3>
                         </span>
                             
 
@@ -58,8 +62,10 @@ export default class Example extends React.Component {
                     </FormGroup>
                 </div>
 
+                <div className="BlueLine"></div>
+
                      {/* NAVBAR STARTS */}
-                    <Navbar color="light" light expand="md">    
+                    <Navbar className="NavBar" color="" light expand="md">    
                         {/* LOGO */}
                          <img src="/images/logo.png" height="60" witdth="53" alt="ESP Gallery logo" />
                        {/* END LOGO */}
