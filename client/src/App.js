@@ -1,18 +1,17 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import Nav from './Nav' // Importing from  Nav.js
-import './App.css'; // Importing from App.css 
-import logo from './logo.svg';
-import HomePage from './pages/HomePage' // Imports homepage AKA Virtual Gallery into App.js
-import GalleryShop from './pages/GalleryShop' // Imports GalleryShop into App.js
-import SellArt from './pages/SellArt' // Imports SellArt.js into App.js
-import About from './pages/About' // Imports About.js into App.js
-import ContactUs from './pages/ContactUs' // Imports ContactUs.js into App.js
-
+import Nav from "./Nav"; // Importing from  Nav.js
+import "./App.css"; // Importing from App.css
+import logo from "./logo.svg";
+import HomePage from "./pages/HomePage"; // Imports homepage AKA Virtual Gallery into App.js
+import GalleryShop from "./pages/GalleryShop"; // Imports GalleryShop into App.js
+import SellArt from "./pages/SellArt"; // Imports SellArt.js into App.js
+import About from "./pages/About"; // Imports About.js into App.js
+import ContactUs from "./pages/ContactUs"; // Imports ContactUs.js into App.js
 
 class App extends Component {
   state = {
-    response: ''
+    response: ""
   };
 
   componentDidMount() {
@@ -22,7 +21,7 @@ class App extends Component {
   }
 
   callApi = async () => {
-    const response = await fetch('/api/hello');
+    const response = await fetch("/");
     const body = await response.json();
 
     if (response.status !== 200) throw Error(body.message);
@@ -35,12 +34,12 @@ class App extends Component {
     return (
       <Router>
         <div>
-           <Nav />
+          <Nav />
           <Route exact path="/" component={HomePage} />
           {/* Goes to the URL home and renders what is in pages/ HomePage.js  eg. it renders the componet {HomePage} */}
           <Route exact path="/shop" component={GalleryShop} />
           {/* Goes to  URL pages/GalleryShop.js and renders what is in the file */}
-          <Route exact path="/sellart" component={SellArt} /> 
+          <Route exact path="/sellart" component={SellArt} />
           <Route exact path="/about" component={About} />
           {/* Goes to the url/about and renders the componet {about} eg renders what is in the pages/aboout.js page */}
           <Route exact path="/contactus" component={ContactUs} />
@@ -59,7 +58,7 @@ class App extends Component {
 // HOME PAGE
 // const Home = () => (
 //   <div>
-//     <h2>Home</h2>   
+//     <h2>Home</h2>
 //   </div>
 // );
 
@@ -111,6 +110,6 @@ class App extends Component {
 //     <h3>{match.params.topicId}</h3>
 //   </div>
 // );
-// END OF (PAGES) COMPONENTS 
+// END OF (PAGES) COMPONENTS
 
 export default App;
