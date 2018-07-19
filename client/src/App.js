@@ -3,6 +3,11 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Nav from './Nav' // Importing from  Nav.js
 import './App.css'; // Importing from App.css 
 import logo from './logo.svg';
+import HomePage from './pages/HomePage' // Imports homepage AKA Virtual Gallery into App.js
+import GalleryShop from './pages/GalleryShop' // Imports GalleryShop into App.js
+import SellArt from './pages/SellArt' // Imports SellArt.js into App.js
+import About from './pages/About' // Imports About.js into App.js
+import ContactUs from './pages/ContactUs' // Imports ContactUs.js into App.js
 
 
 class App extends Component {
@@ -25,17 +30,19 @@ class App extends Component {
     return body;
   };
 
-  // BEGGINING OF NAV ...Calling the NAV from nav.js
+  // NAV ROUTES - Calling from nav.js
   render() {
     return (
       <Router>
         <div>
            <Nav />
-          <Route exact path="/" component={Home} />
-          <Route exact path="/shop" component={Shop} />
-           <Route exact path="/sellart" component={SellArt} /> 
+          <Route exact path="/" component={HomePage} />
+          {/* Goes to the URL home and renders what is in pages/ HomePage.js  eg. it renders the componet {HomePage} */}
+          <Route exact path="/shop" component={GalleryShop} />
+          {/* Goes to  URL pages/GalleryShop.js and renders what is in the file */}
+          <Route exact path="/sellart" component={SellArt} /> 
           <Route exact path="/about" component={About} />
-          {/* This is going to the url/about and saying render the componet {about} */}
+          {/* Goes to the url/about and renders the componet {about} eg renders what is in the pages/aboout.js page */}
           <Route exact path="/contactus" component={ContactUs} />
           {/* <Route exact path="/login" component={Login} />
           <Route exact path="/cart" component={Cart} /> */}
@@ -48,62 +55,62 @@ class App extends Component {
 }
 // END OF NAV
 
-// THIS ARE ACTUAL (PAGES) COMPONENTS - THESE COMPNENTS CAN BE MOVED TO THER OWN .JS FILE
+// (PAGES) COMPONENTS - HAVE BEEN MOVED TO THER OWN .JS FILE
 // HOME PAGE
-const Home = () => (
-  <div>
-    <h2>Home</h2>   
-  </div>
-);
+// const Home = () => (
+//   <div>
+//     <h2>Home</h2>   
+//   </div>
+// );
 
-const SellArt = () => (
-  <div>
-    <h2>Sell Art</h2>
-    <p>Stuff ksdfhg kvhgirt gibuir</p>
-  </div>
-);
+// const SellArt = () => (
+//   <div>
+//     <h2>Sell Art</h2>
+//     <p>Stuff ksdfhg kvhgirt gibuir</p>
+//   </div>
+// );
 
-const Shop = () => (
-  <div>
-    <h2>Gallery Shop</h2>
-  </div>
-);
+// const Shop = () => (
+//   <div>
+//     <h2>Gallery Shop</h2>
+//   </div>
+// );
 
-const ContactUs = () => (
-  <div>
-    <h2>Contact Us</h2>
-  </div>
-);
+// const ContactUs = () => (
+//   <div>
+//     <h2>Contact Us</h2>
+//   </div>
+// );
 
-const About = ({ match }) => (
-  <div>
-    <h2>Our Story</h2>
-    <ul>
-      <li>
-        <Link to={`${match.url}/ourstory`}>Our Story</Link>
-      </li>
-      <li>
-        <Link to={`${match.url}/ourhistory`}>Our History</Link>
-      </li>
-      <li>
-        <Link to={`${match.url}/props-v-state`}>Props v. State</Link>
-      </li>
-    </ul>
+// const About = ({ match }) => (
+//   <div>
+//     <h2>Our Story</h2>
+//     <ul>
+//       <li>
+//         <Link to={`${match.url}/ourstory`}>Our Story</Link>
+//       </li>
+//       <li>
+//         <Link to={`${match.url}/ourhistory`}>Our History</Link>
+//       </li>
+//       <li>
+//         <Link to={`${match.url}/props-v-state`}>Props v. State</Link>
+//       </li>
+//     </ul>
 
-    <Route path={`${match.url}/:shopId`} component={Shop} />
-    <Route
-      exact
-      path={match.url}
-      render={() => <h3>Please select a topic.</h3>}
-    />
-  </div>
-);
+//     <Route path={`${match.url}/:shopId`} component={GalleryShop} />
+//     <Route
+//       exact
+//       path={match.url}
+//       render={() => <h3>Please select a topic.</h3>}
+//     />
+//   </div>
+// );
 
-const Topic = ({ match }) => (
-  <div>
-    <h3>{match.params.topicId}</h3>
-  </div>
-);
-// END OF ACTUAL PAGES
+// const Topic = ({ match }) => (
+//   <div>
+//     <h3>{match.params.topicId}</h3>
+//   </div>
+// );
+// END OF (PAGES) COMPONENTS 
 
 export default App;

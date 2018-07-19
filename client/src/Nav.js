@@ -46,6 +46,11 @@ export default class Example extends React.Component {
                             <MaterialIcon icon="search" className="searchicon mything" size='medium' />
                         </span>
 
+                        <span className="login">
+                            <h3>Login</h3>
+                        </span>
+                            
+
                         {/* CART ICON */}
                         <span className="">
                             <MaterialIcon icon="shopping_cart" className="carticon" size='medium' /> 
@@ -65,7 +70,7 @@ export default class Example extends React.Component {
                     
                         <Nav className="ml-auto" navbar>
                             <NavItem>
-                                <NavLink href="/home/">Virtual Gallery</NavLink>
+                                <NavLink href="/">Virtual Gallery</NavLink>
                             </NavItem>
                             
                             <NavItem>
