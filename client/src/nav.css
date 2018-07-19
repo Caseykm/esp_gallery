@@ -1,15 +1,12 @@
+/* TOP NAV */
 #search {
     background-color: #f9f8f8;
     width: 200px;
 }
    
-   
-
 .searchgroup {
     display: flex;
     justify-content: flex-end;
-
-
 }
 
 .TopNav {
@@ -25,4 +22,10 @@
     margin-right: 1%;
     margin-left: 1%;
 }
+/* END TOP NAV */
+
+.BlueLine {
+    background-color: 337f96;
+}
+/* MAIN NAV */
 
