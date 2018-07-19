@@ -1,6 +1,7 @@
 import React from 'react';
 import './nav.css'; // Importing nav.css
 import { BrowserRouter as Router, Route, Link } from "react-router-dom"
+import MaterialIcon, {colorPallet} from 'material-icons-react'; // IMPORTS ICONS
 import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 import {
   Collapse,
@@ -13,7 +14,7 @@ import {
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
-  DropdownItem } from 'reactstrap';
+  DropdownItem } from 'reactstrap'; // IMPORTS NAV
 
 export default class Example extends React.Component {
   constructor(props) {
@@ -34,23 +35,42 @@ export default class Example extends React.Component {
         <div>
             <div className="Header">  
                 <div className="TopNav">
-                      {/* Search Box */}
-                    <FormGroup className="search">
-                        <Input type="search" name="search" id="search" placeholder="Search   " />
+                      {/* SEARCH BOX */}
+                    <FormGroup className="searchgroup">
+                        <span className="searchbox">
+                            <Input type="search" name="search" id="search" placeholder="Search   " />
+                        </span>
+
+                         {/* SEARCH ICON */}
+                        <span className="magnifying">
+                            <MaterialIcon icon="search" className="searchicon mything" size='medium' />
+                        </span>
+
+                        <span className="login">
+                            <h3>Login</h3>
+                        </span>
+                            
+
+                        {/* CART ICON */}
+                        <span className="">
+                            <MaterialIcon icon="shopping_cart" className="carticon" size='medium' /> 
+                        </span>       
                     </FormGroup>
-                      {/* End Search Box */}
                 </div>
-                
+
+                     {/* NAVBAR STARTS */}
                     <Navbar color="light" light expand="md">    
-                        {/* LOGO IS HERE */}
+                        {/* LOGO */}
                          <img src="/images/logo.png" height="60" witdth="53" alt="ESP Gallery logo" />
                        {/* END LOGO */}
+                       
+                     {/* NAV STARTS */}
                     <NavbarToggler onClick={this.toggle} />
                         <Collapse isOpen={this.state.isOpen} navbar>
                     
                         <Nav className="ml-auto" navbar>
                             <NavItem>
-                                <NavLink href="/home/">Virtual Gallery</NavLink>
+                                <NavLink href="/">Virtual Gallery</NavLink>
                             </NavItem>
                             
                             <NavItem>
@@ -64,7 +84,7 @@ export default class Example extends React.Component {
                             <NavItem>
                                 <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
                             </NavItem>
-                                
+                                {/* NAV DROPDOWN */}
                                 <UncontrolledDropdown nav inNavbar>
                                     <DropdownToggle nav caret>
                                         <NavLink href="/about/">About Us</NavLink>
@@ -82,6 +102,7 @@ export default class Example extends React.Component {
                                             </DropdownItem>
                                         </DropdownMenu>
                                 </UncontrolledDropdown>
+                                {/* END NAV DROPDOWN */}
                             
                             <NavItem>
                             <NavLink href="/contactus/">Contact Us</NavLink>
