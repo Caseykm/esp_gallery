@@ -5,6 +5,9 @@ const jwt = require("jsonwebtoken");
 const keys = require("../../config/keys");
 const passport = require("passport");
 
+// Load Input Validation
+const validateRegisterInput = require("../../validation/register");
+
 // Load User model
 const User = require("../models/user");
 
@@ -13,19 +16,26 @@ const User = require("../models/user");
 // @access  Public
 router.get("/test", (req, res) => res.json({ msg: "Users Works" }));
 
-// router.post("/register", (req, res) => res.json({ msg: "Register Works" }));
-
 // @route   POST api/users/register
 // @desc    Register user
 // @access  Public
 router.post("/register", (req, res) => {
+  const { errors, isValid } = validateRegisterInput(req.body);
+
+  // Check Validation
+  if (!isValid) {
+    return res.status(400).json(errors);
+  }
+
   User.findOne({ email: req.body.email }).then(user => {
     if (user) {
-      return res.status(400).json({ email: "Email already exists" });
+      errors.email = "Email already exists";
+      return res.status(400).json(errors);
     } else {
       // create new user
       const newUser = new User({
-        name: req.body.name,
+        first_name: req.body.first_name,
+        last_name: req.body.last_name,
         email: req.body.email,
         password: req.body.password
       });
@@ -65,8 +75,11 @@ router.post("/login", (req, res) => {
       if (isMatch) {
         // User Matched
 
-        // Might need to change this vvv
-        const payload = { id: user.id, name: user.name }; // Create JWT Payload
+        const payload = {
+          id: user.id,
+          first_name: user.first_name,
+          last_name: user.last_name
+        }; // Create JWT Payload
 
         // Sign Token
         jwt.sign(
@@ -96,7 +109,8 @@ router.get(
   (req, res) => {
     res.json({
       id: req.user.id,
-      name: req.user.name,
+      first_name: req.user.first_name,
+      last_name: req.user.last_name,
       email: req.user.email
     });
   }
