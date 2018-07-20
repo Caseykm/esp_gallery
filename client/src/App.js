@@ -9,6 +9,15 @@ import SellArt from "./pages/SellArt"; // Imports SellArt.js into App.js
 import About from "./pages/About"; // Imports About.js into App.js
 import ContactUs from "./pages/ContactUs"; // Imports ContactUs.js into App.js
 
+//Ckm
+// import ReactDOM from 'react-dom';
+import cloudinary from 'cloudinary-core';
+import { CloudinaryContext, Image, Transformation, Video } from 'cloudinary-react';
+
+const cloudinaryCore = new cloudinary.Cloudinary({cloud_name: 'dxmelc0e6'});
+
+//ckm
+
 class App extends Component {
   state = {
     response: ""
@@ -31,6 +40,10 @@ class App extends Component {
 
   // NAV ROUTES - Calling from nav.js
   render() {
+    const publicIds = ['spices', 'kitten-playing', 'reindeer'];
+    const transformation = new cloudinary.Transformation();
+    transformation.width(500).crop('scale').effect('cartoonify');
+
     return (
       <Router>
         <div>
