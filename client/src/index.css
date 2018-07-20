@@ -5,6 +5,8 @@ body {
   background-color: blue;
 }
 
+
+/* PAGES */
 .PageHeader {
   text-align: center;
 }
@@ -15,6 +17,8 @@ body {
   margin-left: 15%;
 }
 
+
+/* FORMS */
 #exampleEmail  {
   background-color: #F9F8F8;
 }
@@ -27,10 +31,10 @@ body {
   background-color: #F9F8F8;
 }
 
+/* CONTACT US */
 .ContactFormBackground {
   /* background-color: rgb(199, 192, 192) */
-  background-color: #B5ADAD;
-
+  background-color: #E5E5E5;
 }
 
 .ContactUsSubmitButton {
@@ -49,5 +53,9 @@ body {
   background-color: aqua;
   max-height: 4%;
 }
+<<<<<<< HEAD
+=======
+/* END SLIDER */
+>>>>>>> d862c58da6503c7fda82563980e2089ce9998f87
 
 

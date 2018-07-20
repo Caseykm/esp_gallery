@@ -4,6 +4,13 @@ import { Carousel } from 'react-responsive-carousel';
 import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 // export default () => (<div>
+
+ {/* CALLING ARTWORK / ARTCARD */}
+    {/* <list>
+        <Artwork title={} image={} ... />
+    </list> */}
+    {/* END CALLING THE CARD */}
+    
 class GalleryCarousel extends React.Component {
     render() {
         return (
