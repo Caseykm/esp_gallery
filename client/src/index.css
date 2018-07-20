@@ -5,7 +5,54 @@ body {
   background-color: blue;
 }
 
-.aboutPageStuff {
-  background-color:aliceblue;
+
+/* PAGES */
+.PageHeader {
+  text-align: center;
 }
+
+/* CONTACT US */
+.ContactForm {
+  margin-right: 15%;
+  margin-left: 15%;
+}
+
+
+/* FORMS */
+#exampleEmail  {
+  background-color: #F9F8F8;
+}
+
+#exampleName {
+  background-color: #F9F8F8;
+}
+
+#exampleMessage {
+  background-color: #F9F8F8;
+}
+
+/* CONTACT US */
+.ContactFormBackground {
+  /* background-color: rgb(199, 192, 192) */
+  background-color: #E5E5E5;
+}
+
+.ContactUsSubmitButton {
+  display: flex;
+  align-content: center;
+}
+/* END CONTACT US */
+
+/* SLIDER */
+.GalleryCarousel {
+  max-height: 20%;
+
+}
+
+.legend1 {
+  background-color: aqua;
+  max-height: 4%;
+}
+/* END SLIDER */
+
 

@@ -16,7 +16,7 @@ const User = new Schema({
     stripe_id: String,
     admin: Boolean,
     user_description: String,
-    images: Text = {}, // Michael dosent know what the {} do.
+    images: Text
 });
 
 User.plugin(passportLocalMongoose, {
