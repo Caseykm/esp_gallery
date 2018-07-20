@@ -10,6 +10,7 @@ import About from "./pages/About"; // Imports About.js into App.js
 import ContactUs from "./pages/ContactUs"; // Imports ContactUs.js into App.js
 
 //Ckm
+
 // import ReactDOM from 'react-dom';
 import cloudinary from 'cloudinary-core';
 import { CloudinaryContext, Image, Transformation, Video } from 'cloudinary-react';
@@ -45,6 +46,22 @@ class App extends Component {
     transformation.width(500).crop('scale').effect('cartoonify');
 
     return (
+
+// const SampleImg = () => (
+//     <img src={cloudinaryCore.url('spices')} />
+// );
+
+// //
+// {/* <input name="file" type="file"
+//    class="file-upload" data-cloudinary-field="image_id"
+//    data-form-data="{ 'transformation': {'crop':'limit','tags':'samples','width':3000,'height':2000}}"/> */}
+// return 
+//    <CloudinaryContext cloudName="dxmelc0e6">
+//    <Image publicId="spices" format="jpg">
+//        <Transformation crop="fill" gravity="faces" width="300" height="200"/>
+//    </Image>
+// </CloudinaryContext>
+
       <Router>
         <div>
           <Nav />
