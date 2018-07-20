@@ -3,6 +3,7 @@ const router = express.Router();
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const keys = require("../../config/keys");
+const passport = require("passport");
 
 // Load User model
 const User = require("../models/user");
@@ -14,7 +15,7 @@ router.get("/test", (req, res) => res.json({ msg: "Users Works" }));
 
 // router.post("/register", (req, res) => res.json({ msg: "Register Works" }));
 
-// @route   GET api/users/register
+// @route   POST api/users/register
 // @desc    Register user
 // @access  Public
 router.post("/register", (req, res) => {
@@ -24,6 +25,7 @@ router.post("/register", (req, res) => {
     } else {
       // create new user
       const newUser = new User({
+        name: req.body.name,
         email: req.body.email,
         password: req.body.password
       });
@@ -43,7 +45,7 @@ router.post("/register", (req, res) => {
 });
 
 // Accept a user's email, validate that email and then validate login
-// @route   GET api/routes/users/login
+// @route   POST api/routes/users/login
 // @desc    Login User / Returning JWT Token
 // @access  Public
 router.post("/login", (req, res) => {
@@ -84,5 +86,20 @@ router.post("/login", (req, res) => {
     });
   });
 });
+
+// @route   GET api/routes/users/current
+// @desc    Return current user
+// @access  Private
+router.get(
+  "/current",
+  passport.authenticate("jwt", { session: false }),
+  (req, res) => {
+    res.json({
+      id: req.user.id,
+      name: req.user.name,
+      email: req.user.email
+    });
+  }
+);
 
 module.exports = router;
