@@ -1,4 +1,4 @@
-const express = require('express')
+const express = require('../../../../Library/Caches/typescript/2.9/node_modules/@types/express')
 const router = express.Router()
 const Artwork = require('../models/artwork')
 

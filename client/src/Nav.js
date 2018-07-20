@@ -1,20 +1,20 @@
 import React from 'react';
 import './nav.css'; // Importing nav.css
-import { BrowserRouter as Router, Route, Link } from "react-router-dom"
+// import { BrowserRouter as Router, Route, Link } from react-router-dom;
 import MaterialIcon, {colorPallet} from 'material-icons-react'; // IMPORTS ICONS
 import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem } from 'reactstrap'; // IMPORTS NAV
+    Collapse,
+    Navbar,
+    NavbarToggler,
+    NavbarBrand,
+    Nav,
+    NavItem,
+    NavLink,
+    UncontrolledDropdown,
+    DropdownToggle,
+    DropdownMenu,
+    DropdownItem } from 'reactstrap'; // IMPORTS NAV
 
 export default class Example extends React.Component {
   constructor(props) {
@@ -35,34 +35,34 @@ export default class Example extends React.Component {
         <div>
             <div className="Header">  
                    {/* TOP NAV */}
-                <div className="TopNav">
+                <div className="TopNav"> 
     
                     {/* SEARCH BOX */}
                     <FormGroup className="searchgroup">
                         <span className="searchbox">
-                            <Input type="search" name="search" id="search" placeholder="Search   " />
+                            <Input type="search" name="search" id="search"  placeholder="Search" />
                         </span>
-
+                        
+                        <NavLink className="searchbox" href="#">Link</NavLink>
+                        
                          {/* SEARCH ICON */}
-                        <span className="magnifying">
+                       <span className="magnifying">
                             <MaterialIcon icon="search" className="searchicon mything" size='medium' />
-                        </span>
+                        </span> 
 
                         {/* Login */}
-
-                        <span className="login">
-                            <h3 href="/logInForm/">Login</h3>
-                        </span>
+                       <h5 className="logIn"><a href="/logIn/">Login</a></h5> 
+                     
                             
 
                         {/* CART ICON */}
                         <span className="">
-                            <MaterialIcon icon="shopping_cart" className="carticon" size='medium' /> 
+                           <a  href="/cart/"> <MaterialIcon icon="shopping_cart" className="carticon" size='medium' /></a>
                         </span>       
                     </FormGroup>
                 </div>
 
-                <div className="BlueLine"></div>
+             
 
                      {/* NAVBAR STARTS */}
                     <Navbar className="NavBar" color="" light expand="md">    

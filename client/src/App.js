@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+// import TopNav from './TopNav' 
 import Nav from './Nav' // Importing from  Nav.js
 import './App.css'; // Importing from App.css 
 import logo from './logo.svg';
@@ -7,7 +8,7 @@ import HomePage from './pages/HomePage' // Imports homepage AKA Virtual Gallery 
 import GalleryShop from './pages/GalleryShop' // Imports GalleryShop into App.js
 import SellArt from './pages/SellArt' // Imports SellArt.js into App.js
 import About from './pages/About' // Imports About.js into App.js
-import ContactUs from './pages/ContactUs' // Imports ContactUs.js into App.js
+import ContactUs from './forms/ContactUs' // Imports ContactUs.js into App.js
 
 
 class App extends Component {
@@ -34,7 +35,10 @@ class App extends Component {
   render() {
     return (
       <Router>
+        
         <div>
+          {/* <TopNav /> */}
+
            <Nav />
           <Route exact path="/" component={HomePage} />
           {/* Goes to the URL home and renders what is in pages/ HomePage.js  eg. it renders the componet {HomePage} */}
