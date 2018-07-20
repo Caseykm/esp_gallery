@@ -24,6 +24,7 @@
     "passport-local-mongoose": "^5.0.1",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
+    "react-scripts": "^1.1.4",
     "reactstrap": "^6.3.0",
     "validator": "^10.4.0"
   },
