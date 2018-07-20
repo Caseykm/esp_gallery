@@ -14,9 +14,14 @@
     margin-top: 0.5%;
 }
 
-.login {
-    margin-right: 1%;
+.logIn a {
+    margin-right: 50%;
     color: #4444;
+  }
+
+  .logIn a:hover {
+    margin-right: 1%;
+    color: purple;
   }
   
 

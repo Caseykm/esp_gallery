@@ -43,7 +43,7 @@ export default class Example extends React.Component {
                             <Input type="search" name="search" id="search"  placeholder="Search" />
                         </span>
                         
-                        <NavLink className="searchbox" href="#">Link</NavLink>
+                       
                         
                          {/* SEARCH ICON */}
                         <span className="magnifying">
@@ -52,10 +52,8 @@ export default class Example extends React.Component {
 
                         {/* Login */}
 
-                        <span className="login">
-                            <h3 href="/logInForm/">Login</h3>
-                        </span>
-                            
+                        
+                        <h5 className="logIn"><a href="/logIn/">Login</a></h5> 
 
                         {/* CART ICON */}
                         <span className="">
