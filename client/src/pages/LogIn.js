@@ -6,7 +6,7 @@ import '../index.css'; // Importing from index.css to apply the css styling
 //     <h2>Do Reactstrap contact form</h2>
 
 
-export default class LogIn extends React.Component {
+ class LogIn extends React.Component {
   
   render() {
       return (
@@ -35,3 +35,5 @@ export default class LogIn extends React.Component {
     );
   }
 }
+
+export default LogIn;

@@ -4,7 +4,7 @@
     width: 200px;
 }
    
-.searchgroup {
+.topnavgroup {
     display: flex;
     justify-content: flex-end;
 }
@@ -13,6 +13,8 @@
     margin-right:2%;
     margin-top: 0.5%;
 }
+
+
 
 .logIn a {
     margin-right: 50%;

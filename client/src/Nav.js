@@ -39,8 +39,8 @@ export default class Example extends React.Component {
                 <div className="TopNav"> 
     
                     {/* SEARCH BOX */}
-                    <FormGroup className="searchgroup">
-                        <span className="searchbox">
+                    <FormGroup className="topnavgroup">
+                        <span className="searchbox">    
                             <Input type="search" name="search" id="search"  placeholder="Search" />
                         </span>
                                               
@@ -50,7 +50,7 @@ export default class Example extends React.Component {
                         </span>                    
 
                         {/* LOGIN */}
-                        <h5 className="login"><a href="/login/">Login</a></h5> 
+                        <h5 className="logIn"><a href="/LogInForm/">Login</a></h5> 
                       
                         {/* CART ICON */}
                         <span className="">
@@ -88,6 +88,7 @@ export default class Example extends React.Component {
                             <NavItem>
                                 <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
                             </NavItem>
+                            
                                 {/* NAV DROPDOWN */}
                                 <UncontrolledDropdown nav inNavbar>
                                     <DropdownToggle nav caret>
