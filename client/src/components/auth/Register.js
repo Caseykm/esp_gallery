@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import axios from "axios";
 
 class Register extends Component {
   constructor() {
@@ -24,14 +25,17 @@ class Register extends Component {
     e.preventDefault();
 
     const newUser = {
-      first_name: this.state.name,
-      last_name: this.state.name,
+      first_name: this.state.first_name,
+      last_name: this.state.last_name,
       email: this.state.email,
       password: this.state.password,
       password2: this.state.password2
     };
 
-    console.log(newUser);
+    axios
+      .post("/api/routes/users/register", newUser)
+      .then(res => console.log(res.data))
+      .catch(err => console.log(err.response.data));
   }
 
   render() {
