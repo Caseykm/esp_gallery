@@ -1,6 +1,7 @@
 {
   "name": "esp_gallery",
   "version": "0.1.0",
+  "license": "MIT",
   "private": false,
   "proxy": "http://localhost:9001/",
   "dependencies": {

@@ -18,12 +18,12 @@ const db = require("./config/keys").mongoURI;
 // Connect to MongoDB
 mongoose
   .connect(db)
-  .then(() => console.log("MongoDB connected"))
+  .then(() => console.log("MongoDB locked and loaded"))
   .catch(err => console.log(err));
 
 // API calls
 app.get("/", (req, res) => {
-  res.send({ express: "Hello From Express" });
+  res.send({ express: "You shouldn't be seeing this" });
 });
 
 // Passport middleware
