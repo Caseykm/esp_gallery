@@ -32,29 +32,6 @@ body {
 }
 /* cloudinary */
 
-/* CONTACT US */
-.FormBackground {
-  background-color: #E5E5E5;
-}
-
-.ContactUsSubmitButton {
-  display: flex;
-  align-content: center;
-}
-/* END CONTACT US */
-
-/* SLIDER */
-.GalleryCarousel {
-  max-height: 20%;
-
-}
-
-.legend1 {
-  background-color: aqua;
-  max-height: 4%;
-}
-
-
 #dropbox { 
   border: 4px dashed #ccc; 
   padding-left: 8px;
@@ -78,4 +55,28 @@ body {
   height: 8px;
   background-color: #ff0000;
   width: 0;
+}
+
+
+
+/* CONTACT US */
+.FormBackground {
+  background-color: #E5E5E5;
+}
+
+.ContactUsSubmitButton {
+  display: flex;
+  align-content: center;
+}
+/* END CONTACT US */
+
+/* SLIDER */
+.GalleryCarousel {
+  max-height: 20%;
+
+}
+
+.legend1 {
+  background-color: aqua;
+  max-height: 4%;
 }
