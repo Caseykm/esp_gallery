@@ -1,8 +1,12 @@
 {
   "name": "example-create-react-app-express",
   "version": "1.0.0",
+  "license": "MIT",
+  "engines": {
+    "node": "8.11.3"
+  },
   "scripts": {
-    "start": "node server.js",
+    "start": "concurrently \"yarn server\" \"yarn client\"",
     "heroku-postbuild": "cd client && yarn install && yarn install --only=dev --no-shrinkwrap && yarn run build",
     "client": "cd client && yarn start",
     "server": "nodemon server.js",
