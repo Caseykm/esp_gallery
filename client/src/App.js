@@ -80,6 +80,12 @@ class App extends Component {
           <Route exact path="/cart" component={Cart} /> */}
           {/* <Route exact path="/product" component={ProductPage} />  */}
           {/* <Route exact path="/footer" component={Footer} /> */}
+          
+          {/* cloudinary */}
+          {/* <Route path='/image/upload' render={
++             () => (
++               <ImageUpload/>
++             )}/> */}
         </div>
       </Router>
     );
