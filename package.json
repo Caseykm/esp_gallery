@@ -1,8 +1,12 @@
 {
   "name": "example-create-react-app-express",
   "version": "1.0.0",
+  "engines": {
+    "node": "8.11.3"
+  },
   "scripts": {
     "start": "node server.js",
+    "heroku-postbuild": "cd client && yarn install && yarn install --only=dev --no-shrinkwrap && yarn run build",
     "client": "cd client && yarn start",
     "server": "nodemon server.js",
     "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
@@ -24,11 +28,8 @@
     "passport-local-mongoose": "^5.0.1",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
-<<<<<<< HEAD
     "react-responsive-carousel": "^3.1.41",
-=======
     "react-scripts": "^1.1.4",
->>>>>>> 721e9d46a87b81b11aedee06c85ca3f2b357fcc4
     "reactstrap": "^6.3.0",
     "validator": "^10.4.0"
   },

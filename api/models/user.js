@@ -1,7 +1,7 @@
 const { Schema, mongoose } = require("./db");
 const passportLocalMongoose = require("passport-local-mongoose");
 
-const User = new Schema({
+const UserSchema = new Schema({
   //  user_id: Number, ID will be automatically generated
   profile_pic: String,
   username: String,
@@ -18,8 +18,8 @@ const User = new Schema({
   images: String
 });
 
-User.plugin(passportLocalMongoose, {
+UserSchema.plugin(passportLocalMongoose, {
   usernameField: "email"
 });
 
-module.exports = mongoose.model("User", User);
+module.exports = User = mongoose.model("users", UserSchema);
