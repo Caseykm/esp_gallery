@@ -1,17 +1,37 @@
+/* TOP NAV */
 #search {
     background-color: #f9f8f8;
     width: 200px;
-   
-   
 }
-
-.search {
+   
+.searchgroup {
     display: flex;
     justify-content: flex-end;
-
 }
 
 .TopNav {
     margin-right:2%;
     margin-top: 0.5%;
 }
+
+.logIn a {
+    margin-right: 50%;
+    color: #4444;
+  }
+
+  .logIn a:hover {
+    margin-right: 1%;
+    color: purple;
+  }
+  
+
+.magnifying {
+    margin-right: 1%;
+    margin-left: 1%;
+}
+/* END TOP NAV */
+
+
+/* MAIN NAV */
+/* END MAIN NAV */
+
