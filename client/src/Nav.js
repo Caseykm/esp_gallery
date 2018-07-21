@@ -61,7 +61,7 @@ export default class Example extends React.Component {
 
               {/* Register */}
               <h5 className="register">
-                <Link to="/register">Register</Link>
+                <Link to="/register">Sign Up</Link>
               </h5>
 
               {/* LOGIN */}
