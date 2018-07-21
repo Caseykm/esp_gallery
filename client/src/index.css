@@ -32,6 +32,33 @@ body {
 }
 /* cloudinary */
 
+<<<<<<< HEAD
+/* CONTACT US */
+.FormBackground {
+  /* background-color: rgb(199, 192, 192) */
+  background-color: #E5E5E5;
+}
+
+.ContactUsSubmitButton {
+  display: flex;
+  align-content: center;
+}
+/* END CONTACT US */
+
+/* SLIDER */
+.GalleryCarousel {
+  max-height: 20%;
+
+}
+
+.legend1 {
+  background-color: aqua;
+  max-height: 4%;
+}
+
+
+=======
+>>>>>>> 05369b8a470d2184197bb95eb7049f23b09ac5f3
 #dropbox { 
   border: 4px dashed #ccc; 
   padding-left: 8px;
