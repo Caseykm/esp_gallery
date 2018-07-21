@@ -77,10 +77,10 @@ class App extends Component {
           <Route exact path="/cart" component={Cart} /> */}
           {/* <Route exact path="/product" component={ProductPage} />  */}
           {/* <Route exact path="/footer" component={Footer} /> */}
-          <Route path='/image/upload' render={
+          {/* <Route path='/image/upload' render={
 +             () => (
 +               <ImageUpload/>
-+             )}/>
++             )}/> */}
         </div>
       </Router>
     );
