@@ -6,6 +6,7 @@
     "node": "8.11.3"
   },
   "scripts": {
+    "install": "(cd client && yarn) && (yarn)",
     "start": "concurrently \"yarn server\" \"yarn client\"",
     "heroku-postbuild": "cd client && yarn install && yarn install --only=dev --no-shrinkwrap && yarn run build",
     "client": "cd client && yarn start",
