@@ -2,8 +2,6 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Nav from "./Nav"; // Importing from  Nav.js
 import "./App.css"; // Importing from App.css
-import logo from "./logo.svg";
-
 import HomePage from "./pages/HomePage"; // Imports homepage AKA Virtual Gallery into App.js
 import GalleryShop from "./pages/GalleryShop"; // Imports GalleryShop into App.js
 import SellArt from "./pages/SellArt"; // Imports SellArt.js into App.js
@@ -74,7 +72,7 @@ class App extends Component {
 
       <Router>
         <div>
-          {/* <TopNav /> */}
+        
 
           <Nav />
           <Route exact path="/" component={HomePage} />
@@ -101,64 +99,7 @@ class App extends Component {
     );
   }
 }
-// END OF NAV
 
-// (PAGES) COMPONENTS - HAVE BEEN MOVED TO THER OWN .JS FILE
-// HOME PAGE
-// const Home = () => (
-//   <div>
-//     <h2>Home</h2>
-//   </div>
-// );
 
-// const SellArt = () => (
-//   <div>
-//     <h2>Sell Art</h2>
-//     <p>Stuff ksdfhg kvhgirt gibuir</p>
-//   </div>
-// );
-
-// const Shop = () => (
-//   <div>
-//     <h2>Gallery Shop</h2>
-//   </div>
-// );
-
-// const ContactUs = () => (
-//   <div>
-//     <h2>Contact Us</h2>
-//   </div>
-// );
-
-// const About = ({ match }) => (
-//   <div>
-//     <h2>Our Story</h2>
-//     <ul>
-//       <li>
-//         <Link to={`${match.url}/ourstory`}>Our Story</Link>
-//       </li>
-//       <li>
-//         <Link to={`${match.url}/ourhistory`}>Our History</Link>
-//       </li>
-//       <li>
-//         <Link to={`${match.url}/props-v-state`}>Props v. State</Link>
-//       </li>
-//     </ul>
-
-//     <Route path={`${match.url}/:shopId`} component={GalleryShop} />
-//     <Route
-//       exact
-//       path={match.url}
-//       render={() => <h3>Please select a topic.</h3>}
-//     />
-//   </div>
-// );
-
-// const Topic = ({ match }) => (
-//   <div>
-//     <h3>{match.params.topicId}</h3>
-//   </div>
-// );
-// END OF (PAGES) COMPONENTS
 
 export default App;
