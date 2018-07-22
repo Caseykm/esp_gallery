@@ -5,8 +5,8 @@ body {
   background-color: blue;
 }
 
-
 /* PAGES */
+
 .PageHeader {
   text-align: center;
 }
@@ -18,7 +18,8 @@ body {
 
 
 /* CONTACT US */
-.ContactFormBackground {
+
+/* .ContactFormBackground {
   background-color: #E5E5E5;
 }
 
@@ -31,9 +32,11 @@ body {
 .ContactForm {
   margin-right: 15%;
   margin-left: 15%;
-}
+} */
 
-#exampleEmail  {
+/* FORMS */
+
+#exampleEmail {
   background-color: #F9F8F8;
 }
 
@@ -44,46 +47,60 @@ body {
 #exampleMessage {
   background-color: #F9F8F8;
 }
-/* END CONTACT US */
 
 /* cloudinary */
 
-#dropbox { 
-  border: 4px dashed #ccc; 
-  padding-left: 8px;
-}
-.my-form {
-  margin-top: 10px;
-}
-.gallery {
-  margin: 10px;
-}
-.gallery img {
-  margin-left: 16px;
-}
-.progress-bar{
-  width: 200px;
-  position: relative;
-  height: 8px;
-  margin-top: 4px;
-}
-.progress-bar .progress{
-  height: 8px;
-  background-color: #ff0000;
-  width: 0;
+/* CONTACT US */
+
+.FormBackground {
+  /* background-color: rgb(199, 192, 192) */
+  background-color: #E5E5E5;
 }
 
+.ContactUsSubmitButton {
+  display: flex;
+  align-content: center;
+}
 
-
-
+/* END CONTACT US */
 
 /* SLIDER */
+
 .GalleryCarousel {
   max-height: 20%;
-
 }
 
 .legend1 {
   background-color: aqua;
   max-height: 4%;
+}
+
+#dropbox {
+  border: 4px dashed #ccc;
+  padding-left: 8px;
+}
+
+.my-form {
+  margin-top: 10px;
+}
+
+.gallery {
+  margin: 10px;
+}
+
+.gallery img {
+  margin-left: 16px;
+}
+
+.progress-bar {
+  width: 200px;
+  position: relative;
+  height: 8px;
+  margin-top: 4px;
+}
+
+.progress-bar .progress {
+  height: 8px;
+  background-color: #ff0000;
+  width: 0;
 }
