@@ -2,13 +2,13 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Nav from './Nav' // Importing from  Nav.js
 import './App.css'; // Importing from App.css 
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import HomePage from './pages/HomePage'; // Imports homepage AKA Virtual Gallery into App.js
 import GalleryShop from './pages/GalleryShop'; // Imports GalleryShop into App.js
 import SellArt from './pages/SellArt'; // Imports SellArt.js into App.js
 import About from './pages/About'; // Imports About.js into App.js
 import ContactUs from './forms/ContactUs'; // Imports ContactUs.js into App.js
-import LogInForm from './forms/LogInForm';
+import LogIn from './forms/LogIn';
 
 //Ckm
 
@@ -66,9 +66,9 @@ class App extends Component {
       <Router>
         
         <div>
-          {/* <TopNav /> */}
+        
 
-           <Nav />
+          <Nav />
           <Route exact path="/" component={HomePage} />
           {/* Goes to the URL home and renders what is in pages/ HomePage.js  eg. it renders the componet {HomePage} */}
           <Route exact path="/shop" component={GalleryShop} />
@@ -77,21 +77,17 @@ class App extends Component {
           <Route exact path="/about" component={About} />
           {/* Goes to the url/about and renders the componet {about} eg renders what is in the pages/aboout.js page */}
           <Route exact path="/contactus" component={ContactUs} />
-          {/* <Route exact path="/login" component={Login} />
-          <Route exact path="/cart" component={Cart} /> */}
+          {/* <Route exact path="/login" component={Login} /> */}
+          {/* <Route exact path="/cart" component={Cart} />  */}
           {/* <Route exact path="/product" component={ProductPage} />  */}
           {/* <Route exact path="/footer" component={Footer} /> */}
-          
-          {/* cloudinary */}
-          {/* <Route path='/image/upload' render={
-+             () => (
-+               <ImageUpload/>
-+             )}/> */}
         </div>
       </Router>
     );
   }
 }
+
+
 // END OF NAV
 
 // (PAGES) COMPONENTS - HAVE BEEN MOVED TO THER OWN .JS FILE

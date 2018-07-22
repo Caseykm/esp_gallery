@@ -11,14 +11,28 @@ body {
   text-align: center;
 }
 
+
+
+
+/* FORMS */
+
+
 /* CONTACT US */
+.ContactFormBackground {
+  background-color: #E5E5E5;
+}
+
+.ContactUsSubmitButton {
+  display: flex;
+  align-content: center;
+
+}
+
 .ContactForm {
   margin-right: 15%;
   margin-left: 15%;
 }
 
-
-/* FORMS */
 #exampleEmail  {
   background-color: #F9F8F8;
 }
@@ -30,6 +44,8 @@ body {
 #exampleMessage {
   background-color: #F9F8F8;
 }
+/* END CONTACT US */
+
 /* cloudinary */
 
 #dropbox { 
@@ -59,16 +75,7 @@ body {
 
 
 
-/* CONTACT US */
-.FormBackground {
-  background-color: #E5E5E5;
-}
 
-.ContactUsSubmitButton {
-  display: flex;
-  align-content: center;
-}
-/* END CONTACT US */
 
 /* SLIDER */
 .GalleryCarousel {
