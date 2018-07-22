@@ -3,6 +3,10 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Nav from "./Nav"; // Importing from  Nav.js
 import "./App.css"; // Importing from App.css
 import logo from "./logo.svg";
+import jwt_decode from "jwt-decode";
+import setAuthToken from "./utils/setAuthToken";
+import { setCurrentUser } from "./actions/authActions";
+
 import { Provider } from "react-redux";
 import store from "./store";
 
@@ -27,6 +31,16 @@ import {
 const cloudinaryCore = new cloudinary.Cloudinary({ cloud_name: "dxmelc0e6" });
 //ckm
 
+// Check for token
+if (localStorage.jwtToken) {
+  // Set auth token header auth
+  setAuthToken(localStorage.jwtToken);
+  // Decode token and get user info and exp
+  // Checks token every page request to check if the users logged in or not
+  const decoded = jwt_decode(localStorage.jwtToken);
+  // Set current user and isAuthenticated
+  store.dispatch(setCurrentUser(decoded));
+}
 class App extends Component {
   state = {
     response: ""
