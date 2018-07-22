@@ -10,6 +10,7 @@ import ContactUs from "./forms/ContactUs"; // Imports ContactUs.js into App.js
 import Register from "./components/auth/Register";
 import Login from "./components/auth/Login";
 import Footer from "./pages/Footer"; // Imports Footer.js into App.js
+import TermsOfService from "./pages/TermsOfService";
 
 //Ckm
 
@@ -88,7 +89,8 @@ class App extends Component {
           <Route exact path="/login" component={Login} />
           {/* <Route exact path="/cart" component={Cart} /> */}
           {/* <Route exact path="/product" component={ProductPage} />  */}
-           <Route exact path="/footer" component={Footer} /> 
+          <Route exact path="/footer" component={Footer} /> 
+          <Route exact path="/Termsofservice" component={TermsOfService} /> 
 
           {/* cloudinary */}
           {/* <Route path='/image/upload' render={

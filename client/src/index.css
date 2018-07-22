@@ -7,11 +7,34 @@ body {
 
 /* FOOTER */
 .footerwrapper {
-  background-color: #4444;
+  background-color: #444444;
+  color: #F9F8F8;
+ 
+}
 
+.textinfooter {
+  color: #F9F8F8;
+  text-align: center;
+  padding-top: 2%;
+ padding-bottom: 2%;
+}
+
+.footertextlink a {
+  color: #F9F8F8
 }
 
 
+
+
+.logIn a {
+  margin-right: 50%;
+  color: #0007;
+}
+
+.logIn a:hover {
+  margin-right: 50%;
+  color: blue;
+}
 
 /* PAGES */
 
