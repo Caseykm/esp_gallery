@@ -10,7 +10,7 @@ export default class ContactForm extends React.Component {
   render() {
       return (
           <div><h2 className="PageHeader">Contact Us</h2>
-              <div className="ContactFormBackground">
+              <div className="FormBackground">
                 <Form className="ContactForm">
                     <FormGroup>
                     <Label for="exampleEmail"></Label>

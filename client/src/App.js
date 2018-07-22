@@ -9,6 +9,7 @@ import About from "./pages/About"; // Imports About.js into App.js
 import ContactUs from "./forms/ContactUs"; // Imports ContactUs.js into App.js
 import Register from "./components/auth/Register";
 import Login from "./components/auth/Login";
+import Footer from "./pages/Footer"; // Imports Footer.js into App.js
 
 //Ckm
 
@@ -87,7 +88,7 @@ class App extends Component {
           <Route exact path="/login" component={Login} />
           {/* <Route exact path="/cart" component={Cart} /> */}
           {/* <Route exact path="/product" component={ProductPage} />  */}
-          {/* <Route exact path="/footer" component={Footer} /> */}
+           <Route exact path="/footer" component={Footer} /> 
 
           {/* cloudinary */}
           {/* <Route path='/image/upload' render={
@@ -96,6 +97,9 @@ class App extends Component {
 +             )}/> */}
         </div>
       </Router>
+
+     
+      
     );
   }
 }

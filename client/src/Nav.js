@@ -89,9 +89,13 @@ export default class Example extends React.Component {
                             <NavItem>
                                 <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
                             </NavItem>
+
+                            <NavItem>
+                                <NavLink href="/about/">About Us</NavLink>
+                            </NavItem>
                             
                                 {/* NAV DROPDOWN */}
-                                <UncontrolledDropdown nav inNavbar>
+                                {/* <UncontrolledDropdown nav inNavbar>
                                     <DropdownToggle nav caret>
                                         <NavLink href="/about/">About Us</NavLink>
                                     </DropdownToggle>
@@ -107,7 +111,7 @@ export default class Example extends React.Component {
                                                 Reset
                                             </DropdownItem>
                                         </DropdownMenu>
-                                </UncontrolledDropdown>
+                                </UncontrolledDropdown> */}
                                 {/* END NAV DROPDOWN */}
                             
                             <NavItem>
