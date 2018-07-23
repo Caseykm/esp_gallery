@@ -60,6 +60,8 @@ export default class Example extends React.Component {
                     </FormGroup>
                 </div>
 
+                <hr />
+
 
 
                 {/* NAVBAR STARTS */}
