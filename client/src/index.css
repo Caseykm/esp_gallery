@@ -6,26 +6,27 @@ body {
 }
 
 /* FOOTER */
+
 .footerwrapper {
   background-color: #444444;
   color: #F9F8F8;
- 
 }
 
 .textinfooter {
   color: #F9F8F8;
   text-align: center;
   padding-top: 2%;
- padding-bottom: 2%;
+  padding-bottom: 2%;
 }
 
 .footertextlink a {
   color: #F9F8F8
 }
+
 /* END FOOTER */
 
-
 /* PAGES */
+
 .PageHeader {
   text-align: center;
   color: #444444;
@@ -40,15 +41,15 @@ body {
   padding-bottom: 5%;
 }
 
-
 /* END HOME PAGE */
 
 /* CONTACT US */
+
 .ContactForm {
   margin-right: 15%;
   margin-left: 15%;
   padding-bottom: 5%;
-} 
+}
 
 .FormBackground {
   background-color: #E5E5E5;
@@ -58,27 +59,27 @@ body {
   display: flex;
   justify-content: center;
   padding-top: 5%;
- 
 }
 
-#exampleEmail { /* contact us email box */
+#exampleEmail {
+  /* contact us email box */
   background-color: #F9F8F8;
 }
 
-#exampleName { /* contact us name box */
+#exampleName {
+  /* contact us name box */
   background-color: #F9F8F8;
 }
 
-#exampleMessage { /* contact us message box */
+#exampleMessage {
+  /* contact us message box */
   background-color: #F9F8F8;
 }
+
 /* END CONTACT US */
 
-
-
-
-
 /* SLIDER */
+
 .GalleryCarousel {
   max-height: 20%;
 }
@@ -87,66 +88,15 @@ body {
   background-color: aqua;
   max-height: 4%;
 }
+
 /* END SLIDER */
 
 /* FORMS */
+
 /* LOGIN FORM */
+
 .login {
-  background-color:  #E5E5E5;
+  background-color: #E5E5E5;
   padding-top: 2%;
-  padding-bottom: 5%;  
-}
-
-/* This is the "dont have a password sign up now text in Login Form" */
-.nopassword { 
-  margin-top: 5%;
-  font-style: italic;
-}
-
-/* This is the button in Login Form that links to the Register form */
-.LinkToregistrationForm {
-  display: flex;
-  justify-content: center;
   padding-bottom: 5%;
-}
-/* END LOGIN FORM */
-
-/* REGISTRATION FORM */
-.register {
-  background-color:  #E5E5E5;
-  padding-top: 2%;
-  padding-bottom: 5%; 
-}
-/* END REGISTRATION FORM */
-
-
-/* cloudinary */
-#dropbox {
-  border: 4px dashed #ccc;
-  padding-left: 8px;
-}
-
-.my-form {
-  margin-top: 10px;
-}
-
-.gallery {
-  margin: 10px;
-}
-
-.gallery img {
-  margin-left: 16px;
-}
-
-.progress-bar {
-  width: 200px;
-  position: relative;
-  height: 8px;
-  margin-top: 4px;
-}
-
-.progress-bar .progress {
-  height: 8px;
-  background-color: #ff0000;
-  width: 0;
 }
