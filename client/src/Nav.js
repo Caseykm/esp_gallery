@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import "./nav.css"; // Importing nav.css
 // import { BrowserRouter as Router, Route, Link } from react-router-dom;
 import MaterialIcon, { colorPallet } from "material-icons-react"; // IMPORTS ICONS
@@ -17,8 +17,11 @@ import {
   DropdownItem
 } from "reactstrap"; // IMPORTS NAV
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
+import { connect } from "react-redux";
+import { logoutUser } from "../src/actions/authActions";
 
-export default class Example extends React.Component {
+class Navmain extends Component {
   constructor(props) {
     super(props);
 
@@ -141,3 +144,5 @@ export default class Example extends React.Component {
     );
   }
 }
+
+export default Navmain;
