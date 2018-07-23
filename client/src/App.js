@@ -5,18 +5,21 @@ import "./App.css"; // Importing from App.css
 import logo from "./logo.svg";
 import jwt_decode from "jwt-decode";
 import setAuthToken from "./utils/setAuthToken";
-import { setCurrentUser } from "./actions/authActions";
+import { setCurrentUser, logoutUser } from "./actions/authActions";
 
 import { Provider } from "react-redux";
 import store from "./store";
 
 import HomePage from "./pages/HomePage"; // Imports homepage AKA Virtual Gallery into App.js
+import GalleryHire from "./pages/GalleryHire";
 import GalleryShop from "./pages/GalleryShop"; // Imports GalleryShop into App.js
 import SellArt from "./pages/SellArt"; // Imports SellArt.js into App.js
 import About from "./pages/About"; // Imports About.js into App.js
 import ContactUs from "./forms/ContactUs"; // Imports ContactUs.js into App.js
 import Register from "./components/auth/Register";
 import Login from "./components/auth/Login";
+import Footer from "./pages/Footer"; // Imports Footer.js into App.js
+import TermsOfService from "./pages/TermsOfService";
 
 //Ckm
 // import ReactDOM from 'react-dom';
@@ -40,6 +43,13 @@ if (localStorage.jwtToken) {
   const decoded = jwt_decode(localStorage.jwtToken);
   // Set current user and isAuthenticated
   store.dispatch(setCurrentUser(decoded));
+
+  // Check for expired token
+  store.dispatch(logoutUser());
+  // TODO: Clear current profile
+
+  // Redirect to home
+  window.location.href = "/";
 }
 class App extends Component {
   state = {
@@ -86,7 +96,6 @@ class App extends Component {
       //    </Image>
       // </CloudinaryContext>
 
-      // dont get rid of this line vv
       <Provider store={store}>
         <Router>
           <div>

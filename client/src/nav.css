@@ -1,10 +1,5 @@
 /* TOP NAV */
 
-#search {
-    background-color: #f9f8f8;
-    width: 200px;
-}
-
 .topnavgroup {
     display: flex;
     justify-content: flex-end;
@@ -15,15 +10,27 @@
     margin-top: 0.5%;
 }
 
-/* .logIn a {
+#search {
+    background-color: #f9f8f8;
+    width: 200px;
+}
+
+.logIn a {
     margin-right: 50%;
     color: #0007;
-  } */
+}
 
 .logIn a:hover {
-    margin-right: 50%;
-    color: blue;
+    color: #444444;
+    text-decoration: none;
 }
+
+/* this is here to fix the left shift that occures to Login onclick */
+
+/* .logIn  a:active {
+    color: yellow;
+}
+   */
 
 .magnifying {
     margin-right: 1%;

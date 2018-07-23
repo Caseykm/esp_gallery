@@ -46,13 +46,12 @@ class NavMain extends Component {
 
     const authLinks = (
       <ul className="navbar-nav m1-auto">
-        <li className="nav-item">
+        <li className="nav-item logIn">
           <a
             href=""
             onClick={this.onLogoutClick.bind(this)}
             className="nav-link"
           >
-            {" "}
             Logout
           </a>
         </li>
@@ -61,12 +60,7 @@ class NavMain extends Component {
 
     const guestLinks = (
       <ul className="navbar-nav ml-auto">
-        {/* <a className="nav-item">
-          <Link className="nav-link" to="/register">
-            Sign Up
-          </Link>
-        </a> */}
-        <a className="nav-item">
+        <a className="nav-item logIn">
           <Link className="nav-link" to="/login">
             Login
           </Link>
@@ -102,16 +96,6 @@ class NavMain extends Component {
 
               {/* Authentication links ternary function */}
               {isAuthenticated ? authLinks : guestLinks}
-
-              {/* Register */}
-              {/* <h5 className="register"> */}
-              {/* <Link to="/register">Sign Up</Link> */}
-              {/* </h5> */}
-
-              {/* LOGIN */}
-              {/* <h5 className="logIn"> */}
-              {/* <a href="/LogIn/">Login</a> */}
-              {/* </h5> */}
 
               {/* CART ICON */}
               <span className="">
@@ -162,7 +146,7 @@ class NavMain extends Component {
                 </NavItem>
 
                 {/* NAV DROPDOWN */}
-                <UncontrolledDropdown nav inNavbar>
+                {/* <UncontrolledDropdown nav inNavbar>
                   <DropdownToggle nav caret>
                     <NavLink href="/about/">About Us</NavLink>
                   </DropdownToggle>
@@ -172,7 +156,7 @@ class NavMain extends Component {
                     <DropdownItem divider />
                     <DropdownItem>Reset</DropdownItem>
                   </DropdownMenu>
-                </UncontrolledDropdown>
+                </UncontrolledDropdown> */}
                 {/* END NAV DROPDOWN */}
 
                 <NavItem>
