@@ -67,8 +67,7 @@ class Login extends Component {
                       <span className="LinkToregistrationForm">
                         <Button href="/Register" >Sign Up Now</Button>
                       </span>
-                  </div>
-                
+                  </div>      
               </form>
             </div>
           </div>

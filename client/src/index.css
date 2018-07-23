@@ -83,22 +83,31 @@ body {
 /* LOGIN FORM */
 .login {
   background-color:  #E5E5E5;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  
+  padding-top: 2%;
+  padding-bottom: 5%;  
 }
 
-.nopassword {
+/* This is the "dont have a password sign up now text in Login Form" */
+.nopassword { 
   margin-top: 5%;
   font-style: italic;
 }
 
+/* This is the button in Login Form that links to the Register form */
 .LinkToregistrationForm {
   display: flex;
   justify-content: center;
   padding-bottom: 5%;
 }
 /* END LOGIN FORM */
+
+/* REGISTRATION FORM */
+.register {
+  background-color:  #E5E5E5;
+  padding-top: 2%;
+  padding-bottom: 5%; 
+}
+/* END REGISTRATION FORM */
 
 
 /* cloudinary */
