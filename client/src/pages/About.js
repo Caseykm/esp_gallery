@@ -4,18 +4,23 @@ import Footer from './Footer';
 
 export default ({ match }) => (<div>
 
+
+  <div className="container">
+          <div className="row">
       <h2 className="PageHeader">About Us</h2>
-      <ul>
-        <li>
-          <Link to={`${match.url}/ourstory`}>Our Story</Link>
-        </li>
-        <li>
-          <Link to={`${match.url}About/ourhistory`}>Our History</Link>
-        </li>
-        <li>
-          <Link to={`${match.url}/props-v-state`}>Props v. State</Link>
-        </li>
-  </ul>
+        <ul>
+          <li>
+            <Link to={`${match.url}/ourstory`}>Our Story</Link>
+          </li>
+          <li>
+            <Link to={`${match.url}About/ourhistory`}>Our History</Link>
+          </li>
+          <li>
+            <Link to={`${match.url}/props-v-state`}>Props v. State</Link>
+          </li>
+        </ul>
+    </div>
+    </div>
 
    <Footer /> 
   </div>

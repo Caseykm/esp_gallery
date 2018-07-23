@@ -68,7 +68,7 @@ export default class Example extends React.Component {
                 <Navbar className="NavBar" color="" light expand="md"> 
                     
                     {/* LOGO */}
-                    <a><img src="/images/logo.png"  href="/" height="60" witdth="53" alt="ESP Gallery logo" /></a>
+                    <a  href="/" ><img src="/images/logo.png"  height="60" witdth="53" alt="ESP Gallery logo" /></a>
                     {/* END LOGO */}
                        
                     {/* NAV STARTS */}
@@ -77,7 +77,7 @@ export default class Example extends React.Component {
                     
                         <Nav className="ml-auto" navbar>
                             <NavItem>
-                                <NavLink href="/">Virtual Gallery</NavLink>
+                                <NavLink href="/hire/">Gallery Hire</NavLink>
                             </NavItem>
                             
                             <NavItem>

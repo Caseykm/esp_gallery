@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Nav from "./Nav"; // Importing from  Nav.js
 import "./App.css"; // Importing from App.css
 import HomePage from "./pages/HomePage"; // Imports homepage AKA Virtual Gallery into App.js
+import GalleryHire from "./pages/GalleryHire"; 
 import GalleryShop from "./pages/GalleryShop"; // Imports GalleryShop into App.js
 import SellArt from "./pages/SellArt"; // Imports SellArt.js into App.js
 import About from "./pages/About"; // Imports About.js into App.js
@@ -11,6 +12,7 @@ import Register from "./components/auth/Register";
 import Login from "./components/auth/Login";
 import Footer from "./pages/Footer"; // Imports Footer.js into App.js
 import TermsOfService from "./pages/TermsOfService";
+
 
 //Ckm
 
@@ -80,6 +82,7 @@ class App extends Component {
           <Route exact path="/" component={HomePage} />
           {/* Goes to the URL home and renders what is in pages/ HomePage.js  eg. it renders the componet {HomePage} */}
           <Route exact path="/shop" component={GalleryShop} />
+          <Route exact path="/hire" component={GalleryHire} />
           {/* Goes to  URL pages/GalleryShop.js and renders what is in the file */}
           <Route exact path="/sellart" component={SellArt} />
           <Route exact path="/about" component={About} />
