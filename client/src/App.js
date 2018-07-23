@@ -10,20 +10,7 @@ import ContactUs from "./forms/ContactUs"; // Imports ContactUs.js into App.js
 import Register from "./components/auth/Register";
 import Login from "./components/auth/Login";
 
-//Ckm
 
-// import ReactDOM from 'react-dom';
-import cloudinary from "cloudinary-core";
-import {
-  CloudinaryContext,
-  Image,
-  Transformation,
-  Video
-} from "cloudinary-react";
-
-const cloudinaryCore = new cloudinary.Cloudinary({ cloud_name: "dxmelc0e6" });
-
-//ckm
 
 class App extends Component {
   state = {
@@ -47,28 +34,9 @@ class App extends Component {
 
   // NAV ROUTES - Calling from nav.js
   render() {
-    const publicIds = ["spices", "kitten-playing", "reindeer"];
-    const transformation = new cloudinary.Transformation();
-    transformation
-      .width(500)
-      .crop("scale")
-      .effect("cartoonify");
+
 
     return (
-      // const SampleImg = () => (
-      //     <img src={cloudinaryCore.url('spices')} />
-      // );
-
-      // //
-      // {/* <input name="file" type="file"
-      //    class="file-upload" data-cloudinary-field="image_id"
-      //    data-form-data="{ 'transformation': {'crop':'limit','tags':'samples','width':3000,'height':2000}}"/> */}
-      // return
-      //    <CloudinaryContext cloudName="dxmelc0e6">
-      //    <Image publicId="spices" format="jpg">
-      //        <Transformation crop="fill" gravity="faces" width="300" height="200"/>
-      //    </Image>
-      // </CloudinaryContext>
 
       <Router>
         <div>
