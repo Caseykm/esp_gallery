@@ -32,6 +32,15 @@ body {
 }
 
 /* HOME PAGE */
+
+.GoToShopButton {
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+
 /* END HOME PAGE */
 
 /* CONTACT US */

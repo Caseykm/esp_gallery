@@ -4,6 +4,7 @@ import { Carousel } from 'react-responsive-carousel';
 import GalleryCarousel from './GalleryCarousel';
 import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 import Footer from './Footer';
+import '../index.css'; // Importing from index.css to apply the css styling
  
 
 // ReactDOM.render(<GalleryCarousel />, document.querySelector('.gallery-carousel'));
@@ -21,10 +22,11 @@ export default () => (<div>
     {/* <p className="PageHeader">{artistName}</p> Artists name is is called from froms/Uploadexhibiton.js*/}
       
     <GalleryCarousel /> 
-    
-    <span className="GoToShopButton">   
-                     <a href="/shop/"><Button>Go To Shop</Button></a>
-                    </span> 
+
+        {/* GO TO SHOP BUTTON */}
+        <span className="GoToShopButton">   
+         <a href="/shop/"><Button color="info" size="lg">Go To Shop</Button></a>
+        </span> 
     
     <Footer /> 
  </div>
