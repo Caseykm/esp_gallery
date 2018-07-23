@@ -34,7 +34,7 @@ class Login extends Component {
   render() {
     return (
       <div className="login">
-        <div className="container loginwrapper">
+        <div className="container">
           <div className="row">
             <div className="col-md-8 m-auto">
               <h1 className="display-4 text-center">Log In</h1>
@@ -65,7 +65,7 @@ class Login extends Component {
                   <div>
                     <p className="lead text-center nopassword">Dont have a password ?</p>
                       <span className="LinkToregistrationForm">
-                        <Button href="/Register" >Sign Up Now</Button>
+                        <Button href="/Register"   target="_blank">Sign Up Now</Button>
                       </span>
                   </div>      
               </form>

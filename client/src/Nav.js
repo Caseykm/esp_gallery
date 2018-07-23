@@ -68,7 +68,7 @@ export default class Example extends React.Component {
                 <Navbar className="NavBar" color="" light expand="md"> 
                     
                     {/* LOGO */}
-                    <img src="/images/logo.png" height="60" witdth="53" alt="ESP Gallery logo" />
+                    <a><img src="/images/logo.png"  href="/" height="60" witdth="53" alt="ESP Gallery logo" /></a>
                     {/* END LOGO */}
                        
                     {/* NAV STARTS */}

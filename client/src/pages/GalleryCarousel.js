@@ -21,7 +21,8 @@ class GalleryCarousel extends React.Component {
                 </div>
                 <div>
                     <img src="/images/MarkElliot.jpg" />
-                    <p className="legend">Legend 2</p>
+                    <p className="legend">Little Sparrows</p>
+                    {/* <p className="legend">{artworkName}</p> */}
                 </div>
                
                 <div>
