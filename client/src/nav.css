@@ -4,7 +4,7 @@
     width: 200px;
 }
    
-.searchgroup {
+.topnavgroup {
     display: flex;
     justify-content: flex-end;
 }
@@ -14,14 +14,16 @@
     margin-top: 0.5%;
 }
 
+
+
 .logIn a {
     margin-right: 50%;
-    color: #4444;
+    color: #0007;
   }
 
   .logIn a:hover {
-    margin-right: 1%;
-    color: purple;
+    margin-right: 50%;
+    color: blue;
   }
   
 

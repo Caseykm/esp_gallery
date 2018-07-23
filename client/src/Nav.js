@@ -4,16 +4,16 @@ import './nav.css'; // Importing nav.css
 import MaterialIcon, {colorPallet} from 'material-icons-react'; // IMPORTS ICONS
 import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 import {
-    Collapse,
-    Navbar,
-    NavbarToggler,
-    NavbarBrand,
-    Nav,
-    NavItem,
-    NavLink,
-    UncontrolledDropdown,
-    DropdownToggle,
-    DropdownMenu,
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
     DropdownItem } from 'reactstrap'; // IMPORTS NAV
 
 export default class Example extends React.Component {
@@ -32,47 +32,46 @@ export default class Example extends React.Component {
   }
   render() {
     return (
+
         <div>
             <div className="Header">  
+            
                    {/* TOP NAV */}
                 <div className="TopNav"> 
     
                     {/* SEARCH BOX */}
-                    <FormGroup className="searchgroup">
-                        <span className="searchbox">
+                    <FormGroup className="topnavgroup">
+                        <span className="searchbox">    
                             <Input type="search" name="search" id="search"  placeholder="Search" />
                         </span>
-                        
-                       
-                        
+                                              
                          {/* SEARCH ICON */}
                         <span className="magnifying">
-                            <MaterialIcon icon="search" className="" size='medium' />
-                        </span>
+                            <MaterialIcon icon="search"  color='#0007' className="" size='medium' />
+                        </span>                    
 
-                        {/* Login */}
-
-                        
-                        <h5 className="logIn"><a href="/logIn/">Login</a></h5> 
-
+                        {/* LOGIN */}
+                        <h5 className="logIn"><a href="/LogIn/">Login</a></h5> 
+                      
                         {/* CART ICON */}
                         <span className="">
-                           <a  href="/cart/"> <MaterialIcon icon="shopping_cart" className="carticon" size='medium' /></a>
+                           <a  href="/cart/"> <MaterialIcon icon="shopping_cart"  color='#0007' className="carticon" size='medium' /></a>
                         </span>       
                     </FormGroup>
                 </div>
 
-             
 
-                     {/* NAVBAR STARTS */}
-                    <Navbar className="NavBar" color="" light expand="md">    
-                        {/* LOGO */}
-                         <img src="/images/logo.png" height="60" witdth="53" alt="ESP Gallery logo" />
-                       {/* END LOGO */}
+
+                {/* NAVBAR STARTS */}
+                <Navbar className="NavBar" color="" light expand="md"> 
+                    
+                    {/* LOGO */}
+                    <img src="/images/logo.png" height="60" witdth="53" alt="ESP Gallery logo" />
+                    {/* END LOGO */}
                        
-                     {/* NAV STARTS */}
+                    {/* NAV STARTS */}
                     <NavbarToggler onClick={this.toggle} />
-                        <Collapse isOpen={this.state.isOpen} navbar>
+                      <Collapse isOpen={this.state.isOpen} navbar>
                     
                         <Nav className="ml-auto" navbar>
                             <NavItem>
@@ -90,6 +89,7 @@ export default class Example extends React.Component {
                             <NavItem>
                                 <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
                             </NavItem>
+                            
                                 {/* NAV DROPDOWN */}
                                 <UncontrolledDropdown nav inNavbar>
                                     <DropdownToggle nav caret>
@@ -112,12 +112,12 @@ export default class Example extends React.Component {
                             
                             <NavItem>
                             <NavLink href="/contactus/">Contact Us</NavLink>
-                        </NavItem>
-                    </Nav>
-                </Collapse>
-            </Navbar>
-          </div>
+                            </NavItem>
+                        </Nav>
+                     </Collapse>
+                </Navbar>
         </div>
+      </div>
     );
   }
 }

@@ -1,13 +1,16 @@
 {
   "name": "esp_gallery",
   "version": "0.1.0",
+  "license": "MIT",
   "private": false,
   "proxy": "http://localhost:9001/",
   "dependencies": {
     "ajv": "^6.5.2",
     "axios": "^0.18.0",
     "bootstrap": "^4.1.1",
+    "classnames": "^2.2.6",
     "cloudinary-react": "^1.0.6",
+    "concurrently": "^3.6.0",
     "jquery": "^1.9.1",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
