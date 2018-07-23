@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import '../index.css'; // Importing from index.css to apply the css styling
+// import '../index.css'; // Importing from index.css to apply the css styling
 
 class Login extends Component {
   constructor() {
