@@ -1,41 +1,44 @@
 /* TOP NAV */
+
 .topnavgroup {
     display: flex;
     justify-content: flex-end;
 }
 
 .TopNav {
-    margin-right:2%;
+    margin-right: 2%;
     margin-top: 0.5%;
 }
+
 #search {
     background-color: #f9f8f8;
     width: 200px;
 }
-   
+
 .logIn a {
     margin-right: 50%;
     color: #0007;
 }
 
 .logIn a:hover {
-    color:#444444;
+    color: #444444;
     text-decoration: none;
-  
-  } 
+}
+
 /* this is here to fix the left shift that occures to Login onclick */
-  /* .logIn  a:active {
+
+/* .logIn  a:active {
     color: yellow;
 }
    */
-  
+
 .magnifying {
     margin-right: 1%;
     margin-left: 1%;
 }
+
 /* END TOP NAV */
 
-
 /* MAIN NAV */
-/* END MAIN NAV */
 
+/* END MAIN NAV */

@@ -6,26 +6,27 @@ body {
 }
 
 /* FOOTER */
+
 .footerwrapper {
   background-color: #444444;
   color: #F9F8F8;
- 
 }
 
 .textinfooter {
   color: #F9F8F8;
   text-align: center;
   padding-top: 2%;
- padding-bottom: 2%;
+  padding-bottom: 2%;
 }
 
 .footertextlink a {
   color: #F9F8F8
 }
+
 /* END FOOTER */
 
-
 /* PAGES */
+
 .PageHeader {
   text-align: center;
   color: #444444;
@@ -40,15 +41,15 @@ body {
   padding-bottom: 5%;
 }
 
-
 /* END HOME PAGE */
 
 /* CONTACT US */
+
 .ContactForm {
   margin-right: 15%;
   margin-left: 15%;
   padding-bottom: 5%;
-} 
+}
 
 .FormBackground {
   background-color: #E5E5E5;
@@ -58,27 +59,27 @@ body {
   display: flex;
   justify-content: center;
   padding-top: 5%;
- 
 }
 
-#exampleEmail { /* contact us email box */
+#exampleEmail {
+  /* contact us email box */
   background-color: #F9F8F8;
 }
 
-#exampleName { /* contact us name box */
+#exampleName {
+  /* contact us name box */
   background-color: #F9F8F8;
 }
 
-#exampleMessage { /* contact us message box */
+#exampleMessage {
+  /* contact us message box */
   background-color: #F9F8F8;
 }
+
 /* END CONTACT US */
 
-
-
-
-
 /* SLIDER */
+
 .GalleryCarousel {
   max-height: 20%;
 }
@@ -87,48 +88,15 @@ body {
   background-color: aqua;
   max-height: 4%;
 }
+
 /* END SLIDER */
 
 /* FORMS */
+
 /* LOGIN FORM */
+
 .login {
-  background-color:  #E5E5E5;
+  background-color: #E5E5E5;
   padding-top: 2%;
-  padding-bottom: 5%;  
-}
-
-/* cloudinary */
-
-body, html {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #F5F5F5;
-}
-.card {
-  background: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
-}
-
-.file-upload-container {
-    width: 100%;
-    height: 50px;
-    overflow: hidden;
-    background: #3F51B5;
-    user-select: none;
-    transition: all 150ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
-    text-align: center;
-    color: white;
-    line-height: 50px;
-    font-weight: 300;
-    font-size: 20px;
-}
-
-.file-upload-container:hover {
-    cursor: pointer;
-    background: #3949AB;
+  padding-bottom: 5%;
 }
