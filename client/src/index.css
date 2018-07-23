@@ -22,31 +22,22 @@ body {
 .footertextlink a {
   color: #F9F8F8
 }
+/* END FOOTER */
 
-
-
-
-.logIn a {
-  margin-right: 50%;
-  color: #0007;
-}
-
-.logIn a:hover {
-  margin-right: 50%;
-  color: blue;
-}
 
 /* PAGES */
-
 .PageHeader {
   text-align: center;
 }
 
-/* CONTACT US */
+/* HOME PAGE */
+/* END HOME PAGE */
 
+/* CONTACT US */
 .ContactForm {
   margin-right: 15%;
   margin-left: 15%;
+  padding-bottom: 5%;
 } 
 
 .FormBackground {
@@ -55,7 +46,8 @@ body {
 
 .ContactUsSubmitButton {
   display: flex;
-  align-content: center;
+  justify-content: center;
+ 
 }
 
 #exampleEmail { /* contact us email box */
@@ -72,10 +64,10 @@ body {
 /* END CONTACT US */
 
 
-/* HOME PAGE */
+
+
 
 /* SLIDER */
-
 .GalleryCarousel {
   max-height: 20%;
 }
@@ -84,7 +76,15 @@ body {
   background-color: aqua;
   max-height: 4%;
 }
+/* END SLIDER */
 
+/* FORMS */
+/* LOGIN FORM */
+.loginwrapper {
+  background-color:  #E5E5E5;
+  
+  }
+  /* END LOGIN FORM */
 
 
 /* cloudinary */

@@ -51,11 +51,11 @@ export default class Example extends React.Component {
                         </span>                    
 
                         {/* LOGIN */}
-                        <h5 className="logIn"><a href="/LogIn/">Login</a></h5> 
+                        <h5 className="logIn"><a href="/LogIn/" target="_blank">Login</a></h5> 
                       
                         {/* CART ICON */}
                         <span className="">
-                           <a  href="/cart/"> <MaterialIcon icon="shopping_cart"  color='#0007' className="carticon" size='medium' /></a>
+                           <a  href="/cart/" > <MaterialIcon icon="shopping_cart"  color='#0007' className="carticon" size='medium' /></a>
                         </span>       
                     </FormGroup>
                 </div>

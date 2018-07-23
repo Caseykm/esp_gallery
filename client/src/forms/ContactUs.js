@@ -27,9 +27,9 @@ export default class ContactForm extends React.Component {
                     <Input type="textarea" name="message" id="exampleMessage" placeholder="Your message"/>
                     </FormGroup>
 
-                    {/* <span className="ContactUsSubmitButton">   */}
-                     <Button className="ContactUsSubmitButton">Submit</Button>
-                    {/* </span>  */}
+                     <span className="ContactUsSubmitButton">   
+                     <Button>Submit</Button>
+                     </span>  
                   </Form>
             </div>
         </div>

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 // import '../index.css'; // Importing from index.css to apply the css styling
+import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 
 
 class Login extends Component {
@@ -33,7 +34,7 @@ class Login extends Component {
   render() {
     return (
       <div className="login">
-        <div className="container">
+        <div className="container loginwrapper">
           <div className="row">
             <div className="col-md-8 m-auto">
               <h1 className="display-4 text-center">Log In</h1>
@@ -60,6 +61,11 @@ class Login extends Component {
                   />
                 </div>
                 <input type="submit" className="btn btn-info btn-block mt-4" />
+
+                <div>
+                  <p>Dont have a password</p>
+                  <Button  href="./components/auth/Register" className="LinkToregistrationForm">Sign Up Now</Button>
+                </div>
               </form>
             </div>
           </div>
