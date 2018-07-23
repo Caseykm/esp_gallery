@@ -2,7 +2,6 @@ import React, { Component } from "react";
 // import '../index.css'; // Importing from index.css to apply the css styling
 import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 
-
 class Login extends Component {
   constructor() {
     super();
