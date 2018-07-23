@@ -51,14 +51,16 @@ export default class Example extends React.Component {
                         </span>                    
 
                         {/* LOGIN */}
-                        <h5 className="logIn"><a href="/LogIn/">Login</a></h5> 
+                        <h5 className="logIn"><a href="/LogIn/" target="_blank">Login</a></h5> 
                       
                         {/* CART ICON */}
                         <span className="">
-                           <a  href="/cart/"> <MaterialIcon icon="shopping_cart"  color='#0007' className="carticon" size='medium' /></a>
+                           <a  href="/cart/" > <MaterialIcon icon="shopping_cart"  color='#0007' className="carticon" size='medium' /></a>
                         </span>       
                     </FormGroup>
                 </div>
+
+                <hr />
 
 
 
@@ -66,7 +68,7 @@ export default class Example extends React.Component {
                 <Navbar className="NavBar" color="" light expand="md"> 
                     
                     {/* LOGO */}
-                    <img src="/images/logo.png" height="60" witdth="53" alt="ESP Gallery logo" />
+                    <a  href="/" ><img src="/images/logo.png"  height="60" witdth="53" alt="ESP Gallery logo" /></a>
                     {/* END LOGO */}
                        
                     {/* NAV STARTS */}
@@ -75,7 +77,7 @@ export default class Example extends React.Component {
                     
                         <Nav className="ml-auto" navbar>
                             <NavItem>
-                                <NavLink href="/">Virtual Gallery</NavLink>
+                                <NavLink href="/hire/">Gallery Hire</NavLink>
                             </NavItem>
                             
                             <NavItem>
@@ -89,9 +91,13 @@ export default class Example extends React.Component {
                             <NavItem>
                                 <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
                             </NavItem>
+
+                            <NavItem>
+                                <NavLink href="/about/">About Us</NavLink>
+                            </NavItem>
                             
                                 {/* NAV DROPDOWN */}
-                                <UncontrolledDropdown nav inNavbar>
+                                {/* <UncontrolledDropdown nav inNavbar>
                                     <DropdownToggle nav caret>
                                         <NavLink href="/about/">About Us</NavLink>
                                     </DropdownToggle>
@@ -107,7 +113,7 @@ export default class Example extends React.Component {
                                                 Reset
                                             </DropdownItem>
                                         </DropdownMenu>
-                                </UncontrolledDropdown>
+                                </UncontrolledDropdown> */}
                                 {/* END NAV DROPDOWN */}
                             
                             <NavItem>
