@@ -53,26 +53,24 @@
   </body>
 </html>
 
-<!---cloudinary -->
-<br>
-<br>
-<div id="dropbox">
-  <h1>Upload files with to Cloudinary with HTML5 file upload</h1> Learn more in this blog post - <a href="https://cloudinary.com/blog/direct_upload_made_easy_from_browser_or_mobile_app_to_the_cloud">Direct upload made easy, from browser or mobile app to the cloud</a>
-
-  <form class="my-form">
-    <div class="form_line">
-      <h4>Upload multiple files with the file dialog or by dragging and dropping images onto the dashed region</h4>
-      <div class="form_controls">
-        <div class="upload_button_holder">
-          <input type="file" id="fileElem" multiple accept="image/*" style="display:none" onchange="handleFiles(this.files)">
-          <a href="#" id="fileSelect">Select some files</a>
-        </div>
-      </div>
+-------
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Image Upload</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="/public/styles/style.css">
+  </head>
+  <body>
+    <div class="card">
+      <img src="https://sydneyartgalleriesandartcommunity.files.wordpress.com/2011/08/espgallery.jpg" id="img-preview" />
+      <label class="file-upload-container" for="file-upload">
+        <input id="file-upload" type="file" style="display:none;">
+        Art Upload
+      </label>
     </div>
-  </form>
-  <div class="progress-bar" id="progress-bar">
-    <div class="progress" id="progress"></div>
-  </div>
-  <div id="gallery" />
-</div>
-</div>
+    <!-- Scripts -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/public/scripts/app.js"></script>
+  </body>
+</html>

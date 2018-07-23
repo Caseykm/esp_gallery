@@ -10,25 +10,36 @@ import About from "./pages/About"; // Imports About.js into App.js
 import ContactUs from "./forms/ContactUs"; // Imports ContactUs.js into App.js
 import Register from "./components/auth/Register";
 import Login from "./components/auth/Login";
-import Footer from "./pages/Footer"; // Imports Footer.js into App.js
-import TermsOfService from "./pages/TermsOfService";
+import axios from 'axios'
 
+const CLOUDINARY_URL = 'https://api.cloudinary.com/v1_1/dxmelc0e6/upload';
+const CLOUDINARY_UPLOAD_PRESET = 'espgallery';
 
-//Ckm
+// cloudinary>
+window.onload=function(){
+  let imgPreview = document.getElementById('img-preview');
+  let fileUpload = document.getElementById('file-upload');
 
-// import ReactDOM from 'react-dom';
-import cloudinary from "cloudinary-core";
-import {
-  CloudinaryContext,
-  Image,
-  Transformation,
-  Video
-} from "cloudinary-react";
+fileUpload.addEventListener('change', function(event) {
+  let file = event.target.files[0];
+let formData = new FormData();
+formData.append('file', file);
+formData.append('upload_preset', CLOUDINARY_UPLOAD_PRESET);
 
-const cloudinaryCore = new cloudinary.Cloudinary({ cloud_name: "dxmelc0e6" });
-
-//ckm
-
+  axios({
+    url: CLOUDINARY_URL,
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },
+    data: formData
+  }).then(function(res) {
+    console.log(res);
+  }).catch(function(err) {
+    console.error(err);
+  })
+})};
+// cloudinary
 class App extends Component {
   state = {
     response: ""
@@ -51,28 +62,9 @@ class App extends Component {
 
   // NAV ROUTES - Calling from nav.js
   render() {
-    const publicIds = ["spices", "kitten-playing", "reindeer"];
-    const transformation = new cloudinary.Transformation();
-    transformation
-      .width(500)
-      .crop("scale")
-      .effect("cartoonify");
+
 
     return (
-      // const SampleImg = () => (
-      //     <img src={cloudinaryCore.url('spices')} />
-      // );
-
-      // //
-      // {/* <input name="file" type="file"
-      //    class="file-upload" data-cloudinary-field="image_id"
-      //    data-form-data="{ 'transformation': {'crop':'limit','tags':'samples','width':3000,'height':2000}}"/> */}
-      // return
-      //    <CloudinaryContext cloudName="dxmelc0e6">
-      //    <Image publicId="spices" format="jpg">
-      //        <Transformation crop="fill" gravity="faces" width="300" height="200"/>
-      //    </Image>
-      // </CloudinaryContext>
 
       <Router>
         <div>
@@ -92,8 +84,8 @@ class App extends Component {
           <Route exact path="/login" component={Login} />
           {/* <Route exact path="/cart" component={Cart} /> */}
           {/* <Route exact path="/product" component={ProductPage} />  */}
-          <Route exact path="/footer" component={Footer} /> 
-          <Route exact path="/Termsofservice" component={TermsOfService} /> 
+          {/* <Route exact path="/footer" component={Footer} /> 
+          <Route exact path="/Termsofservice" component={TermsOfService} />  */}
 
           {/* cloudinary */}
           {/* <Route path='/image/upload' render={
@@ -112,3 +104,4 @@ class App extends Component {
 
 
 export default App;
+
