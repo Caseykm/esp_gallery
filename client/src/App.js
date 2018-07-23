@@ -12,10 +12,10 @@ import Register from "./components/auth/Register";
 import Login from "./components/auth/Login";
 import axios from 'axios'
 
+// cloudinary> 
 const CLOUDINARY_URL = 'https://api.cloudinary.com/v1_1/dxmelc0e6/upload';
 const CLOUDINARY_UPLOAD_PRESET = 'espgallery';
 
-// cloudinary>
 window.onload=function(){
   let imgPreview = document.getElementById('img-preview');
   let fileUpload = document.getElementById('file-upload');
@@ -35,11 +35,13 @@ formData.append('upload_preset', CLOUDINARY_UPLOAD_PRESET);
     data: formData
   }).then(function(res) {
     console.log(res);
+    imgPreview.src = res.data.secure_url;
   }).catch(function(err) {
     console.error(err);
   })
 })};
 // cloudinary
+
 class App extends Component {
   state = {
     response: ""
@@ -87,21 +89,11 @@ class App extends Component {
           {/* <Route exact path="/footer" component={Footer} /> 
           <Route exact path="/Termsofservice" component={TermsOfService} />  */}
 
-          {/* cloudinary */}
-          {/* <Route path='/image/upload' render={
-+             () => (
-+               <ImageUpload/>
-+             )}/> */}
         </div>
       </Router>
-
-     
-      
     );
   }
 }
-
-
 
 export default App;
 
