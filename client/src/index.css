@@ -47,6 +47,7 @@ body {
 .ContactUsSubmitButton {
   display: flex;
   justify-content: center;
+  padding-top: 5%;
  
 }
 
@@ -80,11 +81,24 @@ body {
 
 /* FORMS */
 /* LOGIN FORM */
-.loginwrapper {
+.login {
   background-color:  #E5E5E5;
+  padding-top: 5%;
+  padding-bottom: 5%;
   
-  }
-  /* END LOGIN FORM */
+}
+
+.nopassword {
+  margin-top: 5%;
+  font-style: italic;
+}
+
+.LinkToregistrationForm {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5%;
+}
+/* END LOGIN FORM */
 
 
 /* cloudinary */
