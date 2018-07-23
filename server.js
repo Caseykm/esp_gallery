@@ -22,8 +22,8 @@ mongoose
   .catch(err => console.log(err));
 
 // API calls
-app.get("/", (req, res) => {
-  res.send({ express: "You shouldn't be seeing this" });
+app.get('/', function(req, res){
+  res.render('App.js', { root: __dirname + "/client/src" } );
 });
 
 // Passport middleware
@@ -34,6 +34,8 @@ require("./config/passport")(passport);
 
 // Use Routes
 app.use("/api/routes/users", users);
+
+
 
 if (process.env.NODE_ENV === "production") {
   // Serve any static files

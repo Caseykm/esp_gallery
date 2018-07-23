@@ -21,7 +21,7 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../src/actions/authActions";
 
-class Navmain extends Component {
+class NavMain extends Component {
   constructor(props) {
     super(props);
 
@@ -35,14 +35,52 @@ class Navmain extends Component {
       isOpen: !this.state.isOpen
     });
   }
+
+  onLogoutClick(e) {
+    e.preventDefault();
+    this.props.logoutUser();
+  }
+
   render() {
+    const { isAuthenticated } = this.props.auth;
+
+    const authLinks = (
+      <ul className="navbar-nav m1-auto">
+        <li className="nav-item">
+          <a
+            href=""
+            onClick={this.onLogoutClick.bind(this)}
+            className="nav-link"
+          >
+            {" "}
+            Logout
+          </a>
+        </li>
+      </ul>
+    );
+
+    const guestLinks = (
+      <ul className="navbar-nav ml-auto">
+        {/* <a className="nav-item">
+          <Link className="nav-link" to="/register">
+            Sign Up
+          </Link>
+        </a> */}
+        <a className="nav-item">
+          <Link className="nav-link" to="/login">
+            Login
+          </Link>
+        </a>
+      </ul>
+    );
+
     return (
       <div>
         <div className="Header">
           {/* TOP NAV */}
           <div className="TopNav">
             {/* SEARCH BOX */}
-            <FormGroup className="searchgroup">
+            <FormGroup className="topnavgroup">
               <span className="searchbox">
                 <Input
                   type="search"
@@ -62,15 +100,18 @@ class Navmain extends Component {
                 />
               </span>
 
+              {/* Authentication links ternary function */}
+              {isAuthenticated ? authLinks : guestLinks}
+
               {/* Register */}
-              <h5 className="register">
-                <Link to="/register">Sign Up</Link>
-              </h5>
+              {/* <h5 className="register"> */}
+              {/* <Link to="/register">Sign Up</Link> */}
+              {/* </h5> */}
 
               {/* LOGIN */}
-              <h5 className="login">
-                <Link to="/login">Login</Link>
-              </h5>
+              {/* <h5 className="logIn"> */}
+              {/* <a href="/LogIn/">Login</a> */}
+              {/* </h5> */}
 
               {/* CART ICON */}
               <span className="">
@@ -93,7 +134,7 @@ class Navmain extends Component {
             <img
               src="/images/logo.png"
               height="60"
-              witdth="53"
+              width="53"
               alt="ESP Gallery logo"
             />
             {/* END LOGO */}
@@ -119,6 +160,7 @@ class Navmain extends Component {
                     GitHub
                   </NavLink>
                 </NavItem>
+
                 {/* NAV DROPDOWN */}
                 <UncontrolledDropdown nav inNavbar>
                   <DropdownToggle nav caret>
@@ -145,4 +187,16 @@ class Navmain extends Component {
   }
 }
 
-export default Navmain;
+NavMain.PropTypes = {
+  logoutUser: PropTypes.func.isRequired,
+  auth: PropTypes.object.isRequired
+};
+
+const mapStateToProps = state => ({
+  auth: state.auth
+});
+
+export default connect(
+  mapStateToProps,
+  { logoutUser }
+)(NavMain);
