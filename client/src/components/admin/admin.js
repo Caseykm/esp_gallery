@@ -24,6 +24,7 @@ window.onload = function() {
     })
       .then(function(res) {
         console.log(res);
+        imgPreview.src = res.data.secure_url;
       })
       .catch(function(err) {
         console.error(err);
