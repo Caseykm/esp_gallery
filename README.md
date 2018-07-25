@@ -69,8 +69,11 @@ Review the conceptual design with the client and edit based on their feedback:
 ## Updated workflow diagram of user journeys
 Due to rescoping, the workflow diagram has changed and is now as follows:
 
----
+![Flowchart](https://github.com/casscass/esp_gallery/blob/develop/README-images/EspFlowchart DiagramUpdate2.jpg)
 
+
+---
+*[Project plan](#ProjectPlan)
 ## Project plan and effort estimation for the design
 	As with the rest of the project, the project plan and effort estimation was managed through Trello and the TeamGantt plugin as outlined below in the project management section below. 
 ---
@@ -138,8 +141,8 @@ The following project charter was signed-off by the client by email (originally 
 ---
 ## Client satisfaction and sign-off
 
-To ensure the client was satisfied with the quality of our work and service provided, we created a final project sign-off/ questionnaire document.
-The information/text contained within this document can be viewed on our client interactions record:
+To ensure the client was satisfied with the quality of our work and service provided, we created a final project sign-off/ questionnaire document. The client tested all the functionality on both computer and mobile, and signed off on the finished product(verbally).  The final interaction as well as the rest of the client communication can be found here(same link as above).
+
 Client interactions: ![Client](https://c4coderacademy.atlassian.net/wiki/spaces/ES/pages/622605/Client+Interactions)
 
 ---
@@ -147,7 +150,9 @@ Client interactions: ![Client](https://c4coderacademy.atlassian.net/wiki/spaces/
 ## Allocate roles and responsibilities to team members, based on project solution requirements
 ## Monitor each other’s assigned work
 
-Tasks initially were broadly distributed with two people on the front-end and two on the backend and one person on documentation. Trello was then implemented to keep all tasks organised and the project progressing according to the schedule on TeamGantt. 
+
+Task areas initially, were broadly distributed based on relative strengths of individual team members to maximize productivity.  One and a half people were placed on the front-end, two and a half on the backend and one person on documentation. 
+Trello was then implemented to keep all tasks organised and the project progressing according to the schedule on TeamGantt. 
 Agile/Kanban was implemented by team members who created a Trello board and self-assigned tasks, putting them in the "doing" section and putting their name to it, and then putting it in "completed" when they were done. Only MVP tasks were allowed to be assigned until all were finished. Only then could optional features be tackled.  This helped prioritize essential project solution requirements over 'sprinkles'. This methodology also allowed us to easily monitor each other’s assigned work.
 
 The Trello board can be viewed [here](https://trello.com/b/NZm11i1D/c4-assignment) or here:
@@ -161,53 +166,97 @@ As mentioned above TeamGantt is a Trello powerup and is pictured below:
 TeamGantt was also used to "estimate effort" by scheduling the amount of days it might take to complete a task.
 
 ---
-
-7Reassess ongoing project scope changes, risks and issues.
-
-Before the initial client face to face meeting, it was identified that the delivery of the selling art feature might be beyond the scope of the 
-
----
-
-8Manage system testing and hand over activities. Prepare maintenance or support plans for client
-
----
-
-9As a team, conduct post project review
-
-
----
-
 [3. CONSTRAINTS AND RISKS](#constraints)
 
----
+Reassess ongoing project scope changes, risks and issues. 
 
+Before the initial client face to face meeting, it was identified that there was a risk that the delivery of the selling art feature might be beyond the scope of the project. As it turned out, this was a correct assessment and a rescope of just the virtual gallery was implemented. Download of images to our cloud storage site was implemented, however there were some issues in deliverying the upload of art from Cloudinary to our website.  Also the positioning of this functionality is a bit of an issue.  Another issue is that there are unsigned upload of images currently. This is not an issue for the current architecture and functionality, however signed uploads will be necessary if the shop is implemented. 
+
+---
+As a team, conduct post project review.
+
+---
 
 [4. TECHNOLOGY STACK](#stack)
-Mongo/mongoose, Express, React, Node, etc.
+### Technology Stack
+
+We have utilised a number of different technologies to create our application:
+
+Mongo/mongoose, Express, React, Node, Redux, Axios, Cloudinary, React-strap, FlexBox, CSS.
 
 ---
-
 
 [8. TESTING](#tests)
+### Testing
+Some testing information is addressed in q. 19 of part A documentation.  
 
+Evidence of extensive User Testing
+
+Our clients main priority was the virtual gallery so our focus was on providing a gallery with the ability to upload and delete images. As this would allow the client to start using the website while we worked on implementing the other features.
+
+Testing of the Main Nav links
+All the Main Nav links work. On click each page will loads in the browser. When the cursor is on the Nav item the name goes darker on hover. Initially we wanted to have a line under each Nav Item to indicated which page the user was on. However this was not mvp. We plan to implement this feature in the near future.
+
+Testing of the Top Nav links
+Login - On click the Login form loads in the same browser window. There was a discussion about whether it should load in a new browser, however we followed best practice and have the login form open in the same browser.
+The search and cart functions were not implemented due to time constraints. We plan to include these features in the near future.
+
+Testing the navigation flow and links on each page, to external sites (social media) and to forms.
+
+
+Landing Page
+    Virtual Gallery
+In the Virtual Gallery the text under each slide is linked to go to the product page. However as the cards are hard coded instead of being instancised they all link to the same product page. But the link does work lol
+
+Button ( Go To Gallery Shop)
+On hover the button color reverses to let the User know they are hovering over the button.
+On click the Gallery Shop opens in the same browser.
+
+Button ( Sell Art)
+On hover the button background color reverses to let the User know they are hovering over the button.
+On click the  button has the Sell Art href set to open in the same browser.
+
+Footer
+    Social Media Icons
+    On hover the two social media Icon grow  let the User know they are hovering over them.
+On click the FB icon opens the ESP GAllery Facebook Page in a new browser window.
+On click the Instagram icon opens the ESP GAllery Instagram in a new browser window.
+
+
+Terms of Service and Privacy Policy are hreft-ed in preparation of receiving the text from client.
+
+Gallery Shop Page
+The Gallery Shop page is populated by Cards.In each Card the Buy Now button links to the Product Page.
+Sell Art Page
+In this page the Apply Now button does not go anywhere because the application form is part of the dashboard the user sees when they  Sign In. The Sign In feature is not working.
+
+About Us Page
+The Button “Go To Gallery Page” links to the Gallery Shop Page
+
+Features not working:
+Sign In
+The Contact Us feature does not email
 ---
 
-# Tools & Methodologies
-Demonstrate your project management skills,
+## Code review.
 
-	1	Trello or similar project management tool to be used for Kanban process to track progress of build
+	For code review. James Apple helped review Cloudinary integration code within the Dashboard component: esp_gallery/client/src/pages/Dashboard.js. Due to this review process, an error was fixed.
 
-	2	GitHub Demonstrate use of frequent commits, feature branches (based on user stories), pull requests and merges
+	Also, Casey reviewed Hadi's group's application.  
 
-	3	Use Agile development methodologies
+Brief rundown of code review: 
+1) Beautiful code
+2) Consistent code, seems to follow best practices e.g. dry
+3) Well organised
+4) Why not Reactstrap?
+5) Lacks some styling consistency
+6) Nice search functionality
+7) Overall, good job. Impressed.
 
-	4	Code review. Demonstrate that you have had your code reviewed by other students and that you have provided a code review for others
-
-	5	Show evidence of client communication, e.g. meeting minutes, emails, or other communication tools
-
-
-	•	Presentation documents (including any external resources)
-
+---
+---
+---
+---
 
 	# ESP Gallery Website Assignment - Part A Questionnaire
 ## 1. Who is your client?
