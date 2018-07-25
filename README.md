@@ -190,6 +190,7 @@ Mongo/mongoose, Express, React, Node, Redux, Axios, Cloudinary, React-strap, Fle
 ### Testing
 Some testing information is addressed in q. 19 of part A documentation.  
 
+
 Evidence of extensive User Testing
 
 Our clients main priority was the virtual gallery so our focus was on providing a gallery with the ability to upload and delete images. As this would allow the client to start using the website while we worked on implementing the other features.
@@ -198,8 +199,13 @@ Testing of the Main Nav links
 All the Main Nav links work. On click each page will loads in the browser. When the cursor is on the Nav item the name goes darker on hover. Initially we wanted to have a line under each Nav Item to indicated which page the user was on. However this was not mvp. We plan to implement this feature in the near future.
 
 Testing of the Top Nav links
+Log In Form
 Login - On click the Login form loads in the same browser window. There was a discussion about whether it should load in a new browser, however we followed best practice and have the login form open in the same browser.
-The search and cart functions were not implemented due to time constraints. We plan to include these features in the near future.
+If the User does not already have a login password there is a ‘Sign Up’ Button at the bottom of the LogIn form. On click this loads the Sign Up form.
+
+Sign Up Form
+In the box where the user enters the  first name and last name. If name is only one character a prompt comes up  “name must be more than one character”
+Similar functionality is present for the other input boxes such as email and password.
 
 Testing the navigation flow and links on each page, to external sites (social media) and to forms.
 
@@ -234,7 +240,7 @@ About Us Page
 The Button “Go To Gallery Page” links to the Gallery Shop Page
 
 Features not working:
-Sign In
+The search and cart functions were not implemented due to time constraints. We plan to include these features in the near future. 
 The Contact Us feature does not email
 ---
 
