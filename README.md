@@ -1,6 +1,8 @@
+
 [1. BUSINESS PROBLEM](#businessproblem)
-## Business Problem and Solution
-	1	A 350 word summary of your application including problem definition and solution
+
+# Business Problem and Solution
+350 word application summary with problem definition and solution
 
 Our client, ESP Gallery, needs a user friendly, aesthetically inviting online art platform allowing users to display, sell or buy artwork. Our client wants to receive a commission on all art sales processed by the site. A hireable main gallery section (i.e. the homepage), is needed for artists who want more exposure for their art. It is important that the site promotes the same sense of community, for which ESP Gallery is known. The site admin must be able to alter key aspects of the site.
 
@@ -22,123 +24,188 @@ The app will fulfill the client needs, as described in question 2 by:
 	* Displaying a disclaimer agreement for artists to show that they understand shipping responsibilities.
 
 	* Providing no automatic audio play, so people can use the site without drawing the attention of others.
+---
 
 * [Links](#links)
 ## Project links
 
 Please see list below for links to all project information. 
 
-Github repo: https://github.com/C4CoderAcademy/esp_gallery
-Deployed App: 
-Trello: https://trello.com/b/NZm11i1D/c4-assignment
+Github repo: ![GIT](https://github.com/C4CoderAcademy/esp_gallery)
+
+Deployed App: ![ESP Galleries](https://espgalleries.herokuapp.com/)
+
+Trello: ![Trello](https://trello.com/b/NZm11i1D/c4-assignment)
+
+---
+---
 
 
 * [Client Communication](#client)
-## CLIENT COMMUNICATION
+# CLIENT COMMUNICATION
 
-1 Record interactions with your client in a diary format
+## Record interactions with your client in a diary format
 
 A diary record of client communication was kept at the following site:
 https://c4coderacademy.atlassian.net/wiki/spaces/ES/pages/622605/Client+Interactions
 
-Also, the following project charter was approved by the client by email, originally in pdf format:
+---
 
-#### Project Charter
-ESP Gallery is the public face of Edith Artists.  It’s gallery opened in Marrickville in September 2009, and has shown the work of over 300 local, national and international artists and held 75 exhibitions and events. ESP Gallery wants to leverage it’s brand recognition and reputation through the provision of an online art platform.
-#### Business Case
-This project would provide an online presence for the ESP Gallery brand and has the potential to provide a revenue stream for the client. It also will allow artists to show their work and for the art community to promote the vibrancy of the Sydney art scene.  
-The team of Charles McGovern, Chris Barfod, Cassandra Daw, and Casey Manning plan to work towards providing the following to the client, Lou Steer.  
+## Obtain final project sign-off
+---
 
-*a beautiful site for artists and art lovers, which promotes a sense of community.
-*providing registration/login so that art buyers, sellers and site admin can use the site. 
-*allowing the buying and selling of art, by providing pages that allow art listings to be displayed and purchased. 
-*allowing artists to have their art displayed in the Gallery by providing Gallery admin with the ability to upload artwork to the gallery.
-*providing a beautiful, well designed site that promotes community through the thoughtful use of html, css, bootstrap, images,and appropriate text and fonts.
-*Setting up a special Admin Account that can:
-a) create, edit and delete user generated content
-b) create, edit and delete key website content
+## Create client satisfaction questionnaire
 
-#### Timeframe:
-The project is to be delivered to ESP Gallery around the 23rd of July.  
-
-#### Risks
-There are a number of risks involved with the delivery of the project:
-1) Content risk - there are many features to be implemented in a short span of time
-2) Version control issues
-3) Software issues
-4) Database issues
-
-#### Project Scope
-The minimum scope for the project is the provision of a beautiful gallery that allows art to be uploaded and displayed on ESP Gallery’s site with the admin account.  Website building will finish at the end of the build sprint on July 23rd at the latest for version 1.  Further website building can be negotiated after this date.
-Client Sign-Off for Lou Steer
-
-9 Obtain final project sign-off
-
-11 Create a questionnaire for the client to ascertain the satisfaction with your products and services
-
+---
+---
 * [Application Design](#design)
-
-## Application Design
+# Application Design
 
 Demonstrate your ability to break down the problem and design a solution:
-	Please see the questionnaire for part A. 
+	Please see the assignment part A questionnaire below. 
 
 Design process:
-	After breaking down the problem and deciding the solution, we chose colours, fonts, and created the wireframes.  We then followed these plans to build our website.  
+	After breaking down the problem and deciding the solution, we chose colours, fonts, and created the wireframes, ERD, user flow and api plan.  We then followed these plans to build our website.   
 
 Review the conceptual design with the client and edit based on their feedback:
-	We kept the client updated on the progress of the site, seeking their input on the website and re-scoping based on their advice due to the time constraints mentioned in the project charter. 
+	We kept the client updated on the progress of the site, seeking their input on the website and re-scoping based on their advice due to the time constraints as mentioned in the project charter. 
 
-
-
-
+---
 *[Workflow](#workflow)
-4A workflow diagram of the user journey/s
+## Updated workflow diagram of user journeys
+Due to rescoping, the workflow diagram has changed and is now as follows:
 
-7Project plan and effort estimation
+---
 
-
-[5. PROJECT Management](#management)
-
+## Project plan and effort estimation for the design
+	As with the rest of the project, the project plan and effort estimation was managed through Trello and the TeamGantt plugin as outlined below in the project management section below. 
+---
+---
 
 * [Project management](#project)
-Project Management- Demonstrate your ability to satisfy your client with the quality of your work and high level of service.
+# Project Management 
 
-2Plan information gathering activities to determine project requirements, constraints and risks
+## Information gathering activities to determine project requirements, constraints and risks
 
-3Develop project charter, including preliminary statement of project scope and obtain sign-off
+We had a four pronged attack in our information gathering plan:
+1) Client
+
+	a) We made initial contact with the client by telephone call to get a generalized overview of what the client wanted.  This info was used to inform the initial client meeting and helped temper client expectations by giving a realistic representation of what we could deliver. 
+
+	b) The first client meeting was used to drill down to the details and develop appropriate scope for the project.  
+
+2) Look for other similar projects/apps that could help inform our build construction.
+
+3) Research suitable technology to use in our app e.g. mern, cloudinary etc. 
+
+4) Research of common project risks in app delivery.
+---
+
+## Project charter, including preliminary statement of project scope.
+
+The following project charter was signed-off by the client by email (originally in pdf format):
+
+	Project Charter
+	ESP Gallery is the public face of Edith Artists.  It’s gallery opened in Marrickville in September 2009, and has shown the work of over 300 local, national and international artists and held 75 exhibitions and events. ESP Gallery wants to leverage it’s brand recognition and reputation through the provision of an online art platform.
+
+	Business Case
+	This project would provide an online presence for the ESP Gallery brand and has the potential to provide a revenue stream for the client. It also will allow artists to show their work and for the art community to promote the vibrancy of the Sydney art scene.  
+	The team of Charles McGovern, Chris Barfod, Cassandra Daw, and Casey Manning plan to work towards providing the following to the client, Lou Steer.  
+
+	a beautiful site for artists and art lovers, which promotes a sense of community.
+	
+	providing registration/login so that art buyers, sellers and site admin can use the site. 
+	allowing the buying and selling of art, by providing pages that allow art listings to be displayed and purchased. 
+
+	allowing artists to have their art displayed in the Gallery by providing Gallery admin with the ability to upload artwork to the gallery.
+
+	providing a beautiful, well designed site that promotes community through the thoughtful use of html, css, bootstrap, images,and appropriate text and fonts.
+
+	Setting up a special Admin Account that can:
+		a) create, edit and delete user generated content
+		b) create, edit and delete key website content
+
+
+
+	Timeframe:
+	The project is to be delivered to ESP Gallery around the 23rd of July.  
+
+
+
+	Risks
+	There are a number of risks involved with the delivery of the project:
+	1) Content risk - there are many features to be implemented in a short span of time
+	2) Version control issues
+	3) Software issues
+	4) Database issues
+	5) Business risk
+
+	Project Scope
+	The minimum scope for the project is the provision of a beautiful gallery that allows art to be uploaded and displayed on ESP Gallery’s site with the admin account.
+
+		Website building will finish at the end of the build sprint on July 25th at the latest for version 1.  Further website building can be negotiated after this date.
+
+---
+
+Client Sign-Off for Lou Steer
+
+---
+
+satisfy client quality of work high level service.
+
+---
 
 4Prepare project work breakdown and schedule
 
+---
+
 5Allocate roles and responsibilities to team members, based on project solution requirements
+
+---
 
 6Monitor each other’s assigned work
 
+---
+
 7Reassess ongoing project scope changes, risks and issues
 
+---
+
 8Manage system testing and hand over activities. Prepare maintenance or support plans for client
+
+---
 
 9As a team, conduct post project review
 
 
+---
 
 [3. CONSTRAINTS AND RISKS](#constraints)
+
+---
 
 
 [4. TECHNOLOGY STACK](#stack)
 Mongo/mongoose, Express, React, Node, etc.
 
+---
+
 
 [8. TESTING](#tests)
 
+---
 
-
-Tools & Methodologies
+# Tools & Methodologies
 Demonstrate your project management skills,
+
 	1	Trello or similar project management tool to be used for Kanban process to track progress of build
+
 	2	GitHub Demonstrate use of frequent commits, feature branches (based on user stories), pull requests and merges
+
 	3	Use Agile development methodologies
+
 	4	Code review. Demonstrate that you have had your code reviewed by other students and that you have provided a code review for others
+
 	5	Show evidence of client communication, e.g. meeting minutes, emails, or other communication tools
 
 
