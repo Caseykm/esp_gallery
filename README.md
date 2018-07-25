@@ -47,14 +47,8 @@ Trello: ![Trello](https://trello.com/b/NZm11i1D/c4-assignment)
 ## Record interactions with your client in a diary format
 
 A diary record of client communication was kept at the following site:
-https://c4coderacademy.atlassian.net/wiki/spaces/ES/pages/622605/Client+Interactions
+Client interactions: ![Client](https://c4coderacademy.atlassian.net/wiki/spaces/ES/pages/622605/Client+Interactions)
 
----
-
-## Obtain final project sign-off
----
-
-## Create client satisfaction questionnaire
 
 ---
 ---
@@ -125,12 +119,8 @@ The following project charter was signed-off by the client by email (originally 
 		a) create, edit and delete user generated content
 		b) create, edit and delete key website content
 
-
-
 	Timeframe:
 	The project is to be delivered to ESP Gallery around the 23rd of July.  
-
-
 
 	Risks
 	There are a number of risks involved with the delivery of the project:
@@ -143,31 +133,38 @@ The following project charter was signed-off by the client by email (originally 
 	Project Scope
 	The minimum scope for the project is the provision of a beautiful gallery that allows art to be uploaded and displayed on ESP Gallery’s site with the admin account.
 
-		Website building will finish at the end of the build sprint on July 25th at the latest for version 1.  Further website building can be negotiated after this date.
+	Website building will finish at the end of the build sprint on July 25th at the latest for version 1.  Further website building can be negotiated after this date.
+
+---
+## Client satisfaction and sign-off
+
+To ensure the client was satisfied with the quality of our work and service provided, we created a final project sign-off/ questionnaire document.
+The information/text contained within this document can be viewed on our client interactions record:
+Client interactions: ![Client](https://c4coderacademy.atlassian.net/wiki/spaces/ES/pages/622605/Client+Interactions)
+
+---
+## Prepare project work breakdown and schedule
+## Allocate roles and responsibilities to team members, based on project solution requirements
+## Monitor each other’s assigned work
+
+Tasks initially were broadly distributed with two people on the front-end and two on the backend and one person on documentation. Trello was then implemented to keep all tasks organised and the project progressing according to the schedule on TeamGantt. 
+Agile/Kanban was implemented by team members who created a Trello board and self-assigned tasks, putting them in the "doing" section and putting their name to it, and then putting it in "completed" when they were done. Only MVP tasks were allowed to be assigned until all were finished. Only then could optional features be tackled.  This helped prioritize essential project solution requirements over 'sprinkles'. This methodology also allowed us to easily monitor each other’s assigned work.
+
+The Trello board can be viewed [here](https://trello.com/b/NZm11i1D/c4-assignment) or here:
+
+![trello](https://github.com/casscass/esp_gallery/blob/develop/README-images/trello1.png)
+
+As mentioned above TeamGantt is a Trello powerup and is pictured below:
+
+![gantt](https://github.com/casscass/esp_gallery/blob/develop/README-images/Gantt.png)
+
+TeamGantt was also used to "estimate effort" by scheduling the amount of days it might take to complete a task.
 
 ---
 
-Client Sign-Off for Lou Steer
+7Reassess ongoing project scope changes, risks and issues.
 
----
-
-satisfy client quality of work high level service.
-
----
-
-4Prepare project work breakdown and schedule
-
----
-
-5Allocate roles and responsibilities to team members, based on project solution requirements
-
----
-
-6Monitor each other’s assigned work
-
----
-
-7Reassess ongoing project scope changes, risks and issues
+Before the initial client face to face meeting, it was identified that the delivery of the selling art feature might be beyond the scope of the 
 
 ---
 
