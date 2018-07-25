@@ -1,5 +1,26 @@
 
-[1. BUSINESS PROBLEM](#businessproblem)
+
+[1. BUSINESS PROBLEM and Solution](#businessproblem)
+[2. Project Links](#links)
+[3. Client Communication](#client)
+[4. Application Design](#design)
+[5. Updated workflow diagram of user journeys](#workflow)
+[6. Project plan](#ProjectPlan)
+[7. Project management](#project)
+[8. Information gathering- project requirements, constraints,risks](#info)
+[9. Project charter/preliminary statement of scope](#charter)
+[10. Client satisfaction and sign-off](#satisfaction)
+[11. Prepare project work breakdown and schedule](#breakdown)
+[12. Allocate roles and responsibilities to team members, based on project solution requirements](#breakdown)
+[13.Monitor each other’s assigned work](#breakdown)
+[14. Reassess ongoing project scope changes, risks and issues](#scope)
+[15. CONSTRAINTS AND RISKS](#constraints)
+[16. Post project review](#review)
+[17. TECHNOLOGY STACK](#stack)
+[18. TESTING](#tests)
+[19. Code review](#code)
+
+<a name="businessproblem"/>
 
 # Business Problem and Solution
 350 word application summary with problem definition and solution
@@ -26,7 +47,8 @@ The app will fulfill the client needs, as described in question 2 by:
 	* Providing no automatic audio play, so people can use the site without drawing the attention of others.
 ---
 
-* [Links](#links)
+<a name="links"/>
+
 ## Project links
 
 Please see list below for links to all project information. 
@@ -39,9 +61,8 @@ Trello: ![Trello](https://trello.com/b/NZm11i1D/c4-assignment)
 
 ---
 ---
+<a name=“client”/>
 
-
-* [Client Communication](#client)
 # CLIENT COMMUNICATION
 
 ## Record interactions with your client in a diary format
@@ -52,7 +73,8 @@ Client interactions: ![Client](https://c4coderacademy.atlassian.net/wiki/spaces/
 
 ---
 ---
-* [Application Design](#design)
+<a name=“design”/>
+
 # Application Design
 
 Demonstrate your ability to break down the problem and design a solution:
@@ -65,7 +87,8 @@ Review the conceptual design with the client and edit based on their feedback:
 	We kept the client updated on the progress of the site, seeking their input on the website and re-scoping based on their advice due to the time constraints as mentioned in the project charter. 
 
 ---
-*[Workflow](#workflow)
+<a name=“workflow”/>
+
 ## Updated workflow diagram of user journeys
 Due to rescoping, the workflow diagram has changed and is now as follows:
 
@@ -73,14 +96,18 @@ Due to rescoping, the workflow diagram has changed and is now as follows:
 
 
 ---
-*[Project plan](#ProjectPlan)
+<a name=“ProjectPlan”/>
+
 ## Project plan and effort estimation for the design
 	As with the rest of the project, the project plan and effort estimation was managed through Trello and the TeamGantt plugin as outlined below in the project management section below. 
 ---
 ---
 
-* [Project management](#project)
+<a name=“project”/>
+
 # Project Management 
+
+<a name=“info”/>
 
 ## Information gathering activities to determine project requirements, constraints and risks
 
@@ -97,6 +124,7 @@ We had a four pronged attack in our information gathering plan:
 
 4) Research of common project risks in app delivery.
 ---
+<a name=“charter”/>
 
 ## Project charter, including preliminary statement of project scope.
 
@@ -139,13 +167,19 @@ The following project charter was signed-off by the client by email (originally 
 	Website building will finish at the end of the build sprint on July 25th at the latest for version 1.  Further website building can be negotiated after this date.
 
 ---
+
+<a name=“satisfaction”/>
+
 ## Client satisfaction and sign-off
 
 To ensure the client was satisfied with the quality of our work and service provided, we created a final project sign-off/ questionnaire document. The client tested all the functionality on both computer and mobile, and signed off on the finished product(verbally).  The final interaction as well as the rest of the client communication can be found here(same link as above).
 
 Client interactions: ![Client](https://c4coderacademy.atlassian.net/wiki/spaces/ES/pages/622605/Client+Interactions)
 
+
 ---
+<a name=“breakdown”/>
+
 ## Prepare project work breakdown and schedule
 ## Allocate roles and responsibilities to team members, based on project solution requirements
 ## Monitor each other’s assigned work
@@ -166,19 +200,25 @@ As mentioned above TeamGantt is a Trello powerup and is pictured below:
 TeamGantt was also used to "estimate effort" by scheduling the amount of days it might take to complete a task.
 
 ---
-[3. CONSTRAINTS AND RISKS](#constraints)
 
-Reassess ongoing project scope changes, risks and issues. 
+<a name=“scope”/>
+
+## Reassess ongoing project scope changes, risks and issues. 
 
 Before the initial client face to face meeting, it was identified that there was a risk that the delivery of the selling art feature might be beyond the scope of the project. As it turned out, this was a correct assessment and a rescope of just the virtual gallery was implemented. Download of images to our cloud storage site was implemented, however there were some issues in deliverying the upload of art from Cloudinary to our website.  Also the positioning of this functionality is a bit of an issue.  Another issue is that there are unsigned upload of images currently. This is not an issue for the current architecture and functionality, however signed uploads will be necessary if the shop is implemented. 
 
 ---
-As a team, conduct post project review.
+<a name=“review”/>
+
+## Post project review
+
+The project was a crash course in developing a complex piece of software in a very short time. We discussed how much of our time was spent learning about how to implement features and teasing out bugs in the code. We reflected on how our initial plan for the site was gradually downsized and descoped as the complexity as well as the level of understanding needed to successfully integrate the various features and how we could have done this better. Overall we decided it has been a terrific opportunity to experience coordinating within a team of beautiful people in the process of designing and implementing a website.
 
 ---
 
-[4. TECHNOLOGY STACK](#stack)
-### Technology Stack
+<a name=“stack”/>
+
+## Technology Stack
 
 We have utilised a number of different technologies to create our application:
 
@@ -186,8 +226,9 @@ Mongo/mongoose, Express, React, Node, Redux, Axios, Cloudinary, React-strap, Fle
 
 ---
 
-[8. TESTING](#tests)
-### Testing
+<a name=“tests”/>
+
+## Testing
 Some testing information is addressed in q. 19 of part A documentation.  
 
 
@@ -212,7 +253,7 @@ Testing the navigation flow and links on each page, to external sites (social me
 
 Landing Page
     Virtual Gallery
-In the Virtual Gallery the text under each slide is linked to go to the product page. However as the cards are hard coded instead of being instancised they all link to the same product page. But the link does work lol
+In the Virtual Gallery the text under each slide is linked to go to the product page. However as the cards are hard coded instead of being instantiated they all link to the same product page. But the link does work.
 
 Button ( Go To Gallery Shop)
 On hover the button color reverses to let the User know they are hovering over the button.
@@ -243,8 +284,9 @@ Features not working:
 The search and cart functions were not implemented due to time constraints. We plan to include these features in the near future. 
 The Contact Us feature does not email
 ---
+<a name=“code”/>
 
-## Code review.
+## Code review
 
 	For code review. James Apple helped review Cloudinary integration code within the Dashboard component: esp_gallery/client/src/pages/Dashboard.js. Due to this review process, an error was fixed.
 
